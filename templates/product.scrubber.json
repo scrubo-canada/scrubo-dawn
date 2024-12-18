@@ -52,6 +52,12 @@
             "show_gift_card_recipient": false
           }
         },
+        "custom_liquid_7T7HEP": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'product-stock-alert' -%}"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -112,6 +118,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "custom_liquid_7T7HEP",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
