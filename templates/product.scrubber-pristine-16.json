@@ -241,6 +241,15 @@
         "padding_bottom": 36
       }
     },
+    "custom_liquid_qdBQYQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- render 'product-videos' -%}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -264,6 +273,7 @@
     "main",
     "multirow_7pTgnF",
     "multicolumn_wmUqJx",
+    "custom_liquid_qdBQYQ",
     "related-products"
   ]
 }
