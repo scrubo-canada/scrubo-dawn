@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -5,6 +14,36 @@
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_JWPGgg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_whEgMk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Customer Service",
+            "heading_size": "h1"
+          }
+        },
+        "text_fcQtRb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our showroom is located at 1125 - 1579 Kingsway Ave, Port Coquitlam, BC, Canada.</p><p>We are open Monday - Friday 9am to 5:30pm and Saturday 10am to 3pm.</p><p>You can reach us by phone at 1-800-350-4840</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_whEgMk",
+        "text_fcQtRb"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "form": {
@@ -20,6 +59,7 @@
   },
   "order": [
     "main",
+    "rich_text_JWPGgg",
     "form"
   ]
 }
