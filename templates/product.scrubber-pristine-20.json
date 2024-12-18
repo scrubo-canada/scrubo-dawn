@@ -141,38 +141,29 @@
         "row_QKk6xF": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/Pristine_20_-_5.jpg",
+            "caption": "Built to last",
+            "heading": "Reliable and Simple Control Panel",
+            "text": "<p>Deliver consistent results with the easy-to-operate and maintain floor scrubber Scrubo Pristine 20. Help lower your labor costs and improve cleaning performance with the high RPM 500w brush motor. </p>",
+            "button_label": "",
             "button_link": ""
           }
         },
         "row_VfLHrK": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_ADJBUE": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/Pristine_20_-_6.jpg",
+            "caption": "Vancouver BC, Canada",
+            "heading": "Local service",
+            "text": "<p>Scrubo is a local business situated in Port Coquitlam, BC, Canada, with a focus on walk-behind floor scrubbers. By eliminating the middleman, we channel the savings directly to you, allowing end customers to save thousands of dollars. What sets us apart is not only our commitment to providing high-quality floor scrubbers at competitive prices but also our dedication to local service and support. This ensures that your floor scrubber can consistently operate without downtime, offering you a seamless and cost-effective solution.</p>",
+            "button_label": "",
             "button_link": ""
           }
         }
       },
       "block_order": [
         "row_QKk6xF",
-        "row_VfLHrK",
-        "row_ADJBUE"
+        "row_VfLHrK"
       ],
       "settings": {
         "image_height": "medium",
