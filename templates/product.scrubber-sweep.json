@@ -135,6 +135,67 @@
         "padding_bottom": 12
       }
     },
+    "multirow_g6GdFC": {
+      "type": "multirow",
+      "blocks": {
+        "row_7nLGpC": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/scrubo_real.jpg",
+            "caption": "Sweeping Faster and Smarter",
+            "heading": "Double brush",
+            "text": "<p>Introducing the Scrubo Sweep, equipped with a dual brush design that delivers unparalleled cleaning power, outpacing conventional brooms by up to six times. Ideal for a variety of outdoor spaces including sidewalks, patios, garages, workshops, driveways, and beyond, the Scrubo Sweep makes quick work of dirt, debris, and leaves.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_w9ffFJ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/scrubo_sweep_3.jpg",
+            "caption": "40\" cleaning path",
+            "heading": "Quiet, motorless operation",
+            "text": "<p>Introducing the Scrubo Sweep, a revolutionary cleaning solution that operates at an impressively low 42dB, significantly quieter than the deafening noise of a typical leaf blower, which can reach around 100dB. Unlike traditional blowers that simply scatter dust and debris, the Scrubo Sweep ingeniously captures dust, ensuring a cleaner environment with minimal disturbance. What's more, its innovative push-powered design eliminates the need for electricity or gas, making it both environmentally friendly and cost-effective.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_7nLGpC",
+        "row_w9ffFJ"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1734560776d12628f8": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_DmpnDy": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_DmpnDy"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -156,6 +217,8 @@
   },
   "order": [
     "main",
+    "multirow_g6GdFC",
+    "1734560776d12628f8",
     "related-products"
   ]
 }
