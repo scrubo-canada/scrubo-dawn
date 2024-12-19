@@ -232,6 +232,9 @@
         "column_7kJCef",
         "column_DACAU3"
       ],
+      "custom_css": [
+        ".multicolumn-list__item {border: dotted #ccc 1px;}"
+      ],
       "settings": {
         "title": "What's Included",
         "heading_size": "h1",
@@ -239,7 +242,7 @@
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "",
