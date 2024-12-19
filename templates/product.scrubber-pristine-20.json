@@ -209,17 +209,17 @@
         "column_JADDnh": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
+            "title": "Pristine 20 owners manual",
+            "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
+            "link_label": "Download",
+            "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Scrubo_Pristine_20.pdf?v=1710011407"
           }
         },
         "column_jpdw9N": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Support at every step",
+            "text": "<p>Our goal is to optimize your business operations for peak efficiency. Should you encounter any challenges with our floor scrubbers, we're here to assist. Feel free to reach out to us via email or contact us directly at 1-800-350-4840.</p>",
             "link_label": "",
             "link": ""
           }
@@ -227,8 +227,8 @@
         "column_tBbFTQ": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Parts and consumables",
+            "text": "<p>Whether you're in need of replacement parts or stocking up on consumables, you've come to the right place. Simply email us with a photo of the part you require, and we'll promptly assist you.</p>",
             "link_label": "",
             "link": ""
           }
