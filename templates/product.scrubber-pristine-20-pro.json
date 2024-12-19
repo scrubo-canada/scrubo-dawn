@@ -167,7 +167,7 @@
             "caption": "Vancouver BC, Canada",
             "heading": "Local service",
             "text": "<p>Scrubo is a local business situated in Port Coquitlam, BC, Canada, with a focus on walk-behind floor scrubbers. By eliminating the middleman, we channel the savings directly to you, allowing end customers to save thousands of dollars. What sets us apart is not only our commitment to providing high-quality floor scrubbers at competitive prices but also our dedication to local service and support. This ensures that your floor scrubber can consistently operate without downtime, offering you a seamless and cost-effective solution.</p>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": ""
           }
         }
@@ -189,6 +189,74 @@
         "section_color_scheme": "",
         "row_color_scheme": "",
         "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1734583994222b3276": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_6enbnG": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_6enbnG"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "multicolumn_e9G4k6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_YVb7LJ": {
+          "type": "column",
+          "settings": {
+            "title": "Pristine 20 owners manual",
+            "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
+            "link_label": "Download",
+            "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Scrubo_Pristine_20.pdf?v=1710011407"
+          }
+        },
+        "column_YnGYK6": {
+          "type": "column",
+          "settings": {
+            "title": "Support at every step",
+            "text": "<p>Our goal is to optimize your business operations for peak efficiency. Should you encounter any challenges with our floor scrubbers, we're here to assist. Feel free to reach out to us via email or contact us directly at 1-800-350-4840.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_H8Li3e": {
+          "type": "column",
+          "settings": {
+            "title": "Parts and Consumables",
+            "text": "<p>Whether you're in need of replacement parts or stocking up on consumables, you've come to the right place. Simply email us with a photo of the part you require, and we'll promptly assist you.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_YVb7LJ",
+        "column_YnGYK6",
+        "column_H8Li3e"
+      ],
+      "settings": {
+        "title": "Support",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -215,6 +283,8 @@
   "order": [
     "main",
     "multirow_CApzNa",
+    "1734583994222b3276",
+    "multicolumn_e9G4k6",
     "related-products"
   ]
 }
