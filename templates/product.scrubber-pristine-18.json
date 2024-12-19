@@ -30,6 +30,12 @@
             "text_style": "subtitle"
           }
         },
+        "custom_liquid_FLj3yj": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'product-stock-alert' -%}"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {}
@@ -108,6 +114,7 @@
         "vendor",
         "title",
         "caption",
+        "custom_liquid_FLj3yj",
         "price",
         "variant_picker",
         "quantity_selector",
