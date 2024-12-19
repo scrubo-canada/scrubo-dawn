@@ -25,6 +25,7 @@
         },
         "caption": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ product.metafields.descriptors.subtitle.value }}",
             "text_style": "subtitle"
@@ -32,6 +33,10 @@
         },
         "judge_me_reviews_preview_badge_KXDN4x": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
           "settings": {}
         },
         "custom_liquid_KMiDqX": {
@@ -61,10 +66,6 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
@@ -119,12 +120,12 @@
         "title",
         "caption",
         "judge_me_reviews_preview_badge_KXDN4x",
+        "description",
         "custom_liquid_KMiDqX",
         "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "description",
         "collapsible-row-0",
         "collapsible-row-1",
         "collapsible-row-2",
