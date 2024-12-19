@@ -244,14 +244,17 @@
         "column_hY7ap8",
         "column_yBVAyM"
       ],
+      "custom_css": [
+        ".multicolumn-list__item {border: dotted #ccc 1px;}"
+      ],
       "settings": {
-        "title": "Multicolumn",
+        "title": "What's Included",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-1",
