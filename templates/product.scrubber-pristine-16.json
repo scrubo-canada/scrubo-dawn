@@ -188,6 +188,62 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_7WAc4q": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nkh9Qf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/brush.jpg",
+            "title": "Brush",
+            "text": "<p>20\" brush for hard or uneven floors</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qt8jde": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/16inPin-PadBundle-1-v2.jpg",
+            "title": "Pad Driver / Pad",
+            "text": "<p>20\" Inch Pad Driver and 20\" Pad (This month special)</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_E78MWt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/NX500_Charger_-_2.jpg",
+            "title": "Charger",
+            "text": "<p>24V smart charger, CE approved.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_nkh9Qf",
+        "column_qt8jde",
+        "column_E78MWt"
+      ],
+      "settings": {
+        "title": "What's included",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_wmUqJx": {
       "type": "multicolumn",
       "blocks": {
@@ -272,6 +328,7 @@
   "order": [
     "main",
     "multirow_7pTgnF",
+    "multicolumn_7WAc4q",
     "multicolumn_wmUqJx",
     "custom_liquid_qdBQYQ",
     "related-products"
