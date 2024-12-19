@@ -38,6 +38,12 @@
           "type": "price",
           "settings": {}
         },
+        "custom_liquid_diEqp7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'product-stock-alert' -%}"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -54,12 +60,6 @@
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
-          }
-        },
-        "custom_liquid_diEqp7": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{%- render 'product-stock-alert' -%}"
           }
         },
         "description": {
@@ -120,10 +120,10 @@
         "caption",
         "judge_me_reviews_preview_badge_9yN8rH",
         "price",
+        "custom_liquid_diEqp7",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "custom_liquid_diEqp7",
         "description",
         "collapsible-row-0",
         "collapsible-row-1",
