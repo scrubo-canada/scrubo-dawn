@@ -30,8 +30,8 @@
             "text_style": "subtitle"
           }
         },
-        "price": {
-          "type": "price",
+        "judge_me_reviews_preview_badge_9yN8rH": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
         "custom_liquid_diEqp7": {
@@ -39,6 +39,10 @@
           "settings": {
             "custom_liquid": "{%- render 'product-stock-alert' -%}"
           }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -114,8 +118,9 @@
         "vendor",
         "title",
         "caption",
-        "price",
+        "judge_me_reviews_preview_badge_9yN8rH",
         "custom_liquid_diEqp7",
+        "price",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
@@ -244,21 +249,6 @@
         "padding_bottom": 36
       }
     },
-    "173458351095e7e63c": {
-      "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_Q7BTYj": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_Q7BTYj"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "multicolumn_wmUqJx": {
       "type": "multicolumn",
       "blocks": {
@@ -310,6 +300,21 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "173458351095e7e63c": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_Q7BTYj": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_Q7BTYj"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "custom_liquid_qdBQYQ": {
