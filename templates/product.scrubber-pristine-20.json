@@ -34,6 +34,12 @@
           "type": "price",
           "settings": {}
         },
+        "custom_liquid_b8aRKC": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'product-stock-alert' -%}"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -109,6 +115,7 @@
         "title",
         "caption",
         "price",
+        "custom_liquid_b8aRKC",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
