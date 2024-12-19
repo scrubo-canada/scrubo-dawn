@@ -30,6 +30,10 @@
             "text_style": "subtitle"
           }
         },
+        "judge_me_reviews_preview_badge_KXDN4x": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
         "custom_liquid_KMiDqX": {
           "type": "custom_liquid",
           "settings": {
@@ -114,6 +118,7 @@
         "vendor",
         "title",
         "caption",
+        "judge_me_reviews_preview_badge_KXDN4x",
         "custom_liquid_KMiDqX",
         "price",
         "variant_picker",
