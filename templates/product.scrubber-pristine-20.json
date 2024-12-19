@@ -219,8 +219,9 @@
         "column_DACAU3": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/NX500_Charger_-_2.jpg",
+            "title": "Charger",
+            "text": "<p>24V smart charger, CE approved.</p>",
             "link_label": "",
             "link": ""
           }
