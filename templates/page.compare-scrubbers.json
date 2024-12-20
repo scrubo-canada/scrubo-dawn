@@ -15,9 +15,26 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "product_compare_table_fBBgRq": {
+      "type": "product-compare-table",
+      "settings": {
+        "title": "Compare Products",
+        "products_to_compare": [
+          "scrubo-pristine-16",
+          "scrubo-pristine-18",
+          "scrubo-pristine-20",
+          "scrubo-flex",
+          "scrubo-cleanrider-26",
+          "scrubo-pristine-20-pro-with-traction-drive",
+          "scrubo-stand-on-28",
+          "scrubo-sweep"
+        ]
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "product_compare_table_fBBgRq"
   ]
 }
