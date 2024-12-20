@@ -25,13 +25,9 @@
 
 <div class="product-compare section">
   <div class="page-width">
-    {% if section.settings.title != blank %}
-      <h2 class="section-title">{{ section.settings.title }}</h2>
-    {% endif %}
-
     {% assign products = section.settings.products_to_compare %}
 
-    {% if products.size > 0 %}
+    {% if products.count > 0 %}
       <div class="compare-table-wrapper">
         <table class="compare-table">
           <thead>
@@ -50,7 +46,7 @@
                   </div>
                   <div class="product-title">{{ product.title }}</div>
                   <div class="product-price">{{ product.price | money }}</div>
-                  <a href="{{ product.url }}" class="button">View Product</a>
+                  {{- 'View Product' | link_to: product.url, class: 'button' -}}
                 </th>
               {% endfor %}
             </tr>
@@ -61,15 +57,31 @@
             <tr>
               <td class="spec-label">Cleaning Path</td>
               {% for product in products %}
-                <td class="spec-value">{{ product.metafields.custom.cleaning_path }}</td>
+                <td class="spec-value">{{ product.metafields.custom.cleaning_path.value }}</td>
               {% endfor %}
             </tr>
 
             <!-- Productivity -->
             <tr>
-              <td class="spec-label">Productivity</td>
+              <td class="spec-label">Brush Diameter</td>
               {% for product in products %}
-                <td class="spec-value">{{ product.metafields.custom.productivity }}</td>
+                <td class="spec-value">{{ product.metafields.custom.brush_diameter.value }}</td>
+              {% endfor %}
+            </tr>
+
+            <!-- Estimated Coverage -->
+            <tr>
+              <td class="spec-label">Estimated Coverage</td>
+              {% for product in products %}
+                <td class="spec-value">{{ product.metafields.custom.estimated_coverage.value }}</td>
+              {% endfor %}
+            </tr>
+
+            <!-- Estimated Runtime -->
+            <tr>
+              <td class="spec-label">Estimated Run Time</td>
+              {% for product in products %}
+                <td class="spec-value">{{ product.metafields.custom.estimated_run_time.value }}</td>
               {% endfor %}
             </tr>
 
@@ -77,23 +89,39 @@
             <tr>
               <td class="spec-label">Solution Tank</td>
               {% for product in products %}
-                <td class="spec-value">{{ product.metafields.custom.solution_tank }}</td>
+                <td class="spec-value">{{ product.metafields.custom.solution_tank_capacity.value }}</td>
               {% endfor %}
             </tr>
 
             <!-- Recovery Tank -->
             <tr>
-              <td class="spec-label">Recovery Tank</td>
+              <td class="spec-label">Recovery Tank Capacity</td>
               {% for product in products %}
-                <td class="spec-value">{{ product.metafields.custom.recovery_tank }}</td>
+                <td class="spec-value">{{ product.metafields.custom.recovery_tank_capacity.value }}</td>
               {% endfor %}
             </tr>
 
-            <!-- Power Source -->
+            <!-- Battery -->
             <tr>
-              <td class="spec-label">Power Source</td>
+              <td class="spec-label">Battery</td>
               {% for product in products %}
-                <td class="spec-value">{{ product.metafields.custom.power_source }}</td>
+                <td class="spec-value">{{ product.metafields.custom.battery.value }}</td>
+              {% endfor %}
+            </tr>
+
+            <!-- Brush Motor -->
+            <tr>
+              <td class="spec-label">Brush Motor</td>
+              {% for product in products %}
+                <td class="spec-value">{{ product.metafields.custom.brush_motor.value }}</td>
+              {% endfor %}
+            </tr>
+
+            <!-- Vacuum Motor -->
+            <tr>
+              <td class="spec-label">Vacuum Motor</td>
+              {% for product in products %}
+                <td class="spec-value">{{ product.metafields.custom.vacuum_motor.value }}</td>
               {% endfor %}
             </tr>
 
@@ -119,7 +147,6 @@
   }
 
   .section-title {
-    text-align: center;
     margin-bottom: 40px;
   }
 
