@@ -157,6 +157,13 @@
             "spec_value": "{{ product.metafields.custom.cleaning_path.value }}"
           }
         },
+        "specification_eyfjxy": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Label",
+            "spec_value": "Value"
+          }
+        },
         "specification_rgieMk": {
           "type": "specification",
           "settings": {
@@ -223,6 +230,7 @@
       },
       "block_order": [
         "specification_QAdU8P",
+        "specification_eyfjxy",
         "specification_rgieMk",
         "specification_9HGee9",
         "specification_rEh8Wr",
@@ -234,7 +242,7 @@
         "specification_ykABBY"
       ],
       "settings": {
-        "title": "Product Specifications",
+        "title": "Pristine 16 Specifications",
         "heading_size": "h1",
         "section_color_scheme": ""
       }
