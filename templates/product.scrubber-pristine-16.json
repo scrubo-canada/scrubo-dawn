@@ -147,6 +147,98 @@
         "padding_bottom": 12
       }
     },
+    "product_specifications_scrubber_NETagQ": {
+      "type": "product-specifications-scrubber",
+      "blocks": {
+        "specification_QAdU8P": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Cleaning Path",
+            "spec_value": "{{ product.metafields.custom.cleaning_path.value }}"
+          }
+        },
+        "specification_rgieMk": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Brush Diameter",
+            "spec_value": "{{ product.metafields.custom.brush_diameter.value }}"
+          }
+        },
+        "specification_9HGee9": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Estimated Coverage",
+            "spec_value": "{{ product.metafields.custom.estimated_coverage.value }}"
+          }
+        },
+        "specification_rEh8Wr": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Estimated Run Time",
+            "spec_value": "{{ product.metafields.custom.estimated_run_time.value }}"
+          }
+        },
+        "specification_QU4UqW": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Battery",
+            "spec_value": "{{ product.metafields.custom.battery.value }}"
+          }
+        },
+        "specification_tVXUfJ": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Brush Motor",
+            "spec_value": "{{ product.metafields.custom.brush_motor.value }}"
+          }
+        },
+        "specification_rg4LWh": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Vacuum Motor",
+            "spec_value": "{{ product.metafields.custom.vacuum_motor.value }}"
+          }
+        },
+        "specification_DgWhE7": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Solution Tank Capacity",
+            "spec_value": "{{ product.metafields.custom.solution_tank_capacity.value }}"
+          }
+        },
+        "specification_7Mjepc": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Recovery Tank Capacity",
+            "spec_value": "{{ product.metafields.custom.recovery_tank_capacity.value }}"
+          }
+        },
+        "specification_ykABBY": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Weight",
+            "spec_value": "{{ product.metafields.custom.weight.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "specification_QAdU8P",
+        "specification_rgieMk",
+        "specification_9HGee9",
+        "specification_rEh8Wr",
+        "specification_QU4UqW",
+        "specification_tVXUfJ",
+        "specification_rg4LWh",
+        "specification_DgWhE7",
+        "specification_7Mjepc",
+        "specification_ykABBY"
+      ],
+      "settings": {
+        "title": "Product Specifications",
+        "heading_size": "h1",
+        "section_color_scheme": ""
+      }
+    },
     "multirow_7pTgnF": {
       "type": "multirow",
       "blocks": {
@@ -350,6 +442,7 @@
   },
   "order": [
     "main",
+    "product_specifications_scrubber_NETagQ",
     "multirow_7pTgnF",
     "multicolumn_7WAc4q",
     "multicolumn_wmUqJx",
