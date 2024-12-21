@@ -220,6 +220,13 @@
             "spec_value": "{{ product.metafields.custom.recovery_tank_capacity.value }}"
           }
         },
+        "specification_hw8q4d": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Label",
+            "spec_value": "Value"
+          }
+        },
         "specification_ykABBY": {
           "type": "specification",
           "settings": {
@@ -239,6 +246,7 @@
         "specification_rg4LWh",
         "specification_DgWhE7",
         "specification_7Mjepc",
+        "specification_hw8q4d",
         "specification_ykABBY"
       ],
       "settings": {
