@@ -157,13 +157,6 @@
             "spec_value": "{{ product.metafields.custom.cleaning_path.value }}"
           }
         },
-        "specification_eyfjxy": {
-          "type": "specification",
-          "settings": {
-            "spec_label": "Label",
-            "spec_value": "Value"
-          }
-        },
         "specification_rgieMk": {
           "type": "specification",
           "settings": {
@@ -220,13 +213,6 @@
             "spec_value": "{{ product.metafields.custom.recovery_tank_capacity.value }}"
           }
         },
-        "specification_hw8q4d": {
-          "type": "specification",
-          "settings": {
-            "spec_label": "Label",
-            "spec_value": "Value"
-          }
-        },
         "specification_ykABBY": {
           "type": "specification",
           "settings": {
@@ -237,7 +223,6 @@
       },
       "block_order": [
         "specification_QAdU8P",
-        "specification_eyfjxy",
         "specification_rgieMk",
         "specification_9HGee9",
         "specification_rEh8Wr",
@@ -246,7 +231,6 @@
         "specification_rg4LWh",
         "specification_DgWhE7",
         "specification_7Mjepc",
-        "specification_hw8q4d",
         "specification_ykABBY"
       ],
       "settings": {
