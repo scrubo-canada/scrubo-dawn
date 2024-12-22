@@ -293,7 +293,7 @@
           "settings": {
             "image": "shopify://shop_images/brush.jpg",
             "title": "Brush",
-            "text": "<p>20\" brush for hard or uneven floors</p>",
+            "text": "<p>16\" brush for hard or uneven floors</p>",
             "link_label": "",
             "link": ""
           }
@@ -303,7 +303,7 @@
           "settings": {
             "image": "shopify://shop_images/16inPin-PadBundle-1-v2.jpg",
             "title": "Pad Driver / Pad",
-            "text": "<p>20\" Inch Pad Driver and 20\" Pad (This month special)</p>",
+            "text": "<p>16\" Inch Pad Driver and 16\" Pad (This month special)</p>",
             "link_label": "",
             "link": ""
           }
