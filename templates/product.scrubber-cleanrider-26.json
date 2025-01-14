@@ -245,7 +245,7 @@
         "row_Qnkhdh": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/CleanRider26--Mattias.jpg",
+            "image": "shopify://shop_images/Scrubo_-_Pristine_16_-_Folded.jpg",
             "caption": "Comfortable Seat",
             "heading": "Efficient cleaning, reduced fatigue",
             "text": "<p>The Scrubo RideClean 26 ride-on floor scrubber is designed to reduce strain and fatigue, offering operators a comfortable alternative to walking long distances behind a traditional scrubber. Ideal for maximizing efficiency, this machine is both economical and highly effective over extended use, making it a valuable investment for long-term cleaning needs. With its compact and maneuverable design, the Scrubo RideClean 26 easily navigates narrow aisles and tight spaces while still delivering powerful cleaning performance across large areas. Simple to operate, it helps maintain operator energy and productivity throughout the entire cleaning process.</p>",
@@ -259,7 +259,7 @@
             "image": "shopify://shop_images/Scrubo_Pristine_16_-_Controls.jpg",
             "caption": "Built to last",
             "heading": "Simple and reliable control panel",
-            "text": "<p>Deliver consistent results with the easy-to-operate and maintain floor scrubber Scrubo Pristine 16. Help lower your labor costs and improve cleaning performance with the high RPM 500w brush motor. </p>",
+            "text": "<p>Classic analog controls are prominently placed for easy access and visibility. The CleanRider 26's cockpit is durable, simple to operate, and easy to learn. </p>",
             "button_label": "",
             "button_link": ""
           }
@@ -267,9 +267,29 @@
         "row_jFRMtN": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "caption": "Highly Effective",
+            "heading": "Massive Area Coverage",
+            "text": "<p>The Scrubo CleanRider 26 can clean an impressive area of 40,000 square feet, equivalent to roughly the size of eight  tennis courts. This expansive coverage means it's ideal for large areas such as airports, sports venues, warehouses, parking lots, or commercial spaces. With this capability, you can maintain cleanliness across vast areas with ease.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_Qw7Pgi": {
+          "type": "row",
+          "settings": {
+            "caption": "High Capacity Clean",
+            "heading": "Maximizing Efficiency",
+            "text": "<p>The CleanRider's 26\" cleaning path and 113 Litre capacity Recovery Tank means you can confidently cover large area without stopping. A 150Ah battery system keeps the CleanRider 26 going the distance.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_gbrfGR": {
+          "type": "row",
+          "settings": {
+            "caption": "Safety",
+            "heading": "Highly Visible",
+            "text": "<p>The CleanRider 26 is fitted with dual LED lights, an amber signal light and audible sound warnings. Built to be highly visible while in operation. </p>",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -278,10 +298,12 @@
       "block_order": [
         "row_Qnkhdh",
         "row_yTjYyD",
-        "row_jFRMtN"
+        "row_jFRMtN",
+        "row_Qw7Pgi",
+        "row_gbrfGR"
       ],
       "settings": {
-        "image_height": "adapt",
+        "image_height": "medium",
         "desktop_image_width": "medium",
         "heading_size": "h1",
         "text_style": "body",
