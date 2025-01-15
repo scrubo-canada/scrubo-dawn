@@ -34,10 +34,6 @@
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {}
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -45,12 +41,12 @@
             "swatch_shape": "circle"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
         "description": {
           "type": "description",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
           "settings": {}
         },
         "custom_liquid_GpCjGk": {
@@ -58,6 +54,10 @@
           "settings": {
             "custom_liquid": "{%- render 'product-stock-alert' -%}"
           }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -119,11 +119,11 @@
         "title",
         "caption",
         "judge_me_reviews_preview_badge_jcE4Dz",
-        "price",
         "variant_picker",
-        "quantity_selector",
         "description",
+        "price",
         "custom_liquid_GpCjGk",
+        "quantity_selector",
         "buy_buttons",
         "collapsible-row-0",
         "collapsible-row-1",
