@@ -93,7 +93,7 @@
       "settings": {
         "title": "Ride-On Floor Scrubbers",
         "heading_size": "h1",
-        "description": "",
+        "description": "<p>Battery-powered ride-on floor scrubbers offer a wide cleaning path, large solution/recovery tank, and reduced operator fatigue.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "ride-on-floor-scrubbers",
