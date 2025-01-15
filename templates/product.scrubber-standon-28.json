@@ -248,7 +248,7 @@
             "image": "shopify://shop_images/Scrubo_-_Pristine_16_-_Folded.jpg",
             "caption": "Compact design",
             "heading": "Efficient cleaning, reduced fatigue",
-            "text": "<p>The Scrubo RideClean 26 ride-on floor scrubber is designed to reduce strain and fatigue, offering operators a comfortable alternative to walking long distances behind a traditional scrubber. Ideal for maximizing efficiency, this machine is both economical and highly effective over extended use, making it a valuable investment for long-term cleaning needs. With its compact and maneuverable design, the Scrubo RideClean 26 easily navigates narrow aisles and tight spaces while still delivering powerful cleaning performance across large areas. Simple to operate, it helps maintain operator energy and productivity throughout the entire cleaning process.</p>",
+            "text": "<p>The Scrubo Stand-On 28 chriot style floor scrubber is designed to reduce strain and fatigue, offering operators a comfortable alternative to walking long distances behind a traditional scrubber. With its compact design and 48\" turning radius, the Scrubo Stand-On 28 easily navigates narrow aisles and tight spaces while still delivering powerful cleaning performance across large areas.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -259,15 +259,26 @@
             "image": "shopify://shop_images/Scrubo_Pristine_16_-_Controls.jpg",
             "caption": "Built to last",
             "heading": "Simple and reliable control panel",
-            "text": "<p>The Stand-On 28 is designed with classic analog controls that are <br/>conveniently positioned for quick access and clear visibility. Its <br/>durable cockpit is user-friendly, straightforward to operate, and easy <br/>to master. Key features include a key switch for powering the machine on<br/> and off, dedicated controls for the brush and vacuum motors, and a <br/>speed selector for optimal performance.</p>",
+            "text": "<p>The Stand-On 28 is designed with classic analog controls that are conveniently positioned for quick access and clear visibility. Its durable cockpit is user-friendly, straightforward to operate, and easy to master. Key features include a key switch for powering the machine on and off, dedicated controls for the brush and vacuum motors, and a speed selector for optimal performance.</p>",
             "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_7bqPPe": {
+          "type": "row",
+          "settings": {
+            "caption": "High Capacity Clean",
+            "heading": "Maximizing Efficiency",
+            "text": "<p>The Stand-On 28 uses twin 14\" brushes for a large 28\" cleaning path and 110 Litre capacity Recovery Tank means you can confidently cover large areas without stopping. A 150Ah battery system keeps the Stand-On 28 going the distance.</p>",
+            "button_label": "Button label",
             "button_link": ""
           }
         }
       },
       "block_order": [
         "row_UUMxP3",
-        "row_H7gtTh"
+        "row_H7gtTh",
+        "row_7bqPPe"
       ],
       "settings": {
         "image_height": "medium",
