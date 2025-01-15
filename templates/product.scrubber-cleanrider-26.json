@@ -295,6 +295,7 @@
         "row_gbrfGR": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/front_lights.jpg",
             "caption": "Safety",
             "heading": "Highly Visible",
             "text": "<p>The CleanRider 26 is fitted with dual LED lights, an amber signal light and audible sound warnings. Built to be highly visible while in operation. </p>",
