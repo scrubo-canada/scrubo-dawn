@@ -329,6 +329,15 @@
         "padding_bottom": 36
       }
     },
+    "custom_liquid_z44LdP": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- render 'product-videos' -%}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1734561048fd4cc682": {
       "type": "apps",
       "blocks": {
@@ -367,6 +376,7 @@
     "main",
     "product_specifications_scrubber_XP6ehU",
     "multirow_EXrAQK",
+    "custom_liquid_z44LdP",
     "1734561048fd4cc682",
     "related-products"
   ]
