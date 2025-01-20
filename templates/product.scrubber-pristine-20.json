@@ -147,73 +147,80 @@
         "padding_bottom": 12
       }
     },
-    "product_specifications_scrubber_gBBnVY": {
+    "product_specifications_scrubber_MRy4hV": {
       "type": "product-specifications-scrubber",
       "blocks": {
-        "specification_Mj8hfk": {
+        "specification_zek6LN": {
           "type": "specification",
           "settings": {
             "spec_label": "Cleaning Path",
             "spec_value": "{{ product.metafields.custom.cleaning_path.value }}"
           }
         },
-        "specification_p9VpVn": {
+        "specification_fpdywp": {
           "type": "specification",
           "settings": {
             "spec_label": "Brush Diameter",
             "spec_value": "{{ product.metafields.custom.brush_diameter.value }}"
           }
         },
-        "specification_6fB3Pb": {
+        "specification_VxC3mW": {
           "type": "specification",
           "settings": {
             "spec_label": "Estimated Coverage",
             "spec_value": "{{ product.metafields.custom.estimated_coverage.value }}"
           }
         },
-        "specification_qTfGCi": {
+        "specification_yyQ4LY": {
           "type": "specification",
           "settings": {
             "spec_label": "Estimated Run Time",
             "spec_value": "{{ product.metafields.custom.estimated_run_time.value }}"
           }
         },
-        "specification_9z3CGx": {
+        "specification_RNnW9n": {
           "type": "specification",
           "settings": {
             "spec_label": "Battery",
             "spec_value": "{{ product.metafields.custom.battery.value }}"
           }
         },
-        "specification_CzzCBr": {
+        "specification_xDKM6G": {
           "type": "specification",
           "settings": {
             "spec_label": "Brush Motor",
             "spec_value": "{{ product.metafields.custom.brush_motor.value }}"
           }
         },
-        "specification_TB7teX": {
+        "specification_XYGUMh": {
           "type": "specification",
           "settings": {
             "spec_label": "Vacuum Motor",
             "spec_value": "{{ product.metafields.custom.vacuum_motor.value }}"
           }
         },
-        "specification_EW6Tz6": {
+        "specification_PhLMYc": {
           "type": "specification",
           "settings": {
             "spec_label": "Solution Tank Capacity",
             "spec_value": "{{ product.metafields.custom.solution_tank_capacity.value }}"
           }
         },
-        "specification_zCkBnU": {
+        "specification_mgzRJE": {
           "type": "specification",
           "settings": {
             "spec_label": "Recovery Tank Capacity",
             "spec_value": "{{ product.metafields.custom.recovery_tank_capacity.value }}"
           }
         },
-        "specification_dQtfft": {
+        "specification_j3gmY7": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Squeegee Width",
+            "spec_value": "{{ product.metafields.custom.squeegee_width.value }}"
+          }
+        },
+        "specification_c6PhDG": {
           "type": "specification",
           "settings": {
             "spec_label": "Weight",
@@ -222,19 +229,20 @@
         }
       },
       "block_order": [
-        "specification_Mj8hfk",
-        "specification_p9VpVn",
-        "specification_6fB3Pb",
-        "specification_qTfGCi",
-        "specification_9z3CGx",
-        "specification_CzzCBr",
-        "specification_TB7teX",
-        "specification_EW6Tz6",
-        "specification_zCkBnU",
-        "specification_dQtfft"
+        "specification_zek6LN",
+        "specification_fpdywp",
+        "specification_VxC3mW",
+        "specification_yyQ4LY",
+        "specification_RNnW9n",
+        "specification_xDKM6G",
+        "specification_XYGUMh",
+        "specification_PhLMYc",
+        "specification_mgzRJE",
+        "specification_j3gmY7",
+        "specification_c6PhDG"
       ],
       "settings": {
-        "title": "Specifications",
+        "title": "Product Specifications",
         "heading_size": "h1",
         "section_color_scheme": ""
       }
@@ -442,7 +450,7 @@
   },
   "order": [
     "main",
-    "product_specifications_scrubber_gBBnVY",
+    "product_specifications_scrubber_MRy4hV",
     "multirow_nDMfp9",
     "multicolumn_fwEVW3",
     "1734584197cc46cf26",
