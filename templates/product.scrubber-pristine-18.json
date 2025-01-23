@@ -364,6 +364,59 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_tmCj86": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_aW8QBz": {
+          "type": "column",
+          "settings": {
+            "title": "Pristine 18 owners manual",
+            "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
+            "link_label": "Download Manual",
+            "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/SCRUBO_Pristine_18.pdf?v=1737665243"
+          }
+        },
+        "column_ctnwhX": {
+          "type": "column",
+          "settings": {
+            "title": "Support at every step",
+            "text": "<p>Our goal is to optimize your business operations for peak efficiency. Should you encounter any challenges with our floor scrubbers, we're here to assist. Feel free to reach out to us via email or contact us directly at 1-800-350-4840.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jTxWYJ": {
+          "type": "column",
+          "settings": {
+            "title": "Parts and consumables",
+            "text": "<p>Whether you're in need of replacement parts or stocking up on consumables, you've come to the right place. Simply email us with a photo of the part you require, and we'll promptly assist you.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_aW8QBz",
+        "column_ctnwhX",
+        "column_jTxWYJ"
+      ],
+      "settings": {
+        "title": "Support",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_liquid_eMgVXw": {
       "type": "custom-liquid",
       "settings": {
@@ -412,6 +465,7 @@
     "product_specifications_scrubber_Vj8Lzg",
     "multirow_87dtNe",
     "multicolumn_bFTCyJ",
+    "multicolumn_tmCj86",
     "custom_liquid_eMgVXw",
     "17345845959a4d84c7",
     "related-products"
