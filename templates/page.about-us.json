@@ -49,7 +49,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Erin-2.webp",
-            "title": "Erin Altstadt",
+            "title": "<strong>Erin Altstadt</strong>",
             "text": "<p>Erin is holding down the customer support lines, and is essential part of our team. You can typically find her swimming, working out!</p>",
             "link_label": "",
             "link": ""
@@ -59,7 +59,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Atta-4.webp",
-            "title": "Column",
+            "title": "<strong>Atta Dimitrova</strong>",
             "text": "<p>Atta is valuable team member with many years of work experience in administration and customer relations sectors. No matter how tense a meeting, she effortlessly leaves everyone with a smile. She has a great ability to handle pressure and sudden deadlines.Atta will be your go to person when you have issues, and she will make sure to resolve them as per your satisfaction.</p>",
             "link_label": "",
             "link": ""
