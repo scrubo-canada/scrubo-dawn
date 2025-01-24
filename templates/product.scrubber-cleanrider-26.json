@@ -345,8 +345,9 @@
         "column_mr7Mjx": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/16inPin-PadBundle-1-v2.jpg",
             "title": "Pad Driver / Pad",
-            "text": "<p>16\" Inch Pad Driver and 16\" Pad (This month special)</p>",
+            "text": "<p>2 x 16\" Inch Pad Driver and 2 x 16\" Pad (This month special)</p>",
             "link_label": "",
             "link": ""
           }
