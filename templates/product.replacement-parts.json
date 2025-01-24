@@ -38,10 +38,6 @@
           "type": "description",
           "settings": {}
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -51,6 +47,10 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
           "settings": {}
         },
         "buy_buttons": {
@@ -114,9 +114,9 @@
         "caption",
         "judge_me_reviews_preview_badge_XFzMRL",
         "description",
-        "price",
         "variant_picker",
         "quantity_selector",
+        "price",
         "buy_buttons",
         "collapsible-row-0",
         "collapsible-row-1",
