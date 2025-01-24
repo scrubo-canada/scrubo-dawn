@@ -337,7 +337,7 @@
           "settings": {
             "image": "shopify://shop_images/brush.jpg",
             "title": "Brush",
-            "text": "<p>2 x 18\" brushes for hard or uneven floors</p>",
+            "text": "<p>2 x 16\" brushes for hard or uneven floors</p>",
             "link_label": "",
             "link": ""
           }
@@ -345,8 +345,8 @@
         "column_mr7Mjx": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "title": "Pad Driver / Pad",
+            "text": "<p>16\" Inch Pad Driver and 16\" Pad (This month special)</p>",
             "link_label": "",
             "link": ""
           }
