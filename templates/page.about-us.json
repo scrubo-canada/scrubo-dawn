@@ -40,7 +40,7 @@
           "settings": {
             "image": "shopify://shop_images/george-krastev.webp",
             "title": "<strong>George Krastev</strong>",
-            "text": "<p><strong>Founder and CEO</strong></p><p>George Krastev (Georgi Krastev) hails from Europe and is the founder of Scrubo, his second entrepreneurial venture following the success of VoltBike. Scrubo was born out of George’s personal need for an efficient and affordable scrubber machine to clean his own warehouse.<br/><br/>Recognizing the high cost and complexity of acquiring cleaning machines, George set out to create Scrubo with a mission to deliver high-quality scrubbers directly to customers while providing exceptional support, particularly for Canadian and American clients.<br/><br/>George holds a master’s degree in Computer Science and resides in Vancouver, BC, where he enjoys life with his family.</p>",
+            "text": "<h4>Founder and CEO</h4><p>George Krastev (Georgi Krastev) hails from Europe and is the founder of Scrubo, his second entrepreneurial venture following the success of VoltBike. Scrubo was born out of George’s personal need for an efficient and affordable scrubber machine to clean his own warehouse.<br/><br/>Recognizing the high cost and complexity of acquiring cleaning machines, George set out to create Scrubo with a mission to deliver high-quality scrubbers directly to customers while providing exceptional support, particularly for Canadian and American clients.<br/><br/>George holds a master’s degree in Computer Science and resides in Vancouver, BC, where he enjoys life with his family.</p>",
             "link_label": "",
             "link": ""
           }
@@ -49,8 +49,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Erin-2.webp",
-            "title": "<strong>Erin Altstadt</strong>",
-            "text": "<p>Erin is holding down the customer support lines, and is essential part of our team. You can typically find her swimming, working out!</p>",
+            "title": "<strong>Jason Tomblin</strong>",
+            "text": "<h4>Marketing Manager</h4><p>Jason's focus is spreading the good word of VoltBike, and coming up with great ideas to keep our offerings fresh and fun. Jason helps out wherever he's needed, so whether its on the phone, email or in the showroom, you'll see him working on something new at all times.</p>",
             "link_label": "",
             "link": ""
           }
@@ -60,7 +60,17 @@
           "settings": {
             "image": "shopify://shop_images/Atta-4.webp",
             "title": "<strong>Atta Dimitrova</strong>",
-            "text": "<p>Atta is valuable team member with many years of work experience in administration and customer relations sectors. No matter how tense a meeting, she effortlessly leaves everyone with a smile. She has a great ability to handle pressure and sudden deadlines.Atta will be your go to person when you have issues, and she will make sure to resolve them as per your satisfaction.</p>",
+            "text": "<h4>Assistant Manager</h4><p>Atta is valuable team member with many years of work experience in administration and customer relations sectors. No matter how tense a meeting, she effortlessly leaves everyone with a smile. She has a great ability to handle pressure and sudden deadlines.Atta will be your go to person when you have issues, and she will make sure to resolve them as per your satisfaction.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DpnkPb": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Erin-2.webp",
+            "title": "<strong>Erin Altstadt</strong>",
+            "text": "<h4>Customer Relations Specialist</h4><p>Erin is holding down the customer support lines, and is essential part of our team. You can typically find her swimming, working out!</p>",
             "link_label": "",
             "link": ""
           }
@@ -69,7 +79,8 @@
       "block_order": [
         "column_8rQTCW",
         "column_M49m63",
-        "column_39HiUh"
+        "column_39HiUh",
+        "column_DpnkPb"
       ],
       "settings": {
         "title": "Our Team",
