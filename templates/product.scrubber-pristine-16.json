@@ -112,6 +112,19 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "icon_with_text_6Wgyrg": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "truck",
+            "heading_1": "Shipping just $80",
+            "icon_2": "box",
+            "heading_2": "Warranty",
+            "icon_3": "truck",
+            "image_3": "shopify://shop_images/shipping-icon.svg",
+            "heading_3": "20+ Quality Standards Checklist"
+          }
         }
       },
       "block_order": [
@@ -129,7 +142,8 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "icon_with_text_6Wgyrg"
       ],
       "settings": {
         "enable_sticky_info": true,
