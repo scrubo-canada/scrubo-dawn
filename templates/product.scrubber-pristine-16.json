@@ -118,8 +118,10 @@
           "settings": {
             "layout": "horizontal",
             "icon_1": "truck",
+            "image_1": "shopify://shop_images/shipping-icon.svg",
             "heading_1": "Shipping just $80",
             "icon_2": "box",
+            "image_2": "shopify://shop_images/warranty-icon.svg",
             "heading_2": "Warranty",
             "icon_3": "truck",
             "image_3": "shopify://shop_images/shipping-icon.svg",
