@@ -119,13 +119,13 @@
             "layout": "horizontal",
             "icon_1": "truck",
             "image_1": "shopify://shop_images/shipping-icon.svg",
-            "heading_1": "Shipping just $80",
+            "heading_1": "<strong>Shipping just $80</strong>",
             "icon_2": "box",
             "image_2": "shopify://shop_images/warranty-icon.svg",
-            "heading_2": "Warranty",
+            "heading_2": "<strong>Warranty</strong>",
             "icon_3": "truck",
             "image_3": "shopify://shop_images/quality-assurance-test.webp",
-            "heading_3": "20+ Quality Standards Checklist"
+            "heading_3": "<strong>20+ Quality Standards Checklist</strong>"
           }
         }
       },
