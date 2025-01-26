@@ -112,6 +112,21 @@
           "settings": {
             "share_label": "Share"
           }
+        },
+        "icon_with_text_KyMaYQ": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "heart",
+            "image_1": "shopify://shop_images/shipping-icon.svg",
+            "heading_1": "<strong>Shipping for just $80</strong>",
+            "icon_2": "return",
+            "image_2": "shopify://shop_images/warranty-icon.svg",
+            "heading_2": "<strong>Warranty</strong>",
+            "icon_3": "truck",
+            "image_3": "shopify://shop_images/quality-assurance-test.webp",
+            "heading_3": "<strong>20+ Quality Standards Checklist</strong>"
+          }
         }
       },
       "block_order": [
@@ -129,7 +144,8 @@
         "collapsible-row-1",
         "collapsible-row-2",
         "collapsible-row-3",
-        "share"
+        "share",
+        "icon_with_text_KyMaYQ"
       ],
       "settings": {
         "enable_sticky_info": true,
