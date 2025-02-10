@@ -12,7 +12,7 @@
     "image_banner_mipQiB": {
       "type": "image-banner",
       "settings": {
-        "image_2": "shopify://shop_images/scrubo_about_us_new.jpg",
+        "image": "shopify://shop_images/image_new.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
