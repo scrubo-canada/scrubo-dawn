@@ -132,8 +132,9 @@
         "column_pabrEP": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/Canadian_Tire_Logo.jpg",
+            "title": "<strong>Canadian Tire</strong>",
+            "text": "<p>Canadian Tire is using Scrubo floor scrubbers in different locations across Canada.</p>",
             "link_label": "",
             "link": ""
           }
