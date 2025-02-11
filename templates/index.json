@@ -148,12 +148,23 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_CxgGPm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/castlegar_logo.jpg",
+            "title": "<strong>City of Castlegar</strong>",
+            "text": "<p>City of Castlegar is a city in the BC interrior. The cleaning team is using Scrubo Pristine 16. </p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_9MVfTA",
         "column_pabrEP",
-        "column_CNXL3D"
+        "column_CNXL3D",
+        "column_CxgGPm"
       ],
       "settings": {
         "title": "Trusted By",
