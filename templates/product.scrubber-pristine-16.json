@@ -393,7 +393,7 @@
           "type": "column",
           "settings": {
             "title": "<strong>Parts and consumables</strong>",
-            "text": "<p>Whether you're in need of replacement parts or stocking up on consumables, you've come to the right place. Simply email us with a photo of the part you require, and we'll promptly assist you.</p>",
+            "text": "<p>We aim to maintain a selection of essential spare parts to keep your scrubber running smoothly. Check out our <a href=\"https://scrubo.ca/collections/replacement-parts\" target=\"_blank\" title=\"https://scrubo.ca/collections/replacement-parts\">spare parts list here</a>. If you can't find the part you need, simply email us a photo of the required part, and we'll get back to you promptly.</p>",
             "link_label": "",
             "link": ""
           }
