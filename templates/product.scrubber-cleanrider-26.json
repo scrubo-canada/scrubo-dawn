@@ -407,7 +407,7 @@
         "column_MFHiwn": {
           "type": "column",
           "settings": {
-            "title": "CleanRider 26 Owners Manual",
+            "title": "<strong>CleanRider 26 Owners Manual</strong>",
             "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
             "link_label": "Download",
             "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/SCRUBO_CleanRider_26.pdf?v=1738629132"
@@ -416,7 +416,7 @@
         "column_XjiyBb": {
           "type": "column",
           "settings": {
-            "title": "Support at every step",
+            "title": "<strong>Support at every step</strong>",
             "text": "<p>Our goal is to optimize your business operations for peak efficiency. Should you encounter any challenges with our floor scrubbers, we're here to assist. Feel free to reach out to us via email or contact us directly at 1-800-350-4840.</p>",
             "link_label": "",
             "link": ""
@@ -425,8 +425,8 @@
         "column_7jRrAi": {
           "type": "column",
           "settings": {
-            "title": "Parts and consumables",
-            "text": "<p>Whether you're in need of replacement parts or stocking up on consumables, you've come to the right place. Simply email us with a photo of the part you require, and we'll promptly assist you.</p>",
+            "title": "<strong>Parts and consumables</strong>",
+            "text": "<p>We aim to maintain a selection of essential spare parts to keep your scrubber running smoothly. Check out our <a href=\"https://scrubo.ca/collections/replacement-parts\" target=\"_blank\" title=\"https://scrubo.ca/collections/replacement-parts\">spare parts list here</a>. If you can't find the part you need, simply email us a photo of the required part, and we'll get back to you promptly.</p>",
             "link_label": "",
             "link": ""
           }
