@@ -95,7 +95,7 @@
   width: calc(
     var(--mega-menu-by-model-cols) * var(--mega-menu-by-model-col-width) + 30px
   );
-  gap: 0 10px;
+  gap: 10px;
 }
 
 .mega-menu__list .list--by-model li {
@@ -105,7 +105,7 @@
 .mega-menu__list .list--by-model li img {
   display: block;
   max-width: 135px;
-  max-height: 85px;
+  max-height: 135px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -123,6 +123,7 @@
 .mega-menu__list .list--by-model li a small {
   color: #2979ff;
   font-weight: bold;
+  display: none;
 }
 
 /* All-bikes Section */
