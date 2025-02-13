@@ -35,9 +35,10 @@
 }
 
 .mega-menu__list {
-  display: grid;
-  gap: 1.8rem 4rem;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  /* display: grid; */
+  display: flex;
+  gap: 1.8rem 8rem;
+  /* grid-template-columns: repeat(6, minmax(0, 1fr)); */
   list-style: none;
 }
 
@@ -84,4 +85,138 @@
 
 .mega-menu__list--condensed .mega-menu__link {
   font-weight: normal;
+}
+
+/* Custom Mega Menu Settings */
+.mega-menu__list .list--by-model {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(
+    var(--mega-menu-by-model-cols) * var(--mega-menu-by-model-col-width) + 30px
+  );
+  gap: 10px;
+}
+
+.mega-menu__list .list--by-model li {
+  width: var(--mega-menu-by-model-col-width);
+}
+
+.mega-menu__list .list--by-model li img {
+  display: block;
+  max-width: 135px;
+  max-height: 135px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.mega-menu__list .list--by-model li a {
+  display: flex;
+  flex-direction: column;
+}
+
+.mega-menu__list .list--by-model li a span {
+  text-transform: uppercase;
+}
+
+.mega-menu__list .list--by-model li a small {
+  color: #2979ff;
+  font-weight: bold;
+  display: none;
+}
+
+/* All-bikes Section */
+.mega-menu__link--view-all {
+  max-width: 250px;
+  box-sizing: border-box;
+}
+
+.mega-menu__link--view-all * {
+  /* display: block; */
+  box-sizing: border-box;
+  margin: 10px 0;
+}
+
+.mega-menu__link--view-all .heading {
+  font-size: 28px;
+  line-height: normal;
+}
+
+.mega-menu__link--view-all .button--custom {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.mega-menu__link--view-all .button--custom * {
+  padding: 0;
+  margin: 0;
+}
+
+.mega-menu__link--view-all .button--custom.style-1 {
+  background-color: #2979ff;
+  color: white;
+}
+
+.mega-menu__link--view-all .button--custom.style-2 {
+  background-color: #2979ff1a;
+}
+
+.mega-menu__link--view-all a.button--affirm {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: gray;
+  font-size: 0.9em;
+}
+
+.mega-menu__link--view-all a.button--affirm img {
+  display: inline-block;
+  margin-bottom: 16px;
+  margin-left: 5px;
+}
+
+.mega-menu__company-info {
+  list-style: none;
+}
+
+.mega-menu__company-info * {
+  text-decoration: none;
+}
+
+.mega-menu__company-info a {
+  color: black;
+  opacity: 80%;
+}
+
+/* Quick Links */
+.quick-link__link {
+  display: flex;
+  background-color: #2979ff1a;
+  border-radius: 5px;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  transition: background-color 0.25s ease-in;
+}
+
+.quick-link__link span:last-child {
+  color: #2979ff80;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.list--quick-links a:hover {
+  text-transform: none;
+  text-decoration: none;
+}
+
+.list--quick-links a:hover .quick-link__link {
+  background-color: #2979ff40;
+  transition: background-color 0.25s ease-out;
 }

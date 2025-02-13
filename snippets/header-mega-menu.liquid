@@ -6,8 +6,8 @@
 {% endcomment %}
 
 <nav class="header__inline-menu">
-  <ul class="list-menu list-menu--inline" role="list">
-    {%- for link in section.settings.menu.links -%}
+  <ul class="TEST list-menu list-menu--inline" role="list">
+    {% for link in section.settings.menu.links %}
       <li>
         {%- if link.links != blank -%}
           <header-menu>
@@ -23,7 +23,7 @@
                 >
                   {{- link.title | escape -}}
                 </span>
-                {{- 'icon-caret.svg' | inline_asset_content -}}
+                {% render 'icon-caret' %}
               </summary>
               <div
                 id="MegaMenu-Content-{{ forloop.index }}"
@@ -36,18 +36,91 @@
                 >
                   {%- for childlink in link.links -%}
                     <li>
-                      <a
-                        id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
-                        href="{{ childlink.url }}"
-                        class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
-                        {% if childlink.current %}
-                          aria-current="page"
-                        {% endif %}
-                      >
-                        {{ childlink.title | escape }}
-                      </a>
+                      {% case childlink.handle %}
+                        {% when 'all-scrubbers' %}
+                          <div class="mega-menu__link--view-all view-all--bikes">
+                            <p class="heading">Not sure what you're looking for?</p>
+                            <p>Take a look through our catalog.</p>
+                            <a href="{{ childlink.url }}" class="button">View All Scrubbers</a>
+
+                            <a class="link link--block" href="{{ pages['compare'].url }}"> Compare </a>
+
+                            {% comment %}
+                              <a href="{{ pages['financing'].url }}" class="button--affirm" target="_blank"
+                                >Finance a scrubber with
+                                <img
+                                  src="{{ 'affirm-black_logo.png' | file_img_url: '40x16' }}"
+                                  width="40"
+                                  height="16"
+                                  alt="Affirm Logo."
+                                  loading="lazy"
+
+                                >.</a
+                              >
+                            {% endcomment %}
+                          </div>
+                        {% when 'all-accessories' %}
+                          <div class="mega-menu__link--view-all view-all--accessories">
+                            <p class="heading">Not sure what you're looking for?</p>
+                            <p>Take a look through our catalog.</p>
+                            <a href="{{ childlink.url }}" class="button">View All Accessories</a>
+                          </div>
+                        {% when 'all-replacement-parts' %}
+                          <div class="mega-menu__link--view-all view-all--replacement-parts">
+                            <p class="heading">Not sure what you're looking for?</p>
+                            <p>Take a look through our catalog.</p>
+                            <a href="{{ childlink.url }}" class="button">View All Parts</a>
+                          </div>
+                        {% when 'image-container-accessories' %}
+                          <img
+                            src="{{ 'Accessories-compressed.jpg' | file_img_url: '200x200' }}"
+                            alt="Thumbnail of various VoltBike accessories."
+                            width="200"
+                            height=""
+                            loading="lazy"
+                          >
+                        {% when 'image-container-replacement-parts' %}
+                          <img
+                            src="{{ 'ReplacementParts_Category.jpg' | file_img_url: '228x205' }}"
+                            alt="Thumbnail of various VoltBike replacement parts."
+                            width="228"
+                            height=""
+                            loading="lazy"
+                          >
+                        {% when 'company-info' %}
+                          <ul class="mega-menu__company-info" style="margin-top: 0;">
+                            <li style="font-size: 2rem; font-weight: bold;">VoltBike Electric Inc</li>
+                            <li style="font-style: italic;">Quality e-bikes at a great price.</li>
+                            <li>
+                              📌
+                              <a href="https://maps.app.goo.gl/wZ6eHcNuUd97fWDq9" target="_blank"
+                                >1579 Kingsway Ave #1125, Port Coquitlam, BC V3C 0H1</a
+                              >
+                            </li>
+                            <li>☎️ <a href="tel:+18003504840">+1 (800) 350-4840</a></li>
+                          </ul>
+                        {% when 'category-header' %}
+                          {%- if link.handle == 'support' -%}
+                            <div class="mega-menu__link--view-all category-header">
+                              <p class="heading">Everything you need to know.</p>
+                              <p>From our warranty, how-to videos, and even owner's groups.</p>
+                            </div>
+                          {% endif %}
+                        {% else %}
+                          <a
+                            id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
+                            href="{{ childlink.url }}"
+                            class="mega-menu__link mega-menu__link--level-2 link{% if childlink.current %} mega-menu__link--active{% endif %}"
+                            {% if childlink.current %}
+                              aria-current="page"
+                            {% endif %}
+                          >
+                            {{ childlink.title | escape }}
+                          </a>
+                      {% endcase %}
+
                       {%- if childlink.links != blank -%}
-                        <ul class="list-unstyled" role="list">
+                        <ul class="list-unstyled list--{{ childlink.handle }}" role="list">
                           {%- for grandchildlink in childlink.links -%}
                             <li>
                               <a
@@ -58,7 +131,67 @@
                                   aria-current="page"
                                 {% endif %}
                               >
-                                {{ grandchildlink.title | escape }}
+                                {% if link.handle == 'floor-scrubbers' %}
+                                  {% if grandchildlink.type == 'collection_link' %}
+                                    {% assign collection = collections[grandchildlink.object.handle] %}
+                                    {% assign title = collection.title | escape %}
+                                    {% if title contains 'Floor Scrubbers' %}
+                                      {% assign title = title | remove: 'Floor Scrubbers' | remove: 'floor scrubbers' %}
+                                    {% endif %}
+                                    <span>{{ title }}</span>
+
+                                    {% if childlink.handle == 'by-model' %}
+                                      <small>{{ collection.products_count | escape }} Models</small>
+                                    {% endif %}
+
+                                    {% if collection.image %}
+                                      <img
+                                        src="{{ collection.image.src | image_url: width: 135 }}"
+                                        alt="{{ collection.title | escape }}"
+                                        width=""
+                                        height=""
+                                        loading="lazy"
+                                      >
+                                    {% endif %}
+                                  {% elsif grandchildlink.type == 'product_link' %}
+                                    {% assign product = all_products[grandchildlink.object.handle] %}
+                                    {% comment %} <span>{{ product.title | slice: 0, 15 | escape }}</span> {% endcomment %}
+                                    <span>{{ product.title | escape }}</span>
+                                    <small style="visibility: hidden">1 version</small>
+                                    {% if product.featured_image %}
+                                      <img
+                                        src="{{ product.featured_image.src | image_url: width: 135 }}"
+                                        alt="{{ product.title | escape }}"
+                                        width=""
+                                        height=""
+                                        loading="lazy"
+                                      >
+                                    {% endif %}
+                                  {% endif %}
+                                {% elsif childlink.handle == 'quick-links' %}
+                                  {% comment %}
+                                    {% assign iconFileName = link.handle
+                                      | append: '-'
+                                      | append: childlink.handle
+                                      | append: '-'
+                                      | append: grandchildlink.handle
+                                      | append: '--icon.png'
+                                    %}
+                                  {% endcomment %}
+                                  <div class="quick-link__link">
+                                    <img
+                                      src="{{ iconFileName | file_img_url }}"
+                                      alt="Icon for {{ grandchildlink.handle }} link"
+                                      height="25"
+                                      width=""
+                                      loading="lazy"
+                                    >
+                                    <span>{{ grandchildlink.title | escape }}</span>
+                                    <span>></span>
+                                  </div>
+                                {% else %}
+                                  {{ grandchildlink.title | escape }}
+                                {% endif %}
                               </a>
                             </li>
                           {%- endfor -%}
