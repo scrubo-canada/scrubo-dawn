@@ -26,7 +26,7 @@
         "caption": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text": "<strong>{{ product.metafields.descriptors.subtitle.value }}</strong>",
             "text_style": "uppercase"
           }
         },
