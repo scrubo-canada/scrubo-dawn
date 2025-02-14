@@ -189,6 +189,15 @@
   text-decoration: none;
 }
 
+.mega-menu__company-info li:nth-child(n+3) {
+  font-size: 14px;
+}
+
+.mega-menu__company-info li:nth-child(3) {
+  margin-top: 10px;
+}
+
+
 .mega-menu__company-info a {
   color: black;
   opacity: 80%;
@@ -220,3 +229,5 @@
   background-color: #2979ff40;
   transition: background-color 0.25s ease-out;
 }
+
+
