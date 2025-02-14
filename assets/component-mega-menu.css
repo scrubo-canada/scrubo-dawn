@@ -189,6 +189,10 @@
   text-decoration: none;
 }
 
+.mega-menu__company-info li:first-child {
+  line-height: normal;
+}
+
 .mega-menu__company-info li:nth-child(n+3) {
   font-size: 14px;
 }
@@ -196,7 +200,6 @@
 .mega-menu__company-info li:nth-child(3) {
   margin-top: 10px;
 }
-
 
 .mega-menu__company-info a {
   color: black;
