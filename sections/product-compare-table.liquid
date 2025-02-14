@@ -28,8 +28,8 @@
     {% assign products = section.settings.products_to_compare %}
 
     {% if products.count > 0 %}
-      <div class="compare-table-wrapper">
-        <table class="compare-table">
+      <div id="table--draggable" class="compare-table-wrapper">
+        <table>
           <thead>
             <tr>
               <th class="spec-header">Specifications</th>
@@ -206,3 +206,40 @@
     }
   }
 </style>
+
+<script>
+  const el = document.getElementById('table--draggable');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+  let scrollSens = 1.5;
+
+  el.addEventListener('mousedown', (e) => {
+    isDown = true;
+    el.style.cursor = 'grabbing';
+    startX = e.pageX - el.offsetLeft;
+    scrollLeft = el.scrollLeft;
+    console.log('mousedown');
+  });
+
+  el.addEventListener('mouseleave', () => {
+    isDown = false;
+    el.style.cursor = 'grab';
+    console.log('mouseleave');
+  });
+
+  el.addEventListener('mouseup', () => {
+    isDown = false;
+    el.style.cursor = 'grab';
+    console.log('mouseup');
+  });
+
+  el.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - el.offsetLeft;
+    const walk = (x - startX) * scrollSens;
+    el.scrollLeft = scrollLeft - walk;
+    console.log('mousemove');
+  });
+</script>
