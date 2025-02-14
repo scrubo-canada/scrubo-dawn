@@ -158,13 +158,24 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_Kn7FPy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/CleanImage_Logo.jpg",
+            "title": "<strong>Clean Image Janitorial Services</strong>",
+            "text": "<p>Providing eco-friendly janitorial services across Lower Mainland since 1989, Clean Image proudly utilizes our Scrubo Pristine 18 floor scrubber.</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_9MVfTA",
         "column_pabrEP",
         "column_CNXL3D",
-        "column_CxgGPm"
+        "column_CxgGPm",
+        "column_Kn7FPy"
       ],
       "settings": {
         "title": "Trusted By",
