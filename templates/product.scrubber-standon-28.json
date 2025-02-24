@@ -313,6 +313,59 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_NRGqKR": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_qJtTdy": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Stand-On 28 Owners Manual</strong>",
+            "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
+            "link_label": "Download",
+            "link": ""
+          }
+        },
+        "column_ejrgGj": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Support at every step</strong>",
+            "text": "<p>Our goal is to optimize your business operations for peak efficiency. Should you encounter any challenges with our floor scrubbers, we're here to assist. Feel free to reach out to us via email or contact us directly at 1-800-350-4840.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Ae7TWb": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Parts and consumables</strong>",
+            "text": "<p>We aim to maintain a selection of essential spare parts to keep your scrubber running smoothly. Check out our <a href=\"https://scrubo.ca/collections/replacement-parts\" target=\"_blank\" title=\"https://scrubo.ca/collections/replacement-parts\">spare parts list here</a>. If you can't find the part you need, simply email us a photo of the required part, and we'll get back to you promptly.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_qJtTdy",
+        "column_ejrgGj",
+        "column_Ae7TWb"
+      ],
+      "settings": {
+        "title": "Support",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "173456049338af48b9": {
       "type": "apps",
       "blocks": {
@@ -351,6 +404,7 @@
     "main",
     "product_specifications_scrubber_4jTX6U",
     "multirow_R37C3W",
+    "multicolumn_NRGqKR",
     "173456049338af48b9",
     "related-products"
   ]
