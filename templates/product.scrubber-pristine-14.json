@@ -1,0 +1,477 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "judge_me_reviews_preview_badge_9yN8rH": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "custom_liquid_diEqp7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'product-stock-alert' -%}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "icon_with_text_6Wgyrg": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "truck",
+            "image_1": "shopify://shop_images/shipping-icon.svg",
+            "heading_1": "<strong>Shipping just $80</strong>",
+            "icon_2": "box",
+            "image_2": "shopify://shop_images/warranty-icon.svg",
+            "heading_2": "<strong>Warranty</strong>",
+            "icon_3": "truck",
+            "image_3": "shopify://shop_images/quality-assurance-test.webp",
+            "heading_3": "<strong>20+ Quality Standards Checklist</strong>"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "judge_me_reviews_preview_badge_9yN8rH",
+        "description",
+        "custom_liquid_diEqp7",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share",
+        "icon_with_text_6Wgyrg"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "product_specifications_scrubber_ikUCGE": {
+      "type": "product-specifications-scrubber",
+      "blocks": {
+        "specification_e7BQmA": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Cleaning Path",
+            "spec_value": "{{ product.metafields.custom.cleaning_path.value }}"
+          }
+        },
+        "specification_WMfpwp": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Brush Diameter",
+            "spec_value": "{{ product.metafields.custom.brush_diameter.value }}"
+          }
+        },
+        "specification_ymKfC4": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Estimated Coverage",
+            "spec_value": "{{ product.metafields.custom.estimated_coverage.value }}"
+          }
+        },
+        "specification_Xjz4jT": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Estimated Run Time",
+            "spec_value": "{{ product.metafields.custom.estimated_run_time.value }}"
+          }
+        },
+        "specification_MAYfWD": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Battery",
+            "spec_value": "{{ product.metafields.custom.battery.value }}"
+          }
+        },
+        "specification_rayiw4": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Brush Motor",
+            "spec_value": "{{ product.metafields.custom.brush_motor.value }}"
+          }
+        },
+        "specification_WiCf79": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Vacuum Motor",
+            "spec_value": "{{ product.metafields.custom.vacuum_motor.value }}"
+          }
+        },
+        "specification_RL3yHa": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Solution Tank Capacity",
+            "spec_value": "{{ product.metafields.custom.solution_tank_capacity.value }}"
+          }
+        },
+        "specification_4tbV8P": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Recovery Tank Capacity",
+            "spec_value": "{{ product.metafields.custom.recovery_tank_capacity.value }}"
+          }
+        },
+        "specification_b99A4q": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Squeegee Width",
+            "spec_value": "{{ product.metafields.custom.squeegee_width.value }}"
+          }
+        },
+        "specification_dcVLyt": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Weight",
+            "spec_value": "{{ product.metafields.custom.weight.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "specification_e7BQmA",
+        "specification_WMfpwp",
+        "specification_ymKfC4",
+        "specification_Xjz4jT",
+        "specification_MAYfWD",
+        "specification_rayiw4",
+        "specification_WiCf79",
+        "specification_RL3yHa",
+        "specification_4tbV8P",
+        "specification_b99A4q",
+        "specification_dcVLyt"
+      ],
+      "settings": {
+        "title": "Product Specifications",
+        "heading_size": "h1",
+        "section_color_scheme": ""
+      }
+    },
+    "multirow_7pTgnF": {
+      "type": "multirow",
+      "blocks": {
+        "row_hxHw7U": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Scrubo_-_Pristine_16_-_Folded.jpg",
+            "caption": "Compact design",
+            "heading": "Compact walk-behind floor scrubber",
+            "text": "<p>Engineered for efficiency, its compact design and 16-inch cleaning path reach challenging spots effortlessly. The adjustable handle enhances comfort, ensuring a personalized experience. Boasting a robust 400W brush motor, it powers through dirt with ease, while the impressive 3-4 hours of work time guarantees completion of any task with finesse.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_kdjiHQ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Scrubo_Pristine_16_-_Controls.jpg",
+            "caption": "Built to last",
+            "heading": "Simple and reliable control panel",
+            "text": "<p>Deliver consistent results with the easy-to-operate and maintain floor scrubber Scrubo Pristine 16. Help lower your labor costs and improve cleaning performance with the high RPM 500w brush motor. </p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_hxHw7U",
+        "row_kdjiHQ"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_7WAc4q": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_nkh9Qf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/brush.jpg",
+            "title": "Brush",
+            "text": "<p>16\" brush for hard or uneven floors</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qt8jde": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/16inPin-PadBundle-1-v2.jpg",
+            "title": "Pad Driver / Pad",
+            "text": "<p>16\" Inch Pad Driver and 16\" Pad (This month special)</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_E78MWt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/NX500_Charger_-_2.jpg",
+            "title": "Charger",
+            "text": "<p>24V smart charger, CE approved.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_nkh9Qf",
+        "column_qt8jde",
+        "column_E78MWt"
+      ],
+      "custom_css": [
+        ".multicolumn-list__item {border: dotted #ccc 1px;}"
+      ],
+      "settings": {
+        "title": "What's included",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_wmUqJx": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6DbXMK": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Pristine 16 owners manual</strong>",
+            "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
+            "link_label": "Download",
+            "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/SCRUBO_Pristine_16.pdf?v=1738628798"
+          }
+        },
+        "column_hEKmaP": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Support at every step</strong>",
+            "text": "<p>Our goal is to optimize your business operations for peak efficiency. Should you encounter any challenges with our floor scrubbers, we're here to assist. Feel free to reach out to us via email or contact us directly at 1-800-350-4840.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pGfK3T": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Parts and consumables</strong>",
+            "text": "<p>We aim to maintain a selection of essential spare parts to keep your scrubber running smoothly. Check out our <a href=\"https://scrubo.ca/collections/replacement-parts\" target=\"_blank\" title=\"https://scrubo.ca/collections/replacement-parts\">spare parts list here</a>. If you can't find the part you need, simply email us a photo of the required part, and we'll get back to you promptly.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_6DbXMK",
+        "column_hEKmaP",
+        "column_pGfK3T"
+      ],
+      "settings": {
+        "title": "Support",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "173458351095e7e63c": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_Q7BTYj": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_Q7BTYj"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "custom_liquid_qdBQYQ": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- render 'product-videos' -%}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_specifications_scrubber_ikUCGE",
+    "multirow_7pTgnF",
+    "multicolumn_7WAc4q",
+    "multicolumn_wmUqJx",
+    "173458351095e7e63c",
+    "custom_liquid_qdBQYQ",
+    "related-products"
+  ]
+}
