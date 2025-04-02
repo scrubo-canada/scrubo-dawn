@@ -15,6 +15,7 @@
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+  {{ 'component-product-compatibility.css' | asset_url | stylesheet_tag }}
 
   {% unless product.has_only_default_variant %}
     {{ 'component-product-variant-picker.css' | asset_url | stylesheet_tag }}
@@ -660,6 +661,31 @@
                 </product-recommendations>
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
+              {%- when 'product_compatibility' -%}
+                <div class="product-compatibility__container">
+                  <span class="product-compatibility__title">
+                    {%- if block.settings.show_compatibility_icon -%}
+                      {% render 'icon-wrench' %}
+                    {%- endif -%}
+                    {{ block.settings.title }}
+                  </span>
+
+                  {% assign reference_products = collections['floor-scrubbers'].products %}
+                  {% assign product_ids = product.metafields.custom.compatible_with
+                    | remove: '['
+                    | remove: ']'
+                    | remove: 'gid://shopify/Product/'
+                    | remove: '"'
+                  %}
+
+                  <ul class="product-compatibility__list">
+                    {% for product in reference_products %}
+                      {% if product_ids contains product.id %}
+                        <li class="product-compatibility__list-item">{{ product.title }}</li>
+                      {% endif %}
+                    {% endfor %}
+                  </ul>
+                </div>
             {%- endcase -%}
           {%- endfor -%}
           <a href="{{ product.url }}" class="link product__view-details animate-arrow">
@@ -2072,6 +2098,24 @@
           "default": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.default",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
+        }
+      ]
+    },
+    {
+      "type": "product_compatibility",
+      "name": "Product Compatibility",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_compatibility_icon",
+          "label": "Show Compatibility Icon",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Product Compatibility"
         }
       ]
     }
