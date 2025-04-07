@@ -38,6 +38,13 @@
           "type": "description",
           "settings": {}
         },
+        "product_compatibility_KdNbJ3": {
+          "type": "product_compatibility",
+          "settings": {
+            "show_compatibility_icon": true,
+            "title": "Product Compatibility"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -114,6 +121,7 @@
         "caption",
         "judge_me_reviews_preview_badge_XFzMRL",
         "description",
+        "product_compatibility_KdNbJ3",
         "variant_picker",
         "quantity_selector",
         "price",
