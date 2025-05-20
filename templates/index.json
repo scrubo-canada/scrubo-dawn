@@ -119,16 +119,6 @@
     "multicolumn_M9fcGT": {
       "type": "multicolumn",
       "blocks": {
-        "column_9MVfTA": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Integral_Logo.jpg",
-            "title": "<strong>Intgral Services Group</strong>",
-            "text": "<p>Premier facilities maintenance and commercial cleaning company using the entire line-up of Scrubo Floor Scrubbers.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_pabrEP": {
           "type": "column",
           "settings": {
@@ -171,7 +161,6 @@
         }
       },
       "block_order": [
-        "column_9MVfTA",
         "column_pabrEP",
         "column_CNXL3D",
         "column_CxgGPm",
