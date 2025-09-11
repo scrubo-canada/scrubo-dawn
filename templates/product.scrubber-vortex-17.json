@@ -269,7 +269,7 @@
         "row_hxHw7U": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Scrubo_-_Pristine_16_-_Folded.jpg",
+            "image": "shopify://shop_images/Vortex17-6_weight.jpg",
             "caption": "Compact design",
             "heading": "Compact walk-behind floor scrubber",
             "text": "<p>Engineered for efficiency, its compact design and 16-inch cleaning path reach challenging spots effortlessly. The adjustable handle enhances comfort, ensuring a personalized experience. Boasting a robust 400W brush motor, it powers through dirt with ease, while the impressive 3-4 hours of work time guarantees completion of any task with finesse.</p>",
@@ -426,7 +426,10 @@
       "blocks": {
         "judge_me_reviews_review_widget_Q7BTYj": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
         }
       },
       "block_order": [
