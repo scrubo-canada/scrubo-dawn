@@ -317,7 +317,7 @@
           "settings": {
             "image": "shopify://shop_images/brush.jpg",
             "title": "Brush",
-            "text": "<p>16\" brush for hard or uneven floors</p>",
+            "text": "<p>17\" brush for hard or uneven floors</p>",
             "link_label": "",
             "link": ""
           }
@@ -327,17 +327,7 @@
           "settings": {
             "image": "shopify://shop_images/16inPin-PadBundle-1-v2.jpg",
             "title": "Pad Driver / Pad",
-            "text": "<p>16\" Inch Pad Driver and 16\" Pad (This month special)</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_E78MWt": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/NX500_Charger_-_2.jpg",
-            "title": "Charger",
-            "text": "<p>24V smart charger, CE approved.</p>",
+            "text": "<p>17\" Inch Pad Driver and 17\" Pad (This month special)</p>",
             "link_label": "",
             "link": ""
           }
@@ -345,8 +335,7 @@
       },
       "block_order": [
         "column_nkh9Qf",
-        "column_qt8jde",
-        "column_E78MWt"
+        "column_qt8jde"
       ],
       "custom_css": [
         ".multicolumn-list__item {border: dotted #ccc 1px;}"
