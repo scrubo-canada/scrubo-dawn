@@ -119,6 +119,15 @@
     "multicolumn_M9fcGT": {
       "type": "multicolumn",
       "blocks": {
+        "column_PCjc8x": {
+          "type": "column",
+          "settings": {
+            "title": "Hillside Maintenance LTD.",
+            "text": "<p>Hillside Maintenance Ltd. is a dedicated cleaning company offering tailored services for businesses and households, available on contract or per job basis. Operating varios offices in BC including Greater Vancouver, Surrey, Kamloops, Vernon, Kelowna and more.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_pabrEP": {
           "type": "column",
           "settings": {
@@ -161,6 +170,7 @@
         }
       },
       "block_order": [
+        "column_PCjc8x",
         "column_pabrEP",
         "column_CNXL3D",
         "column_CxgGPm",
