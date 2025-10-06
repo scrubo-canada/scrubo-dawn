@@ -122,6 +122,7 @@
         "column_PCjc8x": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/hillside_logo.jpg",
             "title": "Hillside Maintenance LTD.",
             "text": "<p>Hillside Maintenance Ltd. is a cleaning company offering tailored services for businesses and households across British Columbia.</p>",
             "link_label": "",
