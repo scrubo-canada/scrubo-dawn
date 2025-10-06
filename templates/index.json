@@ -244,32 +244,10 @@
             "button_label": "Button label",
             "button_link": ""
           }
-        },
-        "row_ekV7kY": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        },
-        "row_6agKXB": {
-          "type": "row",
-          "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
-          }
         }
       },
       "block_order": [
-        "row_pnzr8N",
-        "row_ekV7kY",
-        "row_6agKXB"
+        "row_pnzr8N"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
