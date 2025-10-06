@@ -231,6 +231,63 @@
         "padding_bottom": 36
       }
     },
+    "multirow_bCFmBr": {
+      "type": "multirow",
+      "blocks": {
+        "row_pnzr8N": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/warehouse-new-2.webp",
+            "caption": "Caption",
+            "heading": "Why choose Scrubo",
+            "text": "<p>At Scrubo™, we’re proud to call Port Coquitlam, BC our home! As a Canadian company, we believe in keeping things simple and transparent. That’s why we sell directly to you—no middlemen, no extra markups. You get top-quality scrubbers at a fraction of the price you’d pay elsewhere.</p><p>When you buy from Scrubo™, you’re dealing with one team from start to finish—from purchase to delivery and even warranty support. That means faster answers, smoother service, and real people ready to help whenever you need it.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_ekV7kY": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_6agKXB": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_pnzr8N",
+        "row_ekV7kY",
+        "row_6agKXB"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_hkq3zk": {
       "type": "featured-collection",
       "settings": {
@@ -283,6 +340,7 @@
     "featured_collection_4PrwtR",
     "multicolumn_M9fcGT",
     "image_with_text_D3ttct",
+    "multirow_bCFmBr",
     "featured_collection_hkq3zk",
     "featured_blog_7NAdpB"
   ]
