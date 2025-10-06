@@ -204,7 +204,7 @@
           "type": "button",
           "settings": {
             "button_label": "More About Us",
-            "button_link": "",
+            "button_link": "https://scrubo.ca/pages/about-us",
             "button_style_secondary": false
           }
         }
