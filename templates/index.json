@@ -216,7 +216,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/About_Us.jpg",
+        "image": "shopify://shop_images/warehouse-new-2.webp",
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
