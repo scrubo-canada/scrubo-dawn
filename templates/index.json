@@ -135,8 +135,8 @@
             "image": "shopify://shop_images/oliviers_bakery.jpg",
             "title": "<strong>Olivier's La Boulangerie</strong>",
             "text": "<p>Olivier’s Bread, a French-inspired bakery based in Vancouver, maintains spotless floors with the help of the Scruo CleanRider 26.</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "Learn more",
+            "link": "https://www.oliviersbreads.com/about"
           }
         },
         "column_pabrEP": {
