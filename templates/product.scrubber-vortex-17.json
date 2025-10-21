@@ -410,16 +410,6 @@
         "padding_bottom": 36
       }
     },
-    "custom_liquid_99DQUV": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "{% render 'product-videos' %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "173458351095e7e63c": {
       "type": "apps",
       "blocks": {
@@ -474,7 +464,6 @@
     "multirow_7pTgnF",
     "multicolumn_7WAc4q",
     "multicolumn_wmUqJx",
-    "custom_liquid_99DQUV",
     "173458351095e7e63c",
     "custom_liquid_qdBQYQ",
     "related-products"
