@@ -387,6 +387,8 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
             "max_width": 1200
           }
         }
@@ -404,10 +406,10 @@
         "column_YVb7LJ": {
           "type": "column",
           "settings": {
-            "title": "<strong>Pristine 20 owners manual</strong>",
+            "title": "<strong>Pristine 26 Pro owners manual</strong>",
             "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
             "link_label": "Download",
-            "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/SCRUBO_Pristine_20_Manual.pdf?v=1736294487"
+            "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/SCRUBO_Pristine_26Pro.pdf?v=1761256210"
           }
         },
         "column_YnGYK6": {
