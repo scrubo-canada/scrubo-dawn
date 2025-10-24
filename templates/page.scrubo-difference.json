@@ -43,6 +43,7 @@
         "row_p49prt": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/Portrait-Jason-StandOn28_2.jpg",
             "caption": "Caption",
             "heading": "Live Support and Resources",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
