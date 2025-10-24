@@ -22,8 +22,9 @@
         "row_bt87fD": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
+            "image": "shopify://shop_images/IMG_2365.jpg",
+            "caption": "",
+            "heading": "Delivered Fully-Built",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "button_label": "Button label",
             "button_link": ""
