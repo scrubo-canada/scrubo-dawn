@@ -51,12 +51,23 @@
             "button_label": "",
             "button_link": ""
           }
+        },
+        "row_qRTfML": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>At Scrubo, we deliver superior value by offering premium-quality scrubbers at prices the industry can’t match. Unlike competitors who rely on costly dealer networks—often doubling or even tripling the final price—we sell directly to you. By cutting out the middleman, we provide not only better pricing but also exceptional reliability and dedicated after-care support. Plus, we ship anywhere in Canada, and our machines arrive nearly ready to use with minimal setup required.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "row_bt87fD",
         "row_Pwffei",
-        "row_p49prt"
+        "row_p49prt",
+        "row_qRTfML"
       ],
       "name": "t:sections.multirow.presets.name",
       "settings": {
