@@ -29,7 +29,7 @@
         "text_QrWjEE": {
           "type": "text",
           "settings": {
-            "text": "<p>Our machines are used daily by a growing community of loyal customers who trust the Scrubo brand. Experience great cleaning equipment at affordable prices!</p>"
+            "text": "<p>These industry leaders trust Scrubo to deliver unmatched performance, reliability, and results. From high-traffic facilities to precision-clean environments, our machines stand up to the toughest demands—day in and day out.</p><p><strong>Proudly partnered with:</strong></p><ul><li><em>National Chain Department Stores</em></li><li><em>Leading janitorial service providers</em></li><li><em>Commercial property management groups</em></li><li><em>Educational institutions & campuses</em></li><li><em>Food processing & manufacturing plants</em></li></ul><p><em>\"Scrubo doesn’t just sell machines—they deliver peace of mind.\"</em><br/>— <em>Operations Director, [Partner Name]</em></p><p><strong>Why they choose Scrubo:</strong><br/>✔ <strong>Proven durability</strong> in real-world conditions<br/>✔ <strong>Lower downtime</strong>, higher productivity<br/>✔ <strong>Canadian-Company</strong> for easy communication<br/>✔ <strong>Responsive support</strong> that feels like an extension of their team</p><p>We don’t just build scrubbers.<br/>We build lasting partnerships.</p>"
           }
         }
       },
@@ -49,54 +49,87 @@
     },
     "1761678228f4cec273": {
       "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "multicolumn_9ErDHH": {
+      "type": "multicolumn",
       "blocks": {
-        "judge_me_reviews_testimonials_carousel_8FcqgC": {
-          "type": "shopify://apps/judge-me-reviews/blocks/testimonials_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "column_3FeGK7": {
+          "type": "column",
           "settings": {
-            "show_sample_reviews": true,
-            "reviews_selection": "product_reviews",
-            "products": [],
-            "star_rating": "4_to_5_star",
-            "max_reviews": 14,
-            "quote_marks_size": "hidden",
-            "product_name_text_size": "small",
-            "verified_badge_style": "icon",
-            "card_height": "medium",
-            "text_size": "small",
-            "stars_size": "medium",
-            "arrows_position": "bottom",
-            "max_width": 1100,
-            "corner_styling": "soft",
-            "quote_marks_style": "serif",
-            "card_color": "#F9F9F9",
-            "stars_and_quote_marks_color": "#334fb4",
-            "text_color": "#000000",
-            "arrows_color": "#000000",
-            "show_border": false,
-            "border_color": "#108474",
-            "show_drop_shadow": false,
-            "transition_speed": 5,
-            "header_text": "Scrubo's Reviews",
-            "show_average_rating": true
+            "image": "shopify://shop_images/seneca-logo-No-Shadow3-300x237-1-1.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xzJmh6": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/peaceriverschooldivision.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_bgBxUT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Linamar_Logo_Colour_no_tag.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iLm6C4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2024stratus_logo.png",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_testimonials_carousel_8FcqgC"
+        "column_3FeGK7",
+        "column_xzJmh6",
+        "column_bgBxUT",
+        "column_iLm6C4"
       ],
+      "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "include_margins": true
+        "title": "Our Trusted Partners",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "shopify://collections",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "multicolumn_BtXWTH": {
       "type": "multicolumn",
       "blocks": {
-        "column_AiFXdq": {
+        "column_DRcnYk": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/12V_100Ah_Battery_-_2.jpg",
-            "title": "Battery Jim's",
-            "text": "<p>Battery Jim owns a Ride on 26\" Machine</p>",
+            "image": "shopify://shop_images/logo_voltbike_beta2.jpg",
+            "title": "VoltBike",
+            "text": "<p>This eBike seller utilizes the Scrubo Flex in their showroom to keep things shiny and clean. </p>",
             "link_label": "",
             "link": ""
           }
@@ -104,8 +137,9 @@
         "column_9qAAaa": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/toyotetsu.jpg",
+            "title": "Toyotetsu Canada Inc",
+            "text": "<p>Pristine 20</p>",
             "link_label": "",
             "link": ""
           }
@@ -113,24 +147,7 @@
         "column_WeH3fi": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_DRcnYk": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_PVgHPg": {
-          "type": "column",
-          "settings": {
+            "image": "shopify://shop_images/2024stratus_logo.png",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -140,6 +157,7 @@
         "column_AaCYLL": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/Linamar_Logo_Colour_no_tag.png",
             "title": "Column",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
             "link_label": "",
@@ -148,23 +166,21 @@
         }
       },
       "block_order": [
-        "column_AiFXdq",
+        "column_DRcnYk",
         "column_9qAAaa",
         "column_WeH3fi",
-        "column_DRcnYk",
-        "column_PVgHPg",
         "column_AaCYLL"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
-        "title": "Our Amazing Customers",
+        "title": "",
         "heading_size": "h1",
         "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 6,
+        "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "primary",
-        "button_label": "Compare Our Products",
+        "button_label": "",
         "button_link": "shopify://pages/compare",
         "color_scheme": "",
         "columns_mobile": "1",
@@ -178,6 +194,7 @@
     "main",
     "rich_text_ipFXnx",
     "1761678228f4cec273",
+    "multicolumn_9ErDHH",
     "multicolumn_BtXWTH"
   ]
 }
