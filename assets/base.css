@@ -3596,6 +3596,6 @@ details-disclosure > details {
   }
 }
 
-price-item price-item--sale {
+.price__sale .price-item--sale {
   font-weight: bold;
 }
