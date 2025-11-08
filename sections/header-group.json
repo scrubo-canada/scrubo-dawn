@@ -20,10 +20,18 @@
             "text": "Proudly Canadian! 🍁 Shipping from Port Coquitlam, BC. Call us at 1-866-700-2023",
             "link": ""
           }
+        },
+        "announcement_7Err6P": {
+          "type": "announcement",
+          "settings": {
+            "text": "Black Friday Sale. Save up to $400. Ends December 1st",
+            "link": ""
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_7Err6P"
       ],
       "settings": {
         "color_scheme": "scheme-2dd931e8-97c8-4ee9-9c49-cabbfcd03b92",
