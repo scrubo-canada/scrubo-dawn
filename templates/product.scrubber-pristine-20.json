@@ -277,6 +277,17 @@
             "button_link": ""
           }
         },
+        "row_X3BNxt": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Downpressure_clean_last.jpg",
+            "caption": "Enhanced Cleaning",
+            "heading": "Adjustable Brush Pressure",
+            "text": "<p>The Pristine 20 Pro is equipped with a down-pressure adjustment lever capable of applying an extra 20 kg of force to the brush. This flexibility ensures effective cleaning performance across a wide range of floor surfaces.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
         "row_VfLHrK": {
           "type": "row",
           "settings": {
@@ -291,6 +302,7 @@
       },
       "block_order": [
         "row_QKk6xF",
+        "row_X3BNxt",
         "row_VfLHrK"
       ],
       "settings": {
@@ -373,7 +385,12 @@
       "blocks": {
         "judge_me_reviews_review_widget_WGRDFJ": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
         }
       },
       "block_order": [
