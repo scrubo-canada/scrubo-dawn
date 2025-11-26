@@ -413,5 +413,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".product__title h1 {font-weight: bold;}"
+    ]
   }
 }
