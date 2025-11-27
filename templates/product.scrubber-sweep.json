@@ -48,12 +48,6 @@
           "type": "price",
           "settings": {}
         },
-        "custom_liquid_mqNHjr": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{%- render 'product-stock-alert' -%}"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -128,7 +122,6 @@
         "description",
         "custom_liquid_PVc3gX",
         "price",
-        "custom_liquid_mqNHjr",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
