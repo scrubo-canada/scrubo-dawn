@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_7Err6P": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Black Friday Sale. Save up to $400. Ends December 5.",
             "link": ""
