@@ -16,10 +16,10 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/shipping-canada.jpg",
-            "heading": "Image slide",
+            "heading": "Shipping across Canada",
             "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
+            "subheading": "Just $80 fully assembled",
+            "button_label": "",
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
