@@ -241,7 +241,7 @@
           "type": "specification",
           "settings": {
             "spec_label": "Charger",
-            "spec_value": "Value{{ product.metafields.custom.charger.value }}"
+            "spec_value": "{{ product.metafields.custom.charger.value }}"
           }
         }
       },
