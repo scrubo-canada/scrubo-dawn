@@ -166,6 +166,13 @@
     "product_specifications_scrubber_Vj8Lzg": {
       "type": "product-specifications-scrubber",
       "blocks": {
+        "specification_CRdGQp": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Charger",
+            "spec_value": "{{ product.metafields.custom.charger.value }}"
+          }
+        },
         "specification_gtDDVD": {
           "type": "specification",
           "settings": {
@@ -245,6 +252,7 @@
         }
       },
       "block_order": [
+        "specification_CRdGQp",
         "specification_gtDDVD",
         "specification_BQNw8X",
         "specification_gVfctU",
