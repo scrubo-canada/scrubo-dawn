@@ -328,6 +328,7 @@
         "column_AqwP9y": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/FloorScrubberBrush-1.jpg",
             "title": "Brush",
             "text": "<p>9\" Nylon brush for hard/uneven floors and medium–heavy stain removal.</p>",
             "link_label": "",
