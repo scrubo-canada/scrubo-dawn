@@ -236,6 +236,13 @@
             "spec_label": "Weight",
             "spec_value": "{{ product.metafields.custom.weight.value }}"
           }
+        },
+        "specification_rwf3Jd": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Charger",
+            "spec_value": "Value{{ product.metafields.custom.charger.value }}"
+          }
         }
       },
       "block_order": [
@@ -248,7 +255,8 @@
         "specification_9HHBPE",
         "specification_ea7MhJ",
         "specification_QjVQJe",
-        "specification_yt9MfV"
+        "specification_yt9MfV",
+        "specification_rwf3Jd"
       ],
       "settings": {
         "title": "Product Specifications",
@@ -319,7 +327,12 @@
       "blocks": {
         "judge_me_reviews_review_widget_Yrzjkk": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
         }
       },
       "block_order": [
