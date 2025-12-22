@@ -322,6 +322,50 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_VNWaAn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_AqwP9y": {
+          "type": "column",
+          "settings": {
+            "title": "Brush",
+            "text": "<p>9\" Nylon brush for hard/uneven floors and medium–heavy stain removal.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_gjXqnr": {
+          "type": "column",
+          "settings": {
+            "title": "Charger",
+            "text": "<p>36V smart charger, UL certified.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_AqwP9y",
+        "column_gjXqnr"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "What's Included",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "1734584670cef19c0d": {
       "type": "apps",
       "blocks": {
@@ -427,6 +471,7 @@
     "main",
     "product_specifications_scrubber_NT6NNg",
     "multirow_hGnXbf",
+    "multicolumn_VNWaAn",
     "1734584670cef19c0d",
     "multicolumn_gWpgmU",
     "custom_liquid_Bc6Ejq",
