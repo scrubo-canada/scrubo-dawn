@@ -242,6 +242,13 @@
             "spec_label": "Weight",
             "spec_value": "{{ product.metafields.custom.weight.value }}"
           }
+        },
+        "specification_Hczpea": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Charger",
+            "spec_value": "{{ product.metafields.custom.charger.value }}"
+          }
         }
       },
       "block_order": [
@@ -255,7 +262,8 @@
         "specification_RL3yHa",
         "specification_4tbV8P",
         "specification_b99A4q",
-        "specification_dcVLyt"
+        "specification_dcVLyt",
+        "specification_Hczpea"
       ],
       "settings": {
         "title": "Product Specifications",
