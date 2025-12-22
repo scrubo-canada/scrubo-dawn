@@ -338,6 +338,7 @@
         "column_gjXqnr": {
           "type": "column",
           "settings": {
+            "image": "shopify://shop_images/LBC0_Charger_-_2.jpg",
             "title": "Charger",
             "text": "<p>36V smart charger, UL certified.</p>",
             "link_label": "",
