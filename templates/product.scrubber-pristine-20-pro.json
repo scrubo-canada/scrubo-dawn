@@ -242,6 +242,13 @@
             "spec_label": "Weight",
             "spec_value": "{{ product.metafields.custom.weight.value }}"
           }
+        },
+        "specification_reTRUD": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Charger",
+            "spec_value": "{{ product.metafields.custom.charger.value }}"
+          }
         }
       },
       "block_order": [
@@ -255,7 +262,8 @@
         "specification_7NMbbD",
         "specification_CfR8qN",
         "specification_Entq9j",
-        "specification_gqw8EQ"
+        "specification_gqw8EQ",
+        "specification_reTRUD"
       ],
       "settings": {
         "title": "Product Specifications",
