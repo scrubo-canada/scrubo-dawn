@@ -166,13 +166,6 @@
     "product_specifications_scrubber_Vj8Lzg": {
       "type": "product-specifications-scrubber",
       "blocks": {
-        "specification_CRdGQp": {
-          "type": "specification",
-          "settings": {
-            "spec_label": "Charger",
-            "spec_value": "{{ product.metafields.custom.charger.value }}"
-          }
-        },
         "specification_gtDDVD": {
           "type": "specification",
           "settings": {
@@ -249,10 +242,16 @@
             "spec_label": "Weight",
             "spec_value": "{{ product.metafields.custom.weight.value }}"
           }
+        },
+        "specification_CRdGQp": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Charger",
+            "spec_value": "{{ product.metafields.custom.charger.value }}"
+          }
         }
       },
       "block_order": [
-        "specification_CRdGQp",
         "specification_gtDDVD",
         "specification_BQNw8X",
         "specification_gVfctU",
@@ -263,7 +262,8 @@
         "specification_6i4PtW",
         "specification_NDyMLq",
         "specification_nUtzyU",
-        "specification_rxkd43"
+        "specification_rxkd43",
+        "specification_CRdGQp"
       ],
       "settings": {
         "title": "Product Specifications",
