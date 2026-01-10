@@ -12,7 +12,7 @@
     "image_banner_mipQiB": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/Firefly_Gemini_Flash_6.png",
+        "image": "shopify://shop_images/main_banner_clean.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
