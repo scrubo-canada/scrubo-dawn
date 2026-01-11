@@ -11,6 +11,18 @@
   "sections": {
     "image_banner_mipQiB": {
       "type": "image-banner",
+      "blocks": {
+        "heading_iGzq36": {
+          "type": "heading",
+          "settings": {
+            "heading": "About Us",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_iGzq36"
+      ],
       "settings": {
         "image": "shopify://shop_images/home_banner_clean_new.jpg",
         "image_overlay_opacity": 0,
