@@ -12,7 +12,7 @@
     "image_banner_mipQiB": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/main_banner_clean.jpg",
+        "image": "shopify://shop_images/home_banner_clean_new.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
