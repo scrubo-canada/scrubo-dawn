@@ -1,6 +1,532 @@
+{% doc %}
+  @prompt
+    Create a two-column section where each column can contain other sections nested inside it. The section should be flexible and allow merchants to add, remove, and customize content blocks within each column independently. Include settings to control column width distribution and spacing between columns.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-two-column-container-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-two-column-wrapper-{{ ai_gen_id }} {
+    max-width: {{ block.settings.container_width }}px;
+    margin: 0 auto;
+    padding: 0 {{ block.settings.horizontal_padding }}px;
+  }
+
+  .ai-two-column-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: {{ block.settings.left_column_width }}% {{ 100 | minus: block.settings.left_column_width }}%;
+    gap: {{ block.settings.column_gap }}px;
+    align-items: {{ block.settings.vertical_alignment }};
+  }
+
+  .ai-two-column-left-{{ ai_gen_id }},
+  .ai-two-column-right-{{ ai_gen_id }} {
+    padding: {{ block.settings.column_padding }}px;
+    background-color: {{ block.settings.column_background_color }};
+    border-radius: {{ block.settings.column_border_radius }}px;
+  }
+
+  .ai-two-column-content-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-two-column-content-{{ ai_gen_id }} h2 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-two-column-content-{{ ai_gen_id }} p {
+    margin-bottom: 16px;
+  }
+
+  .ai-two-column-content-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-two-column-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: {{ block.settings.image_border_radius }}px;
+  }
+
+  .ai-two-column-image-wrapper-{{ ai_gen_id }} {
+    margin-bottom: {{ block.settings.image_spacing }}px;
+  }
+
+  .ai-two-column-image-wrapper-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-two-column-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+  }
+
+  .ai-two-column-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ai-two-column-button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-two-column-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-two-column-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.mobile_column_gap }}px;
+    }
+
+    {% if block.settings.reverse_columns_mobile %}
+      .ai-two-column-grid-{{ ai_gen_id }} {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    {% endif %}
+
+    .ai-two-column-container-{{ ai_gen_id }} {
+      padding: {{ block.settings.mobile_padding_top }}px 0 {{ block.settings.mobile_padding_bottom }}px;
+    }
+
+    .ai-two-column-wrapper-{{ ai_gen_id }} {
+      padding: 0 {{ block.settings.mobile_horizontal_padding }}px;
+    }
+
+    .ai-two-column-left-{{ ai_gen_id }},
+    .ai-two-column-right-{{ ai_gen_id }} {
+      padding: {{ block.settings.mobile_column_padding }}px;
+    }
+  }
+{% endstyle %}
+
+<two-column-layout-{{ ai_gen_id }} class="ai-two-column-container-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-two-column-wrapper-{{ ai_gen_id }}">
+    <div class="ai-two-column-grid-{{ ai_gen_id }}">
+      <div class="ai-two-column-left-{{ ai_gen_id }}">
+        {% if block.settings.left_image %}
+          <div class="ai-two-column-image-wrapper-{{ ai_gen_id }}">
+            <img
+              src="{{ block.settings.left_image | image_url: width: 1000 }}"
+              alt="{{ block.settings.left_image.alt | escape }}"
+              loading="lazy"
+              width="{{ block.settings.left_image.width }}"
+              height="{{ block.settings.left_image.height }}"
+              class="ai-two-column-image-{{ ai_gen_id }}"
+            >
+          </div>
+        {% endif %}
+
+        <div class="ai-two-column-content-{{ ai_gen_id }}">
+          {% if block.settings.left_heading != blank %}
+            <h2>{{ block.settings.left_heading }}</h2>
+          {% endif %}
+
+          {% if block.settings.left_content != blank %}
+            {{ block.settings.left_content }}
+          {% endif %}
+
+          {% if block.settings.left_button_text != blank and block.settings.left_button_link != blank %}
+            <a href="{{ block.settings.left_button_link }}" class="ai-two-column-button-{{ ai_gen_id }}">
+              {{ block.settings.left_button_text }}
+            </a>
+          {% endif %}
+        </div>
+
+        {% if block.settings.left_image == blank and block.settings.left_heading == blank and block.settings.left_content == blank %}
+          <div class="ai-two-column-image-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-two-column-right-{{ ai_gen_id }}">
+        {% if block.settings.right_image %}
+          <div class="ai-two-column-image-wrapper-{{ ai_gen_id }}">
+            <img
+              src="{{ block.settings.right_image | image_url: width: 1000 }}"
+              alt="{{ block.settings.right_image.alt | escape }}"
+              loading="lazy"
+              width="{{ block.settings.right_image.width }}"
+              height="{{ block.settings.right_image.height }}"
+              class="ai-two-column-image-{{ ai_gen_id }}"
+            >
+          </div>
+        {% endif %}
+
+        <div class="ai-two-column-content-{{ ai_gen_id }}">
+          {% if block.settings.right_heading != blank %}
+            <h2>{{ block.settings.right_heading }}</h2>
+          {% endif %}
+
+          {% if block.settings.right_content != blank %}
+            {{ block.settings.right_content }}
+          {% endif %}
+
+          {% if block.settings.right_button_text != blank and block.settings.right_button_link != blank %}
+            <a href="{{ block.settings.right_button_link }}" class="ai-two-column-button-{{ ai_gen_id }}">
+              {{ block.settings.right_button_text }}
+            </a>
+          {% endif %}
+        </div>
+
+        {% if block.settings.right_image == blank and block.settings.right_heading == blank and block.settings.right_content == blank %}
+          <div class="ai-two-column-image-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</two-column-layout-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class TwoColumnLayout{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.style.display = 'block';
+      }
+    }
+
+    customElements.define('two-column-layout-{{ ai_gen_id }}', TwoColumnLayout{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Two column layout",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 1000,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "label": "Container width",
+      "default": 1400
+    },
+    {
+      "type": "range",
+      "id": "left_column_width",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "%",
+      "label": "Left column width",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Column gap",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "vertical_alignment",
+      "label": "Vertical alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Bottom"
+        },
+        {
+          "value": "stretch",
+          "label": "Stretch"
+        }
+      ],
+      "default": "start"
+    },
+    {
+      "type": "header",
+      "content": "Left column"
+    },
+    {
+      "type": "image_picker",
+      "id": "left_image",
+      "label": "Image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "left_heading",
+      "label": "Heading",
+      "default": "Left column"
+    },
+    {
+      "type": "richtext",
+      "id": "left_content",
+      "label": "Content",
+      "default": "<p>Add your content for the left column here. You can include text, images, and more.</p>"
+    },
+    {
+      "type": "text",
+      "id": "left_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "left_button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Right column"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_image",
+      "label": "Image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "right_heading",
+      "label": "Heading",
+      "default": "Right column"
+    },
+    {
+      "type": "richtext",
+      "id": "right_content",
+      "label": "Content",
+      "default": "<p>Add your content for the right column here. You can include text, images, and more.</p>"
+    },
+    {
+      "type": "text",
+      "id": "right_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "right_button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "column_background_color",
+      "label": "Column background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#121212"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button",
+      "default": "#334fb4"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button hover",
+      "default": "#121212"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "horizontal_padding",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "column_padding",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Column padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "column_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Column border radius",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "image_spacing",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Image spacing",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "reverse_columns_mobile",
+      "label": "Reverse columns",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "mobile_column_gap",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Column gap",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "mobile_horizontal_padding",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "mobile_column_padding",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Column padding",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Two column layout"
+    }
+  ]
+}
 {% endschema %}
