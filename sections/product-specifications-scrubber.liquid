@@ -21,6 +21,7 @@
   .specification-item {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
     gap: 10px;
   }
 
@@ -31,6 +32,12 @@
 
     .specifications-grid {
       grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .specification-item { 
+      justify-content: flex-start;
     }
   }
 {% endstyle %}
