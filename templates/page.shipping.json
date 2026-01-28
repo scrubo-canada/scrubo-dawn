@@ -15,17 +15,17 @@
         "slide_aJ7LT3": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/shipping-canada.jpg",
+            "image": "shopify://shop_images/Gemini_Generated_Image_5txx75txx75txx75.png",
             "heading": "Shipping across Canada",
             "heading_size": "h1",
             "subheading": "Just $80 to ship. Arrives in days, 99% assembled.",
             "button_label": "",
             "link": "",
             "button_style_secondary": false,
-            "box_align": "middle-center",
+            "box_align": "bottom-center",
             "show_text_box": true,
             "text_alignment": "center",
-            "image_overlay_opacity": 0,
+            "image_overlay_opacity": 40,
             "color_scheme": "",
             "text_alignment_mobile": "center"
           }
