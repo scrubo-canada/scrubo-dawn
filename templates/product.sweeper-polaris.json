@@ -330,16 +330,6 @@
             "link": ""
           }
         },
-        "column_qt8jde": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/16inPin-PadBundle-1-v2.jpg",
-            "title": "Pad Driver / Pad",
-            "text": "<p>16\" Inch Pad Driver and 16\" Pad (This month special)</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_E78MWt": {
           "type": "column",
           "settings": {
@@ -353,7 +343,6 @@
       },
       "block_order": [
         "column_nkh9Qf",
-        "column_qt8jde",
         "column_E78MWt"
       ],
       "custom_css": [
