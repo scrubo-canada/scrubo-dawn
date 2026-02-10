@@ -68,7 +68,7 @@
         "description": "<p>The Pristine collection offers sizing and functionality to tackle any space effectively.</p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "pristine",
+        "collection": "featured-walk-behind",
         "products_to_show": 5,
         "columns_desktop": 4,
         "full_width": false,
