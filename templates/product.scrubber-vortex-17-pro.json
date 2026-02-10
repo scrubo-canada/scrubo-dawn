@@ -280,7 +280,7 @@
         "row_kdjiHQ": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Vortex_Control_Panel.jpg",
+            "image": "shopify://shop_images/handle.jpg",
             "caption": "Built to last",
             "heading": "Simple and reliable control panel",
             "text": "<p>Deliver consistent results with the easy-to-operate and maintain floor scrubber Scrubo Pristine 16. Help lower your labor costs and improve cleaning performance with the high RPM 500w brush motor. </p>",
@@ -417,9 +417,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget",
-            "max_width": 1200
+            "empty_state": "empty_widget"
           }
         }
       },
