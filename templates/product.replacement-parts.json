@@ -45,6 +45,12 @@
             "title": "Product Compatibility"
           }
         },
+        "custom_liquid_B3xfW3": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'product-stock-alert' %}"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -122,6 +128,7 @@
         "judge_me_reviews_preview_badge_XFzMRL",
         "description",
         "product_compatibility_KdNbJ3",
+        "custom_liquid_B3xfW3",
         "variant_picker",
         "quantity_selector",
         "price",
