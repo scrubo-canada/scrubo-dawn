@@ -22,30 +22,32 @@
         "row_p4URkj": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/cart_screenshot_shop_pay.jpg",
+            "caption": "Step 1",
+            "heading": "Fill Your Cart",
+            "text": "<p>Place all the items you wish to buy into your cart and initiate the checkout procedure. Please note that there is minimum order amount of $1000.<br/><br/></p>",
+            "button_label": "",
             "button_link": ""
           }
         },
         "row_TjfkGh": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "image": "shopify://shop_images/payment_screenshot.jpg",
+            "caption": "Step 2",
+            "heading": "Select Payment Method",
+            "text": "<p>During the checkout process, kindly select Shop Pay and complete the required details to generate your order totals.</p>",
+            "button_label": "",
             "button_link": ""
           }
         },
         "row_jfWdUm": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
+            "caption": "Step 3",
+            "heading": "Pick Your Financing Option",
+            "text": "<p>Select the monthly payment scheme that suits you most. Your final payment will never exceed the upfront agreement.</p>",
+            "button_label": "",
             "button_link": ""
           }
         }
@@ -71,10 +73,46 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_hKFBGj": {
+      "type": "rich-text",
+      "blocks": {
+        "text_nALwfh": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Disclosure</strong><br/><br/>Payment<br/> options through Affirm Canada Holdings Ltd. (“Affirm”). Your rate will <br/>be 0–31.99% APR (where available and subject to provincial regulatory <br/>limitations). APR offered is based on creditworthiness and subject to an<br/> eligibility check. Not all customers will be eligible for 0% APR.</p><p>For example a $800 purchase could be split into 12 monthly payments <br/>of $72.21 at 15% Apr, or 4 interest-free payments of $200 every 2 weeks.</p><p><br/>Shop Pay Installments is offered in partnership with Affirm. <br/>Affirm is the provider of your loan, and you can handle payments in your<br/> Shop Pay account or directly via Affirm. </p>"
+          }
+        },
+        "button_PTtJHK": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "text_nALwfh",
+        "button_PTtJHK"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
-    "multirow_AgxFnw"
+    "multirow_AgxFnw",
+    "rich_text_hKFBGj"
   ]
 }
