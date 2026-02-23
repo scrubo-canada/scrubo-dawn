@@ -44,6 +44,7 @@
         "row_jfWdUm": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/payment_options_scrubo.jpg",
             "caption": "Step 3",
             "heading": "Pick Your Financing Option",
             "text": "<p>Select the monthly payment scheme that suits you most. Your final payment will never exceed the upfront agreement.</p>",
@@ -80,24 +81,12 @@
         "text_nALwfh": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Disclosure</strong><br/><br/>Payment<br/> options through Affirm Canada Holdings Ltd. (“Affirm”). Your rate will <br/>be 0–31.99% APR (where available and subject to provincial regulatory <br/>limitations). APR offered is based on creditworthiness and subject to an<br/> eligibility check. Not all customers will be eligible for 0% APR.</p><p>For example a $800 purchase could be split into 12 monthly payments <br/>of $72.21 at 15% Apr, or 4 interest-free payments of $200 every 2 weeks.</p><p><br/>Shop Pay Installments is offered in partnership with Affirm. <br/>Affirm is the provider of your loan, and you can handle payments in your<br/> Shop Pay account or directly via Affirm. </p>"
-          }
-        },
-        "button_PTtJHK": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "<p><strong>Disclosure</strong><br/><br/>Payment options through Affirm Canada Holdings Ltd. (“Affirm”). Your rate will <br/>be 0–31.99% APR (where available and subject to provincial regulatory <br/>limitations). APR offered is based on creditworthiness and subject to an<br/> eligibility check. Not all customers will be eligible for 0% APR.</p><p>For example a $800 purchase could be split into 12 monthly payments <br/>of $72.21 at 15% Apr, or 4 interest-free payments of $200 every 2 weeks.</p><p><br/>Shop Pay Installments is offered in partnership with Affirm. <br/>Affirm is the provider of your loan, and you can handle payments in your<br/> Shop Pay account or directly via Affirm. </p>"
           }
         }
       },
       "block_order": [
-        "text_nALwfh",
-        "button_PTtJHK"
+        "text_nALwfh"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
