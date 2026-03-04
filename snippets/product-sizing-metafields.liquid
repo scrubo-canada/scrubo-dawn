@@ -64,7 +64,7 @@
 {% endstyle %}
 
 {%- if product.metafields.custom.dimensions.value != empty and product.metafields.sizing.diagram != empty -%}
-  <div class="isolate">test
+  <div class="isolate">
     <div
       id="sizing-container"
       class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
@@ -76,7 +76,7 @@
             data-cascade
             style="--animation-order: 3;"
           >
-            Sizing
+            Dimension
           </h2>
           <div
             class="block-sizing rich-text__text rte scroll-trigger animate--slide-in"
@@ -84,7 +84,7 @@
             style="--animation-order: 4;"
           >
             <ul>
-              {{ product.custom.dimensions.value }}
+              {{ product.metafields.custom.dimensions.value }}
             </ul>
 
             <img
