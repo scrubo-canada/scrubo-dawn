@@ -63,7 +63,7 @@
   }
 {% endstyle %}
 
-{%- if product.custom.sizing['content-text'] != empty and product.metafields.sizing.diagram != empty -%}
+{%- if product.custom['sizing'] != empty and product.metafields.sizing.diagram != empty -%}
   <div class="isolate">test
     <div
       id="sizing-container"
@@ -84,7 +84,7 @@
             style="--animation-order: 4;"
           >
             <ul>
-              {{ product.custom.sizing['content-text'] }}
+              {{ product.custom['sizing'] }}
             </ul>
 
             <img
