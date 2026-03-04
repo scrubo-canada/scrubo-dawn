@@ -63,7 +63,7 @@
   }
 {% endstyle %}
 
-{%- if product.custom.dimensions['content-text'] != empty and product.metafields.sizing.diagram != empty -%}
+{%- if product.metafields.custom.dimensions.value != empty and product.metafields.sizing.diagram != empty -%}
   <div class="isolate">test
     <div
       id="sizing-container"
