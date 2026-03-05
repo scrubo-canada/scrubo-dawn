@@ -331,6 +331,7 @@
     },
     "custom_liquid_4RcAjP": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "{% render 'product-sizing-metafields' %}",
