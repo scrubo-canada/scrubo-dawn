@@ -145,14 +145,14 @@
         "text_rC4Ycw": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>During the checkout process, kindly select Affirm and complete the required details to generate your calculations.</p>",
             "text_style": "body"
           }
         },
         "button_WcKRRm": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false
           }
