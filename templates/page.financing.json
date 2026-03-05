@@ -127,14 +127,14 @@
         "heading_HndNxp": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Pick Your Finacing Option",
             "heading_size": "h1"
           }
         },
         "text_mdWtWd": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Select the monthly payment scheme that suits you most. Your final payment will never exceed the upfront agreement.</p>",
             "text_style": "body"
           }
         },
