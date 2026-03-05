@@ -124,6 +124,14 @@
     "image_with_text_JnMhEh": {
       "type": "image-with-text",
       "blocks": {
+        "caption_tVLHWg": {
+          "type": "caption",
+          "settings": {
+            "caption": "STEP 3",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_HndNxp": {
           "type": "heading",
           "settings": {
@@ -141,13 +149,14 @@
         "button_BXjUCd": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false
           }
         }
       },
       "block_order": [
+        "caption_tVLHWg",
         "heading_HndNxp",
         "text_mdWtWd",
         "button_BXjUCd"
