@@ -165,6 +165,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/financing_2.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
