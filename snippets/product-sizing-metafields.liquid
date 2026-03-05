@@ -87,11 +87,13 @@
               {{ product.metafields.custom.dimensions.value }}
             </div>
 
+            <div style="width:50%">
             <img
               src="{{ product.metafields.custom.dimensions_diagram.value | image_url }}"
               alt="{{ product.title | escape }} sizing chart."
               style="border: none;"
             >
+              </div>
           </div>
         </div>
       </div>
