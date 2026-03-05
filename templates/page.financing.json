@@ -16,65 +16,6 @@
         "padding_bottom": 28
       }
     },
-    "multirow_AgxFnw": {
-      "type": "multirow",
-      "blocks": {
-        "row_p4URkj": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/financing_1.jpg",
-            "caption": "Step 1",
-            "heading": "Fill Your Cart",
-            "text": "<p>Place all the items you wish to buy into your cart and initiate the checkout procedure. Please note that there is minimum order amount of $1000.<br/><br/></p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_TjfkGh": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/payment_screenshot.jpg",
-            "caption": "Step 2",
-            "heading": "Select Payment Method",
-            "text": "<p>During the checkout process, kindly select Shop Pay and complete the required details to generate your order totals.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        },
-        "row_jfWdUm": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/payment_options_scrubo.jpg",
-            "caption": "Step 3",
-            "heading": "Pick Your Financing Option",
-            "text": "<p>Select the monthly payment scheme that suits you most. Your final payment will never exceed the upfront agreement.</p>",
-            "button_label": "",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_p4URkj",
-        "row_TjfkGh",
-        "row_jfWdUm"
-      ],
-      "name": "t:sections.multirow.presets.name",
-      "settings": {
-        "image_height": "medium",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_with_text_3xnHdQ": {
       "type": "image-with-text",
       "blocks": {
@@ -206,7 +147,6 @@
   },
   "order": [
     "main",
-    "multirow_AgxFnw",
     "image_with_text_3xnHdQ",
     "image_with_text_eapwLY",
     "rich_text_hKFBGj"
