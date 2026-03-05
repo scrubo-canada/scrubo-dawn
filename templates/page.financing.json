@@ -88,14 +88,14 @@
         "text_7Ggfei": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>Place all the items you wish to buy into your cart and initiate the checkout procedure. Please note that there is minimum order amount of $1000.</p>",
             "text_style": "body"
           }
         },
         "button_CaJWpY": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": "",
             "button_style_secondary": false
           }
