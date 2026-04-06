@@ -166,13 +166,6 @@
     "product_specifications_scrubber_MRy4hV": {
       "type": "product-specifications-scrubber",
       "blocks": {
-        "specification_WGjkNi": {
-          "type": "specification",
-          "settings": {
-            "spec_label": "Pad Pressure",
-            "spec_value": "Value{{ product.metafields.custom.pad_pressure.value }}"
-          }
-        },
         "specification_zek6LN": {
           "type": "specification",
           "settings": {
@@ -206,6 +199,13 @@
           "settings": {
             "spec_label": "Battery",
             "spec_value": "{{ product.metafields.custom.battery.value }}"
+          }
+        },
+        "specification_WGjkNi": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Pad Pressure",
+            "spec_value": "Value{{ product.metafields.custom.pad_pressure.value }}"
           }
         },
         "specification_xDKM6G": {
@@ -259,12 +259,12 @@
         }
       },
       "block_order": [
-        "specification_WGjkNi",
         "specification_zek6LN",
         "specification_fpdywp",
         "specification_VxC3mW",
         "specification_yyQ4LY",
         "specification_RNnW9n",
+        "specification_WGjkNi",
         "specification_xDKM6G",
         "specification_XYGUMh",
         "specification_PhLMYc",
