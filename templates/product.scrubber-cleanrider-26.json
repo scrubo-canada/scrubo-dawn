@@ -166,13 +166,6 @@
     "product_specifications_scrubber_XP6ehU": {
       "type": "product-specifications-scrubber",
       "blocks": {
-        "specification_wbTNaU": {
-          "type": "specification",
-          "settings": {
-            "spec_label": "Pad Pressure",
-            "spec_value": "{{ product.metafields.custom.pad_pressure.value }}"
-          }
-        },
         "specification_CDLDaK": {
           "type": "specification",
           "settings": {
@@ -199,6 +192,13 @@
           "settings": {
             "spec_label": "Estimated Run Time",
             "spec_value": "{{ product.metafields.custom.estimated_run_time.value }}"
+          }
+        },
+        "specification_wbTNaU": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Pad Pressure",
+            "spec_value": "{{ product.metafields.custom.pad_pressure.value }}"
           }
         },
         "specification_By8b7t": {
@@ -259,11 +259,11 @@
         }
       },
       "block_order": [
-        "specification_wbTNaU",
         "specification_CDLDaK",
         "specification_QA77jN",
         "specification_eUPzXX",
         "specification_83iwU6",
+        "specification_wbTNaU",
         "specification_By8b7t",
         "specification_NwJUhg",
         "specification_mUharU",
