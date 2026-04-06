@@ -166,6 +166,13 @@
     "product_specifications_scrubber_7nVWxU": {
       "type": "product-specifications-scrubber",
       "blocks": {
+        "specification_jrWg3R": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Pad Pressure",
+            "spec_value": "{{ product.metafields.custom.pad_pressure.value }}"
+          }
+        },
         "specification_8BbU9A": {
           "type": "specification",
           "settings": {
@@ -245,6 +252,7 @@
         }
       },
       "block_order": [
+        "specification_jrWg3R",
         "specification_8BbU9A",
         "specification_BWbDEE",
         "specification_K6TkQ8",
