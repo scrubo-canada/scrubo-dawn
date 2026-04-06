@@ -201,6 +201,13 @@
             "spec_value": "{{ product.metafields.custom.battery.value }}"
           }
         },
+        "specification_64ddWE": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Pad Pressure",
+            "spec_value": "{{ product.metafields.custom.pad_pressure.value }}"
+          }
+        },
         "specification_xDDfrF": {
           "type": "specification",
           "settings": {
@@ -257,6 +264,7 @@
         "specification_K6TkQ8",
         "specification_DD3e7f",
         "specification_iF39gj",
+        "specification_64ddWE",
         "specification_xDDfrF",
         "specification_w9XAHh",
         "specification_7NMbbD",
