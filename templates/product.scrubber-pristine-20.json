@@ -205,7 +205,7 @@
           "type": "specification",
           "settings": {
             "spec_label": "Pad Pressure",
-            "spec_value": "Value{{ product.metafields.custom.pad_pressure.value }}"
+            "spec_value": "{{ product.metafields.custom.pad_pressure.value }}"
           }
         },
         "specification_xDKM6G": {
