@@ -278,24 +278,24 @@
             "button_link": ""
           }
         },
-        "row_EETHhL": {
+        "row_MdRD7N": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Scrubo_Flex_-_Angle_4_7ad1beb8-23c0-4f8a-b4d7-a681686f79f4.jpg",
-            "caption": "Folding design",
-            "heading": "Double brushes",
-            "text": "<p>Introducing a dynamic cleaning solution equipped with dual counter-rotating 9\" brushes that operate in unison. Driven by a 200W motor, this machine combines the adaptability of a mop with the robust power and efficiency of a scrubber.</p>",
+            "image": "shopify://shop_images/Flex_Plus_-_5.jpg",
+            "caption": "",
+            "heading": "Easy to operate",
+            "text": "<p>Keep track of the battery life with a convenient gauge, ensuring you're always aware of the remaining power. Adjust the brush motor with three distinct power levels for optimal cleaning. Effortlessly control the brush and vacuum functions with dedicated buttons, and easily manage the spraying of solution liquid with a simple toggle button. Experience ultimate convenience and control in one innovative panel.</p>",
             "button_label": "",
             "button_link": ""
           }
         },
-        "row_MdRD7N": {
+        "row_EETHhL": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Scrubo_Flex_-_Controls_7f9890c2-4d22-4a7a-a28a-f6f30910bcf8.jpg",
-            "caption": "",
-            "heading": "Easy to operate",
-            "text": "<p>Keep track of the battery life with a convenient gauge, ensuring you're always aware of the remaining power. Adjust the brush motor with three distinct power levels for optimal cleaning. Effortlessly control the brush and vacuum functions with dedicated buttons, and easily manage the spraying of solution liquid with a simple toggle button. Experience ultimate convenience and control in one innovative panel.</p>",
+            "image": "shopify://shop_images/Flex_Plus_-_4.jpg",
+            "caption": "Folding design",
+            "heading": "Double brushes",
+            "text": "<p>Introducing a dynamic cleaning solution equipped with dual counter-rotating 9\" brushes that operate in unison. Driven by a 200W motor, this machine combines the adaptability of a mop with the robust power and efficiency of a scrubber.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -303,8 +303,8 @@
       },
       "block_order": [
         "row_baL7j8",
-        "row_EETHhL",
-        "row_MdRD7N"
+        "row_MdRD7N",
+        "row_EETHhL"
       ],
       "settings": {
         "image_height": "adapt",
