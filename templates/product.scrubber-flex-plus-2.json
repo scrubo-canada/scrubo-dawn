@@ -1,0 +1,485 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "caption": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.metafields.descriptors.subtitle.value }}",
+            "text_style": "subtitle"
+          }
+        },
+        "judge_me_reviews_preview_badge_KXDN4x": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "custom_liquid_KMiDqX": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{%- render 'product-stock-alert' -%}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "collapsible-row-0": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Materials",
+            "icon": "leather",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Shipping & Returns",
+            "icon": "truck",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Dimensions",
+            "icon": "ruler",
+            "content": "",
+            "page": ""
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Care Instructions",
+            "icon": "heart",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "icon_with_text_RgT4aq": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "heart",
+            "image_1": "shopify://shop_images/shipping-icon.svg",
+            "heading_1": "<strong>Shipping just $80</strong>",
+            "icon_2": "return",
+            "image_2": "shopify://shop_images/warranty-icon.svg",
+            "heading_2": "<strong>Warranty</strong>",
+            "icon_3": "truck",
+            "image_3": "shopify://shop_images/quality-assurance-test.webp",
+            "heading_3": "<strong>20+ Quality Standards Checklist</strong>"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "caption",
+        "judge_me_reviews_preview_badge_KXDN4x",
+        "description",
+        "custom_liquid_KMiDqX",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "collapsible-row-0",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "share",
+        "icon_with_text_RgT4aq"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "product_specifications_scrubber_NT6NNg": {
+      "type": "product-specifications-scrubber",
+      "blocks": {
+        "specification_QM6d38": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Cleaning Path",
+            "spec_value": "{{ product.metafields.custom.cleaning_path.value }}"
+          }
+        },
+        "specification_8dRBw6": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Brush Diameter",
+            "spec_value": "{{ product.metafields.custom.brush_diameter.value }}"
+          }
+        },
+        "specification_X7hV3G": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Estimated Coverage",
+            "spec_value": "{{ product.metafields.custom.estimated_coverage.value }}"
+          }
+        },
+        "specification_UYgha4": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Estimated Run Time",
+            "spec_value": "{{ product.metafields.custom.estimated_run_time.value }}"
+          }
+        },
+        "specification_qkRbBL": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Battery",
+            "spec_value": "{{ product.metafields.custom.battery.value }}"
+          }
+        },
+        "specification_EJ3dLD": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Brush Motor",
+            "spec_value": "{{ product.metafields.custom.brush_motor.value }}"
+          }
+        },
+        "specification_9HHBPE": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Vacuum Motor",
+            "spec_value": "{{ product.metafields.custom.vacuum_motor.value }}"
+          }
+        },
+        "specification_ea7MhJ": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Solution Tank Capacity",
+            "spec_value": "{{ product.metafields.custom.solution_tank_capacity.value }}"
+          }
+        },
+        "specification_QjVQJe": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Recovery Tank Capacity",
+            "spec_value": "{{ product.metafields.custom.recovery_tank_capacity.value }}"
+          }
+        },
+        "specification_yt9MfV": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Weight",
+            "spec_value": "{{ product.metafields.custom.weight.value }}"
+          }
+        },
+        "specification_rwf3Jd": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Charger",
+            "spec_value": "{{ product.metafields.custom.charger.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "specification_QM6d38",
+        "specification_8dRBw6",
+        "specification_X7hV3G",
+        "specification_UYgha4",
+        "specification_qkRbBL",
+        "specification_EJ3dLD",
+        "specification_9HHBPE",
+        "specification_ea7MhJ",
+        "specification_QjVQJe",
+        "specification_yt9MfV",
+        "specification_rwf3Jd"
+      ],
+      "settings": {
+        "title": "Product Specifications",
+        "heading_size": "h1",
+        "section_color_scheme": ""
+      }
+    },
+    "multirow_hGnXbf": {
+      "type": "multirow",
+      "blocks": {
+        "row_baL7j8": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Scrubo_Flex_-_Angle_3_5644bb08-9af0-493f-8450-7dbab81f4ff5.jpg",
+            "caption": "Detachable reservoirs",
+            "heading": "Compact and effective",
+            "text": "<p>Despite its compact size, the Scrubo Flex features generous reservoirs. It boasts a 3.2-liter capacity clean solution tank and a 6.5-liter capacity recovery tank, both detachable for effortless maintenance.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_EETHhL": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Scrubo_Flex_-_Angle_4_7ad1beb8-23c0-4f8a-b4d7-a681686f79f4.jpg",
+            "caption": "Folding design",
+            "heading": "Double brushes",
+            "text": "<p>Introducing a dynamic cleaning solution equipped with dual counter-rotating 9\" brushes that operate in unison. Driven by a 200W motor, this machine combines the adaptability of a mop with the robust power and efficiency of a scrubber.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_MdRD7N": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Scrubo_Flex_-_Controls_7f9890c2-4d22-4a7a-a28a-f6f30910bcf8.jpg",
+            "caption": "",
+            "heading": "Easy to operate",
+            "text": "<p>Keep track of the battery life with a convenient gauge, ensuring you're always aware of the remaining power. Adjust the brush motor with three distinct power levels for optimal cleaning. Effortlessly control the brush and vacuum functions with dedicated buttons, and easily manage the spraying of solution liquid with a simple toggle button. Experience ultimate convenience and control in one innovative panel.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_baL7j8",
+        "row_EETHhL",
+        "row_MdRD7N"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_VNWaAn": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_AqwP9y": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/FloorScrubberBrush-1.jpg",
+            "title": "Brush",
+            "text": "<p>9\" Nylon brush for hard/uneven floors and medium–heavy stain removal.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_gjXqnr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/LBC0_Charger_-_2.jpg",
+            "title": "Charger",
+            "text": "<p>36V smart charger, UL certified.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_AqwP9y",
+        "column_gjXqnr"
+      ],
+      "custom_css": [
+        ".multicolumn-list__item {border: dotted #ccc 1px;}"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "What's Included",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "1734584670cef19c0d": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_Yrzjkk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_Yrzjkk"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "multicolumn_gWpgmU": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_cy8NeE": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Flex Owners Manual</strong>",
+            "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
+            "link_label": "Download",
+            "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/SCRUBO_Flex_Manual.pdf?v=1738884371"
+          }
+        },
+        "column_UKanW4": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Support at every step</strong>",
+            "text": "<p>Our goal is to optimize your business operations for peak efficiency. Should you encounter any challenges with our floor scrubbers, we're here to assist. Feel free to reach out to us via email or contact us directly at 1-800-350-4840.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_AexhK9": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Parts and consumables</strong>",
+            "text": "<p>We aim to maintain a selection of essential spare parts to keep your scrubber running smoothly. Check out our <a href=\"https://scrubo.ca/collections/replacement-parts\" target=\"_blank\" title=\"https://scrubo.ca/collections/replacement-parts\">spare parts list here</a>. If you can't find the part you need, simply email us a photo of the required part, and we'll get back to you promptly.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_cy8NeE",
+        "column_UKanW4",
+        "column_AexhK9"
+      ],
+      "settings": {
+        "title": "Support",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_liquid_Bc6Ejq": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- render 'product-videos' -%}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_specifications_scrubber_NT6NNg",
+    "multirow_hGnXbf",
+    "multicolumn_VNWaAn",
+    "1734584670cef19c0d",
+    "multicolumn_gWpgmU",
+    "custom_liquid_Bc6Ejq",
+    "related-products"
+  ]
+}
