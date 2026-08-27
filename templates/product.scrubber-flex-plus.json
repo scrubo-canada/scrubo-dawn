@@ -243,6 +243,13 @@
             "spec_label": "Charger",
             "spec_value": "{{ product.metafields.custom.charger.value }}"
           }
+        },
+        "specification_paVtVn": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Brush Pressure",
+            "spec_value": "{{ product.metafields.custom.pad_pressure.value }}"
+          }
         }
       },
       "block_order": [
@@ -256,7 +263,8 @@
         "specification_ea7MhJ",
         "specification_QjVQJe",
         "specification_yt9MfV",
-        "specification_rwf3Jd"
+        "specification_rwf3Jd",
+        "specification_paVtVn"
       ],
       "settings": {
         "title": "Product Specifications",
