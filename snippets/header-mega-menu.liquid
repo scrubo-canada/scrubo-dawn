@@ -138,6 +138,7 @@
                                     <span>{{ title }}1</span>
                                     {% if title contains 'Floor Scrubbers' %}
                                       {% assign title = title | remove: 'Floor Scrubbers' | remove: 'floor scrubbers' %}
+                                      <span>Here</span>
                                     {% endif %}
                                     <span>{{ title }}</span>
 
