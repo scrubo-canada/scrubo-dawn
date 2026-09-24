@@ -135,6 +135,7 @@
                                   {% if grandchildlink.type == 'collection_link' %}
                                     {% assign collection = collections[grandchildlink.object.handle] %}
                                     {% assign title = collection.title | escape %}
+                                    
                                     {% if title contains 'Floor Scrubbers' %}
                                       {% assign title = title | remove: 'Floor Scrubbers' | remove: 'floor scrubbers' %}
                                     {% endif %}
