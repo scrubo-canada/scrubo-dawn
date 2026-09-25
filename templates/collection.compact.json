@@ -79,6 +79,16 @@
     "multicolumn_icC6qW": {
       "type": "multicolumn",
       "blocks": {
+        "column_7eLLhf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/grok-image-ee7dc554-02b8-4c03-baf8-80ffd6a6138a.jpg",
+            "title": "Efficient Portable Scrubbing Power:&nbsp;",
+            "text": "<p>Our portable models like the Flex and Flex Plus are powered by advanced Lithium Ion batteries, robust brush motors and optimized down-pressure systems.&nbsp;</p><p></p><p>Scrubo compact scrubbers tear through stubborn grime, oils, and scuffs on the first pass.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_KzXAFA": {
           "type": "column",
           "settings": {
@@ -92,28 +102,18 @@
         "column_amjf8b": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/videoframe_133272.png",
+            "image": "shopify://shop_images/Gemini_Generated_Image_me756ime756ime75.jpg",
             "title": "&nbsp;Long-Lasting Battery Endurance:&nbsp;",
             "text": "<p><br/>Equipped with reliable, high-capacity battery packs ensuring extended continuous run times to get entire facilities done on a single charge.<br/><br/></p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_7eLLhf": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Firefly_Gemini_Flash_No_power_cord_behind_the_unit_and_no_water-soap_on_the_floor._746839_7f40b857-5dac-41a8-95eb-e72c9734e61b.png",
-            "title": "&nbsp;High-Efficiency Scrubbing Power:&nbsp;",
-            "text": "<p><br/>Powered by robust brush motors and optimized down-pressure systems, Scrubo compact scrubbers tear through stubborn grime, oils, and scuffs on the first pass.<br/><br/></p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
+        "column_7eLLhf",
         "column_KzXAFA",
-        "column_amjf8b",
-        "column_7eLLhf"
+        "column_amjf8b"
       ],
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
