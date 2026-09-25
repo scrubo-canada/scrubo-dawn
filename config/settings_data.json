@@ -148,18 +148,24 @@
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
+          "greeting_message": "Hello! Our knowledgeable floor scrubber experts are here to help. Send us a message, and we'll get back to you with answers!",
           "button_color": "#334fb4",
-          "secondary_color": "#ffffff",
-          "ternary_color": "#6a6a6a",
           "button_icon": "chat_bubble",
           "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "lowest",
-          "greeting_message": "Hello! Our knowledgeable floor scrubber experts are here to help. Send us a message, and we'll get back to you with answers!"
+          "button_vertical_position": "lowest"
         }
       },
       "4015264832934714879": {
-        "type": "shopify://apps/sendwill-email-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "type": "shopify://apps/cwillsendwill-popup-email/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "disabled": true,
+        "settings": {
+          "enable_gdpr_mode": false,
+          "enable_cwtracks_listener": false
+        }
+      },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
         "settings": {}
       }
