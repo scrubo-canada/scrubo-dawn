@@ -37,24 +37,64 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_nnKxmE": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_yAnz6V": {
+          "type": "heading",
+          "settings": {
+            "heading": "Scrubo's Compact Scrubbers&nbsp;",
+            "heading_size": "h1"
+          }
+        },
+        "text_eMi74w": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Discover the line of compact commercial floor scrubbers from Scrubo—engineered for high-performance cleaning, unbeatable value, and day-in, day-out reliability.&nbsp;</p><p>Scrubo offers some of the most dependable walk-behind and micro scrubbers in Canada, designed to conquer tight spaces and heavy foot traffic with ease while providing a streak-free, spotless finish.&nbsp;</p><p>Whether you choose the agile Pristine 16 for tight retail aisles or the upgraded Pristine 20 Pro for expansive commercial areas, there is a model built to match your operational needs.</p><p>From local facility managers to professional cleaning crews, our compact utility scrubbers deliver long-lasting value and unmatched cleaning muscle.<br/><br/></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yAnz6V",
+        "text_eMi74w"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/grok-e9caf018-02ea-4acf-8c04-5964fbbecced.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_icC6qW": {
       "type": "multicolumn",
       "blocks": {
-        "column_amjf8b": {
+        "column_KzXAFA": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/videoframe_133272.png",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/Pristine_14_-_2.jpg",
+            "title": "&nbsp;Compact Footprint, Maximum Reach:&nbsp;",
+            "text": "<p><br/>Clever engineering allows these units to easily fit through standard commercial doorways, navigate check-out lanes, and turn effortlessly in confined storage areas.<br/><br/></p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column_KzXAFA": {
+        "column_amjf8b": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/videoframe_133272.png",
+            "title": "&nbsp;Long-Lasting Battery Endurance:&nbsp;",
+            "text": "<p><br/>Equipped with reliable, high-capacity battery packs ensuring extended continuous run times to get entire facilities done on a single charge.<br/><br/></p>",
             "link_label": "",
             "link": ""
           }
@@ -62,16 +102,17 @@
         "column_7eLLhf": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "image": "shopify://shop_images/Firefly_Gemini_Flash_change_the_floor_to_tile_162220.png",
+            "title": "&nbsp;High-Efficiency Scrubbing Power:&nbsp;",
+            "text": "<p><br/>Powered by robust brush motors and optimized down-pressure systems, Scrubo compact scrubbers tear through stubborn grime, oils, and scuffs on the first pass.<br/><br/></p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column_amjf8b",
         "column_KzXAFA",
+        "column_amjf8b",
         "column_7eLLhf"
       ],
       "name": "t:sections.multicolumn.presets.name",
@@ -127,6 +168,7 @@
   "order": [
     "banner",
     "product-grid",
+    "image_with_text_nnKxmE",
     "multicolumn_icC6qW",
     "rich_text_az3wUn"
   ]
