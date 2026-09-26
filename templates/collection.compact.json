@@ -103,8 +103,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Gemini_Generated_Image_me756ime756ime75.jpg",
-            "title": "&nbsp;Long-Lasting Battery Endurance:&nbsp;",
-            "text": "<p><br/>Equipped with reliable, high-capacity battery packs ensuring extended continuous run times to get entire facilities done on a single charge.<br/><br/></p>",
+            "title": "&nbsp;Long-Lasting Battery Endurance",
+            "text": "<p>Equipped with reliable, high-capacity battery packs ensuring extended continuous run times to get entire facilities done on a single charge.</p>",
             "link_label": "",
             "link": ""
           }
