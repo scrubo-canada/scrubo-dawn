@@ -74,6 +74,7 @@
         "column_KzXAFA",
         "column_7eLLhf"
       ],
+      "disabled": true,
       "name": "t:sections.multicolumn.presets.name",
       "settings": {
         "title": "",
