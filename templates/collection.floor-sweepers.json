@@ -83,8 +83,8 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/polaris_in_factory_category_photo.jpg",
-            "title": "&nbsp;Efficient Dust & Debris Collection&nbsp;",
-            "text": "<p>Our commercial <a href=\"https://scrubo.ca/collections/floor-sweepers?utm_source=gemini\" target=\"_blank\">floor sweepers</a> are engineered to quickly capture dirt, dust, and debris across hard floors and low-pile carpets. Designed for optimal airflow and advanced filtration, Scrubo sweepers tear through warehouse grime and retail aisles, leaving a spotless surface on the first pass.<br/><br/></p>",
+            "title": "<strong>&nbsp;Efficient Dust & Debris Collection&nbsp;</strong>",
+            "text": "<p>Our commercial floor sweepers are engineered to quickly capture dirt, dust, and debris across hard floors and low-pile carpets. Designed for optimal airflow and advanced filtration, Scrubo sweepers tear through warehouse grime and retail aisles, leaving a spotless surface on the first pass.<br/><br/></p>",
             "link_label": "",
             "link": ""
           }
@@ -93,7 +93,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Gemini_Generated_Image__9.jpg",
-            "title": "&nbsp;Compact Footprint, Maximum Reach&nbsp;",
+            "title": "<strong>&nbsp;Compact Footprint, Maximum Reach&nbsp;</strong>",
             "text": "<p>Smart engineering allows our sweepers to easily fit through standard commercial doorways, navigate tight checkout lanes, and turn effortlessly in confined storage areas. The ergonomic, lightweight body ensures operators can maintain high-traffic spaces without disrupting daily operations.<br/><br/></p>",
             "link_label": "",
             "link": ""
@@ -103,7 +103,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/sweepers_both_on_factory_floor.jpg",
-            "title": "&nbsp;More Sweeping. Less Downtime.&nbsp;",
+            "title": "<strong>&nbsp;More Sweeping. Less Downtime.&nbsp;</strong>",
             "text": "<p>Built for continuous daily use, these models feature high-capacity debris hoppers and reliable power systems to keep your facility clean with fewer interruptions. Spend less time emptying hoppers and more time maintaining a pristine commercial environment.<br/><br/></p>",
             "link_label": "",
             "link": ""
