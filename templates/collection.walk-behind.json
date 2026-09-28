@@ -43,14 +43,14 @@
         "heading_yAnz6V": {
           "type": "heading",
           "settings": {
-            "heading": "Scrubo's Compact Scrubbers&nbsp;",
+            "heading": "&nbsp;Scrubo's Walk-Behind Scrubbers&nbsp;",
             "heading_size": "h1"
           }
         },
         "text_eMi74w": {
           "type": "text",
           "settings": {
-            "text": "<p><br/>Discover the line of compact commercial floor scrubbers from Scrubo—engineered for high-performance cleaning, unbeatable value, and day-in, day-out reliability.&nbsp;</p><p>Scrubo offers some of the most dependable walk-behind and micro scrubbers in Canada, designed to conquer tight spaces and heavy foot traffic with ease while providing a streak-free, spotless finish.&nbsp;</p><p>Whether you choose the agile Scrubo Flex Plus for tight retail aisles or the upgraded Pristine 14 Plus for expansive commercial areas, there is a model built to match your operational needs.</p><p>From local facility managers to professional cleaning crews, our compact utility scrubbers deliver long-lasting value and unmatched cleaning muscle.<br/><br/></p>",
+            "text": "<p>Discover the line of commercial walk-behind floor scrubbers from Scrubo—engineered for high-performance cleaning, unbeatable value, and day-in, day-out reliability.</p><p>Scrubo offers some of the most dependable walk-behind scrubbers in Canada, designed to conquer wide-open spaces and heavy foot traffic with ease while providing a streak-free, spotless finish. Equipped with large reservoir tanks, these machines keep your facility clean with fewer interruptions by minimizing the time spent emptying and refilling.</p><p>With models ranging from 14\" to 26\" brush sizes, including highly efficient double-brush configurations, there is a machine built to match your exact operational needs. Advanced engineering on select models features adjustable downforce and liftable brushes, allowing operators to effortlessly adapt to different hard floor surfaces and tear through stubborn grime on the first pass. &nbsp;&nbsp;</p><p>From local facility managers to professional cleaning crews, our walk-behind utility scrubbers deliver long-lasting value and unmatched cleaning muscle.</p>",
             "text_style": "body"
           }
         }
@@ -61,8 +61,8 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
-        "image": "shopify://shop_images/grok-e9caf018-02ea-4acf-8c04-5964fbbecced.jpg",
-        "height": "adapt",
+        "image": "shopify://shop_images/Gemini_Generated_Image_akr3bpakr3bpakr3.jpg",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
@@ -82,9 +82,9 @@
         "column_7eLLhf": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/grok-image-ee7dc554-02b8-4c03-baf8-80ffd6a6138a.jpg",
-            "title": "<strong>Efficient Portable Scrubbing Power</strong>",
-            "text": "<p>Our portable models like the Flex and Flex Plus are powered by Lithium-Ion batteries offering power and efficiency similar to the full size models but in compact light-weight body.</p><p>Scrubo compact Flex series scrubbers tear through stubborn grime, oils, and scuffs on the first pass.<br/><br/></p>",
+            "image": "shopify://shop_images/pristine_26_pro_large_warehouse.jpg",
+            "title": "<strong>&nbsp;Versatile Scrubbing Power&nbsp;</strong>",
+            "text": "<p>With models ranging from 14\" to 26\" brush sizes, including highly efficient double-brush configurations, there is a <a href=\"https://scrubo.ca/collections/walk-behind-floor-scrubbers?utm_source=gemini\" target=\"_blank\">walk-behind scrubber</a> built to match your exact operational needs.&nbsp;These machines deliver a wide cleaning path to conquer expansive spaces and heavy foot traffic with a streak-free finish.<br/><br/></p>",
             "link_label": "",
             "link": ""
           }
@@ -92,9 +92,9 @@
         "column_KzXAFA": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Firefly_Gemini_Flash_change_the_unit_she_s_using_to_the_ones_in_photo_3_and_4._She_s_now_cleaning_a_sm_109931.png",
+            "image": "shopify://shop_images/grok-image-ee7dc554-02b8-4c03-baf8-80ffd6a6138a.jpg",
             "title": "<strong>&nbsp;Compact Footprint, Maximum Reach</strong>",
-            "text": "<p>Smart engineering including foldable handle and compact body allows our scrubbers to easily fit through standard commercial doorways, clean under desks and tables, navigate check-out lanes, and turn effortlessly in confined storage areas.</p>",
+            "text": "<p>Advanced engineering on select models features adjustable downforce and liftable brushes. This allows operators to effortlessly adapt to different hard floor surfaces, seamlessly transitioning between daily maintenance and tearing through stubborn, ground-in grime on the first pass.</p>",
             "link_label": "",
             "link": ""
           }
@@ -102,9 +102,9 @@
         "column_amjf8b": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Gemini_Generated_Image_me756ime756ime75.jpg",
+            "image": "shopify://shop_images/pristine_14_in_grocery_store.jpg",
             "title": "<strong>More Cleaning. Less Downtime.&nbsp;</strong>",
-            "text": "<p>Powered by reliable, high-capacity Li-ion or lead-acid battery packs, our compact floor scrubbers deliver 1–3 hours of continuous cleaning time on a single charge—helping you clean entire facilities with fewer interruptions and less downtime.</p>",
+            "text": "<p>Equipped with large reservoir tanks—like the 50L clean water and 56L sewage tanks on the Pristine 20—these scrubbers keep your facility clean with fewer interruptions. Minimize the time your crew spends emptying and refilling hoppers to maximize your day-in, day-out productivity.</p>",
             "link_label": "",
             "link": ""
           }
