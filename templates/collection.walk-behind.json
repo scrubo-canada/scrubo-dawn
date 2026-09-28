@@ -1,0 +1,175 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_nnKxmE": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_yAnz6V": {
+          "type": "heading",
+          "settings": {
+            "heading": "Scrubo's Compact Scrubbers&nbsp;",
+            "heading_size": "h1"
+          }
+        },
+        "text_eMi74w": {
+          "type": "text",
+          "settings": {
+            "text": "<p><br/>Discover the line of compact commercial floor scrubbers from Scrubo—engineered for high-performance cleaning, unbeatable value, and day-in, day-out reliability.&nbsp;</p><p>Scrubo offers some of the most dependable walk-behind and micro scrubbers in Canada, designed to conquer tight spaces and heavy foot traffic with ease while providing a streak-free, spotless finish.&nbsp;</p><p>Whether you choose the agile Scrubo Flex Plus for tight retail aisles or the upgraded Pristine 14 Plus for expansive commercial areas, there is a model built to match your operational needs.</p><p>From local facility managers to professional cleaning crews, our compact utility scrubbers deliver long-lasting value and unmatched cleaning muscle.<br/><br/></p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yAnz6V",
+        "text_eMi74w"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/grok-e9caf018-02ea-4acf-8c04-5964fbbecced.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_icC6qW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_7eLLhf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/grok-image-ee7dc554-02b8-4c03-baf8-80ffd6a6138a.jpg",
+            "title": "<strong>Efficient Portable Scrubbing Power</strong>",
+            "text": "<p>Our portable models like the Flex and Flex Plus are powered by Lithium-Ion batteries offering power and efficiency similar to the full size models but in compact light-weight body.</p><p>Scrubo compact Flex series scrubbers tear through stubborn grime, oils, and scuffs on the first pass.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KzXAFA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Firefly_Gemini_Flash_change_the_unit_she_s_using_to_the_ones_in_photo_3_and_4._She_s_now_cleaning_a_sm_109931.png",
+            "title": "<strong>&nbsp;Compact Footprint, Maximum Reach</strong>",
+            "text": "<p>Smart engineering including foldable handle and compact body allows our scrubbers to easily fit through standard commercial doorways, clean under desks and tables, navigate check-out lanes, and turn effortlessly in confined storage areas.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_amjf8b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_me756ime756ime75.jpg",
+            "title": "<strong>More Cleaning. Less Downtime.&nbsp;</strong>",
+            "text": "<p>Powered by reliable, high-capacity Li-ion or lead-acid battery packs, our compact floor scrubbers deliver 1–3 hours of continuous cleaning time on a single charge—helping you clean entire facilities with fewer interruptions and less downtime.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_7eLLhf",
+        "column_KzXAFA",
+        "column_amjf8b"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_az3wUn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HptRad": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.seo_category_title.value }}",
+            "heading_size": "h2"
+          }
+        },
+        "text_akGfak": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.metafields.custom.seo_category_text | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HptRad",
+        "text_akGfak"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "image_with_text_nnKxmE",
+    "multicolumn_icC6qW",
+    "rich_text_az3wUn"
+  ]
+}
