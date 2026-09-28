@@ -37,6 +37,45 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_PyWNhg": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BPXGaa": {
+          "type": "heading",
+          "settings": {
+            "heading": "&nbsp;Scrubo's Commercial Sweepers&nbsp;",
+            "heading_size": "h1"
+          }
+        },
+        "text_e3JyUe": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover the line of commercial floor sweepers from Scrubo—engineered for high-performance cleaning, unbeatable value, and day-in, day-out reliability. &nbsp;&nbsp;</p><p>Scrubo offers some of the most dependable sweepers in Canada, designed to conquer tight spaces and heavy foot traffic with ease while providing a dust-free, spotless finish. &nbsp;&nbsp;</p><p>Whether you choose an agile manual sweeper for tight retail aisles or an upgraded battery powered model for expansive commercial areas, there is a model built to match your operational needs. &nbsp;&nbsp;</p><p>From local facility managers to professional cleaning crews, our utility sweepers deliver long-lasting value and unmatched cleaning muscle. &nbsp;&nbsp;</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BPXGaa",
+        "text_e3JyUe"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/both_machines_tall.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_icC6qW": {
       "type": "multicolumn",
       "blocks": {
@@ -129,6 +168,7 @@
   "order": [
     "banner",
     "product-grid",
+    "image_with_text_PyWNhg",
     "multicolumn_icC6qW",
     "rich_text_az3wUn"
   ]
