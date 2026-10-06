@@ -135,15 +135,15 @@
             "image_2": "shopify://shop_images/pristine_14_in_grocery_store.jpg",
             "title_2": "Compact",
             "subtitle_2": "Add a short description",
-            "link_2": "",
+            "link_2": "shopify://collections/compact-floor-scrubbers",
             "image_3": "shopify://shop_images/cleanrider_in_hangar_tall.jpg",
             "title_3": "Ride On",
-            "subtitle_3": "Add a short description",
-            "link_3": "",
+            "subtitle_3": "Designed for massive industrial spaces and commercial floors with ease while providing a streak-free, spotless finish.",
+            "link_3": "shopify://collections/ride-on-floor-scrubbers",
             "image_4": "shopify://shop_images/Gemini_Generated_Image__9.jpg",
             "title_4": "Floor Sweepers",
-            "subtitle_4": "Add a short description",
-            "link_4": ""
+            "subtitle_4": "Commercial floor sweepers from Scrubo—engineered for high-performance cleaning .",
+            "link_4": "shopify://collections/floor-sweepers"
           },
           "blocks": {}
         }
