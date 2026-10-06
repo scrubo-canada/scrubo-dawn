@@ -93,6 +93,7 @@
       "blocks": {
         "ai_gen_block_8495321_4jP4Gr": {
           "type": "ai_gen_block_8495321",
+          "disabled": true,
           "settings": {
             "desktop_width_percent": 100,
             "gap": 8,
