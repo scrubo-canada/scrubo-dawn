@@ -60,6 +60,43 @@
         "show_text_below": true
       }
     },
+    "17913259078471b936": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8495321_4jP4Gr": {
+          "type": "ai_gen_block_8495321",
+          "settings": {
+            "desktop_width_percent": 100,
+            "gap": 8,
+            "corner_radius": 8,
+            "text_alignment": "left",
+            "title_size": 24,
+            "subtitle_size": 16,
+            "image_1": "shopify://shop_images/Firefly_Gemini_Flash_Show_this_Scrubo_Pristine_20_floor_scrubber_in_use._Cleaning_an_airport._The_image_ne_299723.png",
+            "title_1": "Walk Behind",
+            "subtitle_1": "Our dependable walk-behind scrubbers are designed to conquer wide-open spaces and heavy foot traffic with ease.",
+            "link_1": "shopify://collections/walk-behind-floor-scrubbers",
+            "image_2": "shopify://shop_images/pristine_14_in_grocery_store.jpg",
+            "title_2": "Compact",
+            "subtitle_2": "We offer agile portable units for tight retail aisles and expansive commercial areas, there is a model built for your needs.",
+            "link_2": "shopify://collections/compact-floor-scrubbers",
+            "image_3": "shopify://shop_images/cleanrider_in_hangar_tall.jpg",
+            "title_3": "Ride On",
+            "subtitle_3": "Designed for massive industrial spaces and commercial floors with ease while providing a streak-free, spotless finish.",
+            "link_3": "shopify://collections/ride-on-floor-scrubbers",
+            "image_4": "shopify://shop_images/Gemini_Generated_Image__9.jpg",
+            "title_4": "Floor Sweepers",
+            "subtitle_4": "See our collection of commercial floor sweepers from Scrubo—engineered for high-performance cleaning .",
+            "link_4": "shopify://collections/floor-sweepers"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8495321_4jP4Gr"
+      ],
+      "settings": {}
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -115,43 +152,6 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "17913259078471b936": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_8495321_4jP4Gr": {
-          "type": "ai_gen_block_8495321",
-          "settings": {
-            "desktop_width_percent": 100,
-            "gap": 8,
-            "corner_radius": 8,
-            "text_alignment": "left",
-            "title_size": 24,
-            "subtitle_size": 16,
-            "image_1": "shopify://shop_images/Firefly_Gemini_Flash_Show_this_Scrubo_Pristine_20_floor_scrubber_in_use._Cleaning_an_airport._The_image_ne_299723.png",
-            "title_1": "Walk Behind",
-            "subtitle_1": "Our dependable walk-behind scrubbers are designed to conquer wide-open spaces and heavy foot traffic with ease.",
-            "link_1": "shopify://collections/walk-behind-floor-scrubbers",
-            "image_2": "shopify://shop_images/pristine_14_in_grocery_store.jpg",
-            "title_2": "Compact",
-            "subtitle_2": "We offer agile portable units for tight retail aisles and expansive commercial areas, there is a model built for your needs.",
-            "link_2": "shopify://collections/compact-floor-scrubbers",
-            "image_3": "shopify://shop_images/cleanrider_in_hangar_tall.jpg",
-            "title_3": "Ride On",
-            "subtitle_3": "Designed for massive industrial spaces and commercial floors with ease while providing a streak-free, spotless finish.",
-            "link_3": "shopify://collections/ride-on-floor-scrubbers",
-            "image_4": "shopify://shop_images/Gemini_Generated_Image__9.jpg",
-            "title_4": "Floor Sweepers",
-            "subtitle_4": "See our collection of commercial floor sweepers from Scrubo—engineered for high-performance cleaning .",
-            "link_4": "shopify://collections/floor-sweepers"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_8495321_4jP4Gr"
-      ],
-      "settings": {}
     },
     "multicolumn_M9fcGT": {
       "type": "multicolumn",
@@ -325,9 +325,9 @@
   },
   "order": [
     "image_banner",
+    "17913259078471b936",
     "featured_collection",
     "featured_collection_4PrwtR",
-    "17913259078471b936",
     "multicolumn_M9fcGT",
     "multirow_bCFmBr",
     "featured_collection_hkq3zk",
