@@ -234,7 +234,7 @@
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "",
-        "button_link": "",
+        "button_link": "shopify://pages/trusted-partners",
         "color_scheme": "",
         "columns_mobile": "2",
         "swipe_on_mobile": false,
