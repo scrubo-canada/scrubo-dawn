@@ -22,8 +22,10 @@
   }
 {% endstyle %}
 
-<div class="page-width ai-title-block-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+<div class="page-width">
+<div class="ai-title-block-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
   <h1 class="ai-title-block-{{ ai_gen_id }}__heading">{{ block.settings.title_text | escape }}</h1>
+</div>
 </div>
 
 {% schema %}
