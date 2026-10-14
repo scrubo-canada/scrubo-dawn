@@ -180,13 +180,6 @@
             "spec_value": "{{ product.metafields.custom.brush_diameter.value }}"
           }
         },
-        "specification_eUPzXX": {
-          "type": "specification",
-          "settings": {
-            "spec_label": "Estimated Coverage",
-            "spec_value": "{{ product.metafields.custom.estimated_coverage.value }}"
-          }
-        },
         "specification_83iwU6": {
           "type": "specification",
           "settings": {
@@ -243,6 +236,13 @@
             "spec_value": "{{ product.metafields.custom.squeegee_width.value }}"
           }
         },
+        "specification_eUPzXX": {
+          "type": "specification",
+          "settings": {
+            "spec_label": "Estimated Coverage",
+            "spec_value": "{{ product.metafields.custom.estimated_coverage.value }}"
+          }
+        },
         "specification_tGRCLx": {
           "type": "specification",
           "settings": {
@@ -261,7 +261,6 @@
       "block_order": [
         "specification_CDLDaK",
         "specification_QA77jN",
-        "specification_eUPzXX",
         "specification_83iwU6",
         "specification_wbTNaU",
         "specification_By8b7t",
@@ -270,6 +269,7 @@
         "specification_wL3VMj",
         "specification_iFdmwy",
         "specification_wHb8jf",
+        "specification_eUPzXX",
         "specification_tGRCLx",
         "specification_rEDzrY"
       ],
@@ -479,6 +479,39 @@
         "padding_bottom": 52
       }
     },
+    "179200125824519357": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_product_faqs_YgRzC7": {
+          "type": "shopify://apps/judge-me-reviews/blocks/product_faqs/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "widget_type": "accordion",
+            "container_style": "card",
+            "card_color": "#F9F9F9",
+            "chevron_button_shape": "round",
+            "question_text_size": "medium",
+            "answer_text_size": "medium",
+            "corner_styling": "soft",
+            "text_color": "#000000",
+            "lighter_text_color": "#7B7B7B",
+            "badge_color": "#F9F9F9",
+            "active_badge_color": "#E0E0E0",
+            "badge_text_color": "#000000",
+            "max_width": 760,
+            "heading_text": "Frequently asked questions"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_product_faqs_YgRzC7"
+      ],
+      "custom_css": [
+        ".jdgm-product-faqs-widget {max-width: none !important;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "1734561048fd4cc682": {
       "type": "apps",
       "blocks": {
@@ -525,6 +558,7 @@
     "multicolumn_mDArHB",
     "multicolumn_KXTfqJ",
     "custom_liquid_z44LdP",
+    "179200125824519357",
     "1734561048fd4cc682",
     "related-products"
   ]
