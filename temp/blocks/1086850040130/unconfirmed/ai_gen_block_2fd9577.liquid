@@ -1,0 +1,74 @@
+{% doc %}
+  @prompt
+    Make title text using H1 tag. I should be able to change the text, color and font size
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-title-block-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+  }
+
+  .ai-title-block-{{ ai_gen_id }}__heading {
+    margin: 0;
+    color: {{ block.settings.title_color }};
+    font-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+    font-style: {{ settings.type_header_font.style }};
+    font-weight: {{ settings.type_header_font.weight }};
+    font-size: {{ block.settings.font_size }}px;
+    line-height: 1.15;
+  }
+{% endstyle %}
+
+<div class="ai-title-block-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <h1 class="ai-title-block-{{ ai_gen_id }}__heading">{{ block.settings.title_text | escape }}</h1>
+</div>
+
+{% schema %}
+{
+  "name": "Custom H1 title",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title_text",
+      "label": "Title text",
+      "default": "Your title"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Text color",
+      "default": "#121212"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Font size",
+      "min": 16,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom H1 title"
+    }
+  ],
+  "tag": null,
+  "class": "custom-h1-title"
+}
+{% endschema %}
