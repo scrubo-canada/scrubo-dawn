@@ -456,7 +456,7 @@
           "type": "shopify://apps/judge-me-reviews/blocks/product_faqs/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "widget_type": "accordion",
-            "container_style": "none",
+            "container_style": "card",
             "card_color": "#F9F9F9",
             "chevron_button_shape": "round",
             "question_text_size": "medium",
