@@ -476,7 +476,7 @@
         "judge_me_reviews_product_faqs_UhK3bd"
       ],
       "custom_css": [
-        ".jdgm-product-faqs-widget {max-width: none;}"
+        ".jdgm-product-faqs-widget {max-width: none !important;}"
       ],
       "settings": {
         "include_margins": true
