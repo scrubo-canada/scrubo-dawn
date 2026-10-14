@@ -449,6 +449,25 @@
         "include_margins": true
       }
     },
+    "1792021921956160a4": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_2fd9577_g4RTE7": {
+          "type": "ai_gen_block_2fd9577",
+          "settings": {
+            "title_text": "Frequently Asked Questions",
+            "title_color": "#121212",
+            "font_size": 36,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_2fd9577_g4RTE7"
+      ],
+      "settings": {}
+    },
     "1791999544371f2ea8": {
       "type": "apps",
       "blocks": {
@@ -457,15 +476,15 @@
           "settings": {
             "widget_type": "accordion",
             "container_style": "card",
-            "card_color": "#F9F9F9",
+            "card_color": "#f9f9f9",
             "chevron_button_shape": "round",
             "question_text_size": "medium",
             "answer_text_size": "medium",
             "corner_styling": "soft",
             "text_color": "#000000",
-            "lighter_text_color": "#7B7B7B",
-            "badge_color": "#F9F9F9",
-            "active_badge_color": "#E0E0E0",
+            "lighter_text_color": "#7b7b7b",
+            "badge_color": "#f9f9f9",
+            "active_badge_color": "#e0e0e0",
             "badge_text_color": "#000000",
             "max_width": 900,
             "heading_text": "Frequently Asked Questions"
@@ -517,6 +536,7 @@
     "multicolumn_7WAc4q",
     "multicolumn_wmUqJx",
     "173458351095e7e63c",
+    "1792021921956160a4",
     "1791999544371f2ea8",
     "custom_liquid_qdBQYQ",
     "related-products"
