@@ -26,11 +26,19 @@
             "heading": "Quick links",
             "menu": "footer"
           }
+        },
+        "link_list_tiEDBr": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
         }
       },
       "block_order": [
         "brand_information_9fNWrT",
-        "footer-0"
+        "footer-0",
+        "link_list_tiEDBr"
       ],
       "settings": {
         "color_scheme": "scheme-2",
