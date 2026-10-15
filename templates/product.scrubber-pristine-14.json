@@ -437,6 +437,26 @@
         "padding_bottom": 36
       }
     },
+    "blocks_fgqJjw": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_2fd9577_WG4bm3": {
+          "type": "ai_gen_block_2fd9577",
+          "settings": {
+            "title_text": "Frequently Asked Questions",
+            "title_color": "#121212",
+            "font_size": 36,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_2fd9577_WG4bm3"
+      ],
+      "name": "Custom H1 title",
+      "settings": {}
+    },
     "17920020141845dad8": {
       "type": "apps",
       "blocks": {
@@ -525,6 +545,7 @@
     "multirow_7pTgnF",
     "multicolumn_7WAc4q",
     "multicolumn_wmUqJx",
+    "blocks_fgqJjw",
     "17920020141845dad8",
     "173458351095e7e63c",
     "custom_liquid_qdBQYQ",
