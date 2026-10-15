@@ -384,59 +384,6 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_wmUqJx": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_6DbXMK": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Pristine 14 owners manual</strong>",
-            "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
-            "link_label": "Download",
-            "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/SCRUBO_Pristine_14.pdf?v=1761170692"
-          }
-        },
-        "column_hEKmaP": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Support at every step</strong>",
-            "text": "<p>Our goal is to optimize your business operations for peak efficiency. Should you encounter any challenges with our floor scrubbers, we're here to assist. Feel free to reach out to us via email or contact us directly at 1-866-700-2023.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_pGfK3T": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Parts and consumables</strong>",
-            "text": "<p>We aim to maintain a selection of essential spare parts to keep your scrubber running smoothly. Check out our <a href=\"https://scrubo.ca/collections/replacement-parts\" target=\"_blank\" title=\"https://scrubo.ca/collections/replacement-parts\">spare parts list here</a>. If you can't find the part you need, simply email us a photo of the required part, and we'll get back to you promptly.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_6DbXMK",
-        "column_hEKmaP",
-        "column_pGfK3T"
-      ],
-      "settings": {
-        "title": "Support",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "blocks_fgqJjw": {
       "type": "_blocks",
       "blocks": {
@@ -489,6 +436,59 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "multicolumn_wmUqJx": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_6DbXMK": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Pristine 14 owners manual</strong>",
+            "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
+            "link_label": "Download",
+            "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/SCRUBO_Pristine_14.pdf?v=1761170692"
+          }
+        },
+        "column_hEKmaP": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Support at every step</strong>",
+            "text": "<p>Our goal is to optimize your business operations for peak efficiency. Should you encounter any challenges with our floor scrubbers, we're here to assist. Feel free to reach out to us via email or contact us directly at 1-866-700-2023.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pGfK3T": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Parts and consumables</strong>",
+            "text": "<p>We aim to maintain a selection of essential spare parts to keep your scrubber running smoothly. Check out our <a href=\"https://scrubo.ca/collections/replacement-parts\" target=\"_blank\" title=\"https://scrubo.ca/collections/replacement-parts\">spare parts list here</a>. If you can't find the part you need, simply email us a photo of the required part, and we'll get back to you promptly.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_6DbXMK",
+        "column_hEKmaP",
+        "column_pGfK3T"
+      ],
+      "settings": {
+        "title": "Support",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "173458351095e7e63c": {
@@ -544,9 +544,9 @@
     "product_specifications_scrubber_ikUCGE",
     "multirow_7pTgnF",
     "multicolumn_7WAc4q",
-    "multicolumn_wmUqJx",
     "blocks_fgqJjw",
     "17920020141845dad8",
+    "multicolumn_wmUqJx",
     "173458351095e7e63c",
     "custom_liquid_qdBQYQ",
     "related-products"
