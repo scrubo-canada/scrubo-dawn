@@ -423,7 +423,8 @@
         "judge_me_reviews_product_faqs_mQmCVk"
       ],
       "custom_css": [
-        ".jdgm-product-faqs-widget {max-width: none !important;}"
+        ".jdgm-product-faqs-widget {max-width: none !important;}",
+        ".jm-cluster.jm-faq-widget__disclaimer {display: none;}"
       ],
       "settings": {
         "include_margins": true
