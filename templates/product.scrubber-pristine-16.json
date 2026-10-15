@@ -486,7 +486,9 @@
         "ai_gen_block_2fd9577_g4RTE7",
         "judge_me_reviews_product_faqs_tM98Ee"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".jdgm-product-faqs-widget {max-width: none !important;}"
+      ],
       "settings": {}
     },
     "custom_liquid_qdBQYQ": {
