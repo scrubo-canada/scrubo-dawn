@@ -470,15 +470,6 @@
         "padding_bottom": 36
       }
     },
-    "custom_liquid_z44LdP": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{%- render 'product-videos' -%}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "blocks_8Nxrkz": {
       "type": "_blocks",
       "blocks": {
@@ -533,6 +524,15 @@
         "include_margins": true
       }
     },
+    "custom_liquid_z44LdP": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- render 'product-videos' -%}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1734561048fd4cc682": {
       "type": "apps",
       "blocks": {
@@ -577,11 +577,11 @@
     "product_specifications_scrubber_XP6ehU",
     "multirow_EXrAQK",
     "multicolumn_mDArHB",
-    "multicolumn_KXTfqJ",
-    "custom_liquid_z44LdP",
     "blocks_8Nxrkz",
     "179200125824519357",
+    "multicolumn_KXTfqJ",
     "1734561048fd4cc682",
+    "custom_liquid_z44LdP",
     "related-products"
   ]
 }
