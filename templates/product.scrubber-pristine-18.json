@@ -451,6 +451,40 @@
       "name": "Custom H1 title",
       "settings": {}
     },
+    "179202581101d7959c": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_product_faqs_Qqnp7k": {
+          "type": "shopify://apps/judge-me-reviews/blocks/product_faqs/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "widget_type": "accordion",
+            "container_style": "card",
+            "card_color": "#F9F9F9",
+            "chevron_button_shape": "round",
+            "question_text_size": "medium",
+            "answer_text_size": "medium",
+            "corner_styling": "soft",
+            "text_color": "#000000",
+            "lighter_text_color": "#7B7B7B",
+            "badge_color": "#F9F9F9",
+            "active_badge_color": "#E0E0E0",
+            "badge_text_color": "#000000",
+            "max_width": 760,
+            "heading_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_product_faqs_Qqnp7k"
+      ],
+      "custom_css": [
+        ".jdgm-product-faqs-widget {max-width: none !important;}",
+        ".jm-cluster.jm-faq-widget__disclaimer {display: none;}"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "multicolumn_tmCj86": {
       "type": "multicolumn",
       "blocks": {
@@ -559,6 +593,7 @@
     "custom_liquid_4RcAjP",
     "multicolumn_bFTCyJ",
     "blocks_ahD99F",
+    "179202581101d7959c",
     "multicolumn_tmCj86",
     "custom_liquid_eMgVXw",
     "17345845959a4d84c7",
