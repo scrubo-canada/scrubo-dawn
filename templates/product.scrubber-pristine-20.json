@@ -450,15 +450,6 @@
         "include_margins": true
       }
     },
-    "custom_liquid_6pmVbn": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% render 'product-videos' %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "multicolumn_j7bmRR": {
       "type": "multicolumn",
       "blocks": {
@@ -512,6 +503,15 @@
         "padding_bottom": 36
       }
     },
+    "custom_liquid_6pmVbn": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-videos' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1734584197cc46cf26": {
       "type": "apps",
       "blocks": {
@@ -558,9 +558,9 @@
     "multicolumn_fwEVW3",
     "blocks_KMX6wc",
     "1792001177afa3c2b4",
-    "custom_liquid_6pmVbn",
     "multicolumn_j7bmRR",
     "1734584197cc46cf26",
+    "custom_liquid_6pmVbn",
     "related-products"
   ]
 }
