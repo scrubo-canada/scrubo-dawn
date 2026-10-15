@@ -388,31 +388,10 @@
             "desktop_width_percent": 100
           },
           "blocks": {}
-        },
-        "judge_me_reviews_product_faqs_tM98Ee": {
-          "type": "shopify://apps/judge-me-reviews/blocks/product_faqs/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "disabled": true,
-          "settings": {
-            "widget_type": "accordion",
-            "container_style": "card",
-            "card_color": "#f9f9f9",
-            "chevron_button_shape": "round",
-            "question_text_size": "medium",
-            "answer_text_size": "medium",
-            "corner_styling": "soft",
-            "text_color": "#000000",
-            "lighter_text_color": "#7b7b7b",
-            "badge_color": "#f9f9f9",
-            "active_badge_color": "#e0e0e0",
-            "badge_text_color": "#000000",
-            "max_width": 900,
-            "heading_text": ""
-          }
         }
       },
       "block_order": [
-        "ai_gen_block_2fd9577_g4RTE7",
-        "judge_me_reviews_product_faqs_tM98Ee"
+        "ai_gen_block_2fd9577_g4RTE7"
       ],
       "custom_css": [
         ".jdgm-product-faqs-widget {max-width: 1280px !important;}",
@@ -439,7 +418,7 @@
             "active_badge_color": "#E0E0E0",
             "badge_text_color": "#000000",
             "max_width": 760,
-            "heading_text": "Frequently asked questions"
+            "heading_text": ""
           }
         }
       },
