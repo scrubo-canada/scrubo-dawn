@@ -469,10 +469,20 @@
         "padding_bottom": 52
       }
     },
-    "179200272214a37cf7": {
-      "type": "apps",
+    "blocks_ahD99F": {
+      "type": "_blocks",
       "blocks": {
-        "judge_me_reviews_product_faqs_7BUR8P": {
+        "ai_gen_block_2fd9577_XaMfxW": {
+          "type": "ai_gen_block_2fd9577",
+          "settings": {
+            "title_text": "Frequently Asked Questions",
+            "title_color": "#121212",
+            "font_size": 36,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        },
+        "judge_me_reviews_product_faqs_bKxXjz": {
           "type": "shopify://apps/judge-me-reviews/blocks/product_faqs/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "widget_type": "accordion",
@@ -488,16 +498,16 @@
             "active_badge_color": "#e0e0e0",
             "badge_text_color": "#000000",
             "max_width": 760,
-            "heading_text": "Frequently asked questions"
+            "heading_text": ""
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_product_faqs_7BUR8P"
+        "ai_gen_block_2fd9577_XaMfxW",
+        "judge_me_reviews_product_faqs_bKxXjz"
       ],
-      "settings": {
-        "include_margins": true
-      }
+      "name": "Custom H1 title",
+      "settings": {}
     },
     "17345845959a4d84c7": {
       "type": "apps",
@@ -546,7 +556,7 @@
     "multicolumn_bFTCyJ",
     "multicolumn_tmCj86",
     "custom_liquid_eMgVXw",
-    "179200272214a37cf7",
+    "blocks_ahD99F",
     "17345845959a4d84c7",
     "related-products"
   ]
