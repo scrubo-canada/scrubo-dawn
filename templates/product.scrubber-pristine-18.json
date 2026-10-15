@@ -506,6 +506,10 @@
         "ai_gen_block_2fd9577_XaMfxW",
         "judge_me_reviews_product_faqs_bKxXjz"
       ],
+      "custom_css": [
+        ".jdgm-product-faqs-widget {max-width: 1280px !important;}",
+        ".jm-cluster.jm-faq-widget__disclaimer {display: none;}"
+      ],
       "name": "Custom H1 title",
       "settings": {}
     },
