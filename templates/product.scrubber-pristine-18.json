@@ -419,30 +419,10 @@
             "desktop_width_percent": 100
           },
           "blocks": {}
-        },
-        "judge_me_reviews_product_faqs_bKxXjz": {
-          "type": "shopify://apps/judge-me-reviews/blocks/product_faqs/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "widget_type": "accordion",
-            "container_style": "card",
-            "card_color": "#f9f9f9",
-            "chevron_button_shape": "round",
-            "question_text_size": "medium",
-            "answer_text_size": "medium",
-            "corner_styling": "soft",
-            "text_color": "#000000",
-            "lighter_text_color": "#7b7b7b",
-            "badge_color": "#f9f9f9",
-            "active_badge_color": "#e0e0e0",
-            "badge_text_color": "#000000",
-            "max_width": 760,
-            "heading_text": ""
-          }
         }
       },
       "block_order": [
-        "ai_gen_block_2fd9577_XaMfxW",
-        "judge_me_reviews_product_faqs_bKxXjz"
+        "ai_gen_block_2fd9577_XaMfxW"
       ],
       "custom_css": [
         ".jdgm-product-faqs-widget {max-width: 1280px !important;}",
@@ -538,15 +518,6 @@
         "padding_bottom": 36
       }
     },
-    "custom_liquid_eMgVXw": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{%- render 'product-videos' -%}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "17345845959a4d84c7": {
       "type": "apps",
       "blocks": {
@@ -565,6 +536,15 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "custom_liquid_eMgVXw": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- render 'product-videos' -%}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "related-products": {
@@ -595,8 +575,8 @@
     "blocks_ahD99F",
     "179202581101d7959c",
     "multicolumn_tmCj86",
-    "custom_liquid_eMgVXw",
     "17345845959a4d84c7",
+    "custom_liquid_eMgVXw",
     "related-products"
   ]
 }
