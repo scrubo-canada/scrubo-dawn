@@ -23,14 +23,14 @@
         "footer-0": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "Support",
             "menu": "footer"
           }
         },
         "link_list_tiEDBr": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "Company",
             "menu": "footer"
           }
         }
