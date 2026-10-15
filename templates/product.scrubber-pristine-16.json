@@ -454,6 +454,7 @@
       "blocks": {
         "ai_gen_block_2fd9577_g4RTE7": {
           "type": "ai_gen_block_2fd9577",
+          "disabled": true,
           "settings": {
             "title_text": "Frequently Asked Questions",
             "title_color": "#121212",
