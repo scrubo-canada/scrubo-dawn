@@ -106,9 +106,9 @@
     "sold_out_badge_color_scheme": "scheme-3",
     "brand_description": "<p>SCRUBO is a proud Canadian company that design, manufacture, and distribute commercial floor scrubbers direct to customers across Canada and USA. We provide unparalleled prices combined with exceptional service.</p>",
     "brand_image": "shopify://shop_images/scrubo-logo--blue.svg",
-    "social_facebook_link": "",
+    "social_facebook_link": "https://www.facebook.com/people/Scrubo/61566871164548/",
     "social_instagram_link": "",
-    "social_youtube_link": "",
+    "social_youtube_link": "https://www.youtube.com/@Scrubo-America/videos",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
@@ -217,7 +217,7 @@
       },
       "scheme-5": {
         "settings": {
-          "background": "#FF3209",
+          "background": "#ff3209",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#6ba780",
