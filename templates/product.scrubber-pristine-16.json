@@ -478,7 +478,7 @@
             "active_badge_color": "#e0e0e0",
             "badge_text_color": "#000000",
             "max_width": 900,
-            "heading_text": ""
+            "heading_text": "Frequently Asked Questions"
           }
         }
       },
@@ -487,7 +487,8 @@
         "judge_me_reviews_product_faqs_tM98Ee"
       ],
       "custom_css": [
-        ".jdgm-product-faqs-widget {max-width: 1280px !important;}"
+        ".jdgm-product-faqs-widget {max-width: 1280px !important;}",
+        ".jm-cluster.jm-faq-widget__disclaimer {display: none;}"
       ],
       "settings": {}
     },
