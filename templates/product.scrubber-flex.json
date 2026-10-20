@@ -335,6 +335,16 @@
             "link": ""
           }
         },
+        "column_tf7zXH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/16inPin-PadBundle-1-v2.jpg",
+            "title": "&nbsp;Pad Driver / Pad&nbsp;",
+            "text": "<p>Two 9\" pad drivers and two red pads.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_gjXqnr": {
           "type": "column",
           "settings": {
@@ -348,6 +358,7 @@
       },
       "block_order": [
         "column_AqwP9y",
+        "column_tf7zXH",
         "column_gjXqnr"
       ],
       "custom_css": [
