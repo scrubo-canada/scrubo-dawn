@@ -338,7 +338,17 @@
           "settings": {
             "image": "shopify://shop_images/FloorScrubberBrush-1.jpg",
             "title": "Brush",
-            "text": "<p>9\" Nylon brush for hard/uneven floors and medium–heavy stain removal.</p>",
+            "text": "<p>Two 9\" nylon brushes for hard/uneven floors and medium–heavy stain removal.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_PzCFB3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/16inPin-PadBundle-1-v2.jpg",
+            "title": "Pad Driver / Pad",
+            "text": "<p>Two 9\" pad drivers and two red pads.</p>",
             "link_label": "",
             "link": ""
           }
@@ -356,6 +366,7 @@
       },
       "block_order": [
         "column_AqwP9y",
+        "column_PzCFB3",
         "column_gjXqnr"
       ],
       "custom_css": [
