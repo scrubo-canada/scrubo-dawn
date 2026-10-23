@@ -321,7 +321,7 @@
             "image": "shopify://shop_images/scrubo_squeegee.jpg",
             "caption": "High Capacity Clean",
             "heading": "Maximizing Efficiency",
-            "text": "<p>The CleanRider's 26\" cleaning path and 113 Litre capacity Recovery Tank means you can confidently cover large area without stopping. A 150Ah battery system keeps the CleanRider 26 going the distance.</p>",
+            "text": "<p>The CleanRider's 26\" cleaning path and 113 Litre capacity Recovery Tank means you can confidently cover large area without stopping. A 180Ah battery system keeps the CleanRider 26 going the distance.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -417,59 +417,6 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_KXTfqJ": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_MFHiwn": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>CleanRider 26 Owners Manual</strong>",
-            "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
-            "link_label": "Download",
-            "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/SCRUBO_CleanRider_26.pdf?v=1738629132"
-          }
-        },
-        "column_XjiyBb": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Support at every step</strong>",
-            "text": "<p>Our goal is to optimize your business operations for peak efficiency. Should you encounter any challenges with our floor scrubbers, we're here to assist. Feel free to reach out to us via email or contact us directly at 1-800-350-4840.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_7jRrAi": {
-          "type": "column",
-          "settings": {
-            "title": "<strong>Parts and consumables</strong>",
-            "text": "<p>We aim to maintain a selection of essential spare parts to keep your scrubber running smoothly. Check out our <a href=\"https://scrubo.ca/collections/replacement-parts\" target=\"_blank\" title=\"https://scrubo.ca/collections/replacement-parts\">spare parts list here</a>. If you can't find the part you need, simply email us a photo of the required part, and we'll get back to you promptly.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_MFHiwn",
-        "column_XjiyBb",
-        "column_7jRrAi"
-      ],
-      "settings": {
-        "title": "Support",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "blocks_8Nxrkz": {
       "type": "_blocks",
       "blocks": {
@@ -524,13 +471,57 @@
         "include_margins": true
       }
     },
-    "custom_liquid_z44LdP": {
-      "type": "custom-liquid",
+    "multicolumn_KXTfqJ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_MFHiwn": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>CleanRider 26 Owners Manual</strong>",
+            "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
+            "link_label": "Download",
+            "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/SCRUBO_CleanRider_26.pdf?v=1738629132"
+          }
+        },
+        "column_XjiyBb": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Support at every step</strong>",
+            "text": "<p>Our goal is to optimize your business operations for peak efficiency. Should you encounter any challenges with our floor scrubbers, we're here to assist. Feel free to reach out to us via email or contact us directly at 1-800-350-4840.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7jRrAi": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Parts and consumables</strong>",
+            "text": "<p>We aim to maintain a selection of essential spare parts to keep your scrubber running smoothly. Check out our <a href=\"https://scrubo.ca/collections/replacement-parts\" target=\"_blank\" title=\"https://scrubo.ca/collections/replacement-parts\">spare parts list here</a>. If you can't find the part you need, simply email us a photo of the required part, and we'll get back to you promptly.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_MFHiwn",
+        "column_XjiyBb",
+        "column_7jRrAi"
+      ],
       "settings": {
-        "custom_liquid": "{%- render 'product-videos' -%}",
+        "title": "Support",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
         "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "1734561048fd4cc682": {
@@ -551,6 +542,15 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "custom_liquid_z44LdP": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{%- render 'product-videos' -%}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "related-products": {
