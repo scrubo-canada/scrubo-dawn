@@ -459,7 +459,7 @@
             "title": "<strong>Pristine 20 owners manual</strong>",
             "text": "<p>Please download the most recent owner's guide, including initial assembly instructions, safety precautions, machine operation guidelines, storage recommendations, maintenance procedures, and troubleshooting tips.</p>",
             "link_label": "Download",
-            "link": "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/SCRUBO_Pristine_20_Manual.pdf?v=1736294487"
+            "link": "https://1drv.ms/b/c/456eb70e1f527807/IQCZy5zSiYITQ4clGDgurN-lAaUw0cD-yA2cmaVvK3-kDz0?e=lY0qeg"
           }
         },
         "column_jpdw9N": {
@@ -503,15 +503,6 @@
         "padding_bottom": 36
       }
     },
-    "custom_liquid_6pmVbn": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% render 'product-videos' %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "1734584197cc46cf26": {
       "type": "apps",
       "blocks": {
@@ -530,6 +521,15 @@
       ],
       "settings": {
         "include_margins": true
+      }
+    },
+    "custom_liquid_6pmVbn": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-videos' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "related-products": {
