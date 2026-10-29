@@ -18,6 +18,15 @@
     },
     "1793313040957b649b": {
       "type": "_blocks",
+      "blocks": {
+        "mapmigo_store_locator_EJ7H6W": {
+          "type": "shopify://apps/mapmigo/blocks/store-locator/019caf5c-f200-7d93-9ec6-52b7bc7e96fd",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "mapmigo_store_locator_EJ7H6W"
+      ],
       "settings": {}
     }
   },
