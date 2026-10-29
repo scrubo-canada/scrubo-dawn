@@ -1,6 +1,98 @@
+{% doc %}
+  @prompt
+    Make an interactive map with stores on the map. Each entry should have store name, phone, address. I need to be able to add new stores
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+{% style %}
+  .ai-store-map-{{ ai_gen_id }} { display: block; width: {{ block.settings.desktop_width_percent }}%; max-width: 100%; color: #121212; font-family: inherit; }
+  .ai-store-map-{{ ai_gen_id }}__heading { margin: 0 0 18px; font-size: 28px; }
+  .ai-store-map-{{ ai_gen_id }}__layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(260px, 1fr); gap: 20px; }
+  .ai-store-map-{{ ai_gen_id }}__canvas { position: relative; min-height: 390px; overflow: hidden; background-color: #e8f0ed; border: 1px solid #cbd5d1; border-radius: 8px; background-image: linear-gradient(32deg, transparent 46%, rgba(255,255,255,.8) 47%, rgba(255,255,255,.8) 49%, transparent 50%), linear-gradient(148deg, transparent 47%, rgba(255,255,255,.7) 48%, rgba(255,255,255,.7) 50%, transparent 51%), repeating-linear-gradient(0deg, transparent 0 54px, rgba(105,135,124,.13) 55px 57px), repeating-linear-gradient(90deg, transparent 0 64px, rgba(105,135,124,.13) 65px 67px); }
+  .ai-store-map-{{ ai_gen_id }}__water { position: absolute; width: 45%; height: 34%; right: -7%; bottom: -10%; border-radius: 50%; background: #c5dce4; }
+  .ai-store-map-{{ ai_gen_id }}__marker { position: absolute; z-index: 2; left: var(--store-x); top: var(--store-y); transform: translate(-50%, -100%); border: 0; background: transparent; padding: 4px; cursor: pointer; color: #334fb4; }
+  .ai-store-map-{{ ai_gen_id }}__marker svg { display: block; width: 34px; height: 42px; filter: drop-shadow(0 2px 2px rgba(0,0,0,.2)); }
+  .ai-store-map-{{ ai_gen_id }}__marker[aria-pressed="true"] { color: #172c78; }
+  .ai-store-map-{{ ai_gen_id }}__marker:focus-visible, .ai-store-map-{{ ai_gen_id }}__store:focus-visible { outline: 3px solid #172c78; outline-offset: 3px; }
+  .ai-store-map-{{ ai_gen_id }}__list { display: grid; align-content: start; gap: 10px; max-height: 390px; overflow: auto; }
+  .ai-store-map-{{ ai_gen_id }}__store { width: 100%; text-align: left; color: #121212; background: #fff; border: 1px solid #d5d9dc; border-radius: 6px; padding: 14px; cursor: pointer; }
+  .ai-store-map-{{ ai_gen_id }}__store[aria-pressed="true"] { border-color: #334fb4; box-shadow: 0 0 0 1px #334fb4; }
+  .ai-store-map-{{ ai_gen_id }}__name { display: block; font-weight: 700; margin-bottom: 6px; }
+  .ai-store-map-{{ ai_gen_id }}__detail { display: block; line-height: 1.5; }
+  .ai-store-map-{{ ai_gen_id }}__empty { padding: 22px; background: #fff; border: 1px solid #d5d9dc; border-radius: 6px; }
+  @media (max-width: 749px) { .ai-store-map-{{ ai_gen_id }}__layout { grid-template-columns: 1fr; } .ai-store-map-{{ ai_gen_id }}__canvas { min-height: 320px; } .ai-store-map-{{ ai_gen_id }}__list { max-height: none; } }
+{% endstyle %}
+
+<store-map-{{ ai_gen_id }} class="ai-store-map-{{ ai_gen_id }}" data-stores="{{ block.settings.stores_json | escape }}" {{ block.shopify_attributes }}>
+  {% if block.settings.heading != blank %}<h2 class="ai-store-map-{{ ai_gen_id }}__heading">{{ block.settings.heading | escape }}</h2>{% endif %}
+  <div class="ai-store-map-{{ ai_gen_id }}__layout">
+    <div class="ai-store-map-{{ ai_gen_id }}__canvas" role="group" aria-label="Store locations map"><span class="ai-store-map-{{ ai_gen_id }}__water" aria-hidden="true"></span><div data-markers></div></div>
+    <div class="ai-store-map-{{ ai_gen_id }}__list" data-store-list aria-label="Store locations"></div>
+  </div>
+</store-map-{{ ai_gen_id }}>
+<script>
+(function() {
+  const tagName = 'store-map-{{ ai_gen_id }}';
+  if (customElements.get(tagName)) return;
+  class StoreMap extends HTMLElement {
+    connectedCallback() {
+      const markers = this.querySelector('[data-markers]');
+      const list = this.querySelector('[data-store-list]');
+      let stores = [];
+      try { stores = JSON.parse(this.dataset.stores || '[]'); } catch (error) { stores = []; }
+      stores = stores.filter((store) => store && store.name && store.address && Number.isFinite(Number(store.x)) && Number.isFinite(Number(store.y)));
+      if (!stores.length) {
+        list.innerHTML = '<div class="ai-store-map-{{ ai_gen_id }}__empty">Add store records in this block’s “Stores” setting. Each record needs name, phone, address, and x/y positions from 0 to 100.</div>';
+        return;
+      }
+      stores.forEach((store, index) => {
+        const x = Math.max(0, Math.min(100, Number(store.x)));
+        const y = Math.max(0, Math.min(100, Number(store.y)));
+        const marker = document.createElement('button');
+        marker.type = 'button';
+        marker.className = 'ai-store-map-{{ ai_gen_id }}__marker';
+        marker.style.setProperty('--store-x', x + '%');
+        marker.style.setProperty('--store-y', y + '%');
+        marker.setAttribute('aria-label', 'Show ' + store.name);
+        marker.setAttribute('aria-pressed', index === 0 ? 'true' : 'false');
+        marker.innerHTML = '<svg viewBox="0 0 24 30" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 0a9 9 0 0 0-9 9c0 6.5 9 21 9 21s9-14.5 9-21a9 9 0 0 0-9-9zm0 12.5A3.5 3.5 0 1 1 12 5.5a3.5 3.5 0 0 1 0 7z"/></svg>';
+        markers.appendChild(marker);
+        const card = document.createElement('button');
+        card.type = 'button';
+        card.className = 'ai-store-map-{{ ai_gen_id }}__store';
+        card.setAttribute('aria-pressed', index === 0 ? 'true' : 'false');
+        const name = document.createElement('span'); name.className = 'ai-store-map-{{ ai_gen_id }}__name'; name.textContent = store.name;
+        const address = document.createElement('span'); address.className = 'ai-store-map-{{ ai_gen_id }}__detail'; address.textContent = store.address;
+        card.append(name, address);
+        if (store.phone) {
+          const phone = document.createElement('a'); phone.className = 'ai-store-map-{{ ai_gen_id }}__detail'; phone.href = 'tel:' + String(store.phone).replace(/[^+\d]/g, ''); phone.textContent = store.phone;
+          phone.addEventListener('click', (event) => event.stopPropagation());
+          card.appendChild(phone);
+        }
+        list.appendChild(card);
+        const activate = () => {
+          markers.querySelectorAll('button').forEach((item) => item.setAttribute('aria-pressed', 'false'));
+          list.querySelectorAll('button').forEach((item) => item.setAttribute('aria-pressed', 'false'));
+          marker.setAttribute('aria-pressed', 'true'); card.setAttribute('aria-pressed', 'true');
+        };
+        marker.addEventListener('click', activate);
+        card.addEventListener('click', activate);
+      });
+    }
+  }
+  customElements.define(tagName, StoreMap);
+})();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Interactive store map",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Find a store" },
+    { "type": "range", "id": "desktop_width_percent", "label": "Desktop width", "min": 50, "max": 100, "step": 5, "unit": "%", "default": 100 },
+    { "type": "textarea", "id": "stores_json", "label": "Stores", "default": "[{\"name\":\"Store name\",\"phone\":\"555-123-4567\",\"address\":\"123 Main Street, City, Province\",\"x\":50,\"y\":45}]", "info": "Add one object per store in JSON. Include name, phone, address, and x/y positions from 0 to 100. Add new objects to add more stores." }
+  ],
+  "presets": [{ "name": "Interactive store map" }],
+  "tag": null,
+  "class": "interactive-store-map"
+}
 {% endschema %}
