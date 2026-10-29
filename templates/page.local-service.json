@@ -15,9 +15,28 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1793313040957b649b": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_e021e54_9m8YVP": {
+          "type": "ai_gen_block_e021e54",
+          "settings": {
+            "heading": "Find a store",
+            "desktop_width_percent": 100,
+            "stores_json": "[{\"name\":\"Store name\",\"phone\":\"555-123-4567\",\"address\":\"123 Main Street, City, Province\",\"x\":50,\"y\":45}]"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_e021e54_9m8YVP"
+      ],
+      "settings": {}
     }
   },
   "order": [
-    "main"
+    "main",
+    "1793313040957b649b"
   ]
 }
