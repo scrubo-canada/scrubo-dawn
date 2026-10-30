@@ -32,6 +32,7 @@
         },
         "slide_zNLmgK": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "heading": "Image slide",
             "heading_size": "h1",
