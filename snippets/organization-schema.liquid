@@ -1,0 +1,108 @@
+{% comment %}
+  Scrubo Organization + LocalBusiness JSON-LD
+  ------------------------------------------------------------------------------
+  PASTE INSTRUCTIONS (do not add this as a second Organization block)
+
+  Live theme: scrubo-dawn/main
+  The current, incomplete Organization schema already lives in
+  sections/header.liquid, lines 401–422 (stock Dawn). layout/theme.liquid
+  has none. Keep the WebSite block that starts on line 424.
+
+  1. In Shopify admin: Online Store → Themes → scrubo-dawn/main → ⋯ → Edit code.
+  2. Under Snippets, add a new snippet named organization-schema.liquid
+     and paste this entire file (comments included). Save.
+  3. Open sections/header.liquid. Select the Organization script only —
+     from <script type="application/ld+json"> through its closing </script> —
+     which sits just above:
+
+       {%- if request.page_type == 'index' -%}
+
+     Delete that Organization script (do not delete the WebSite if-block).
+  4. In its place, add exactly:
+
+       {% render 'organization-schema' %}
+
+  5. Save. If this theme is synced from a code repository, commit the same
+     two files there or the next theme update will revert the change.
+
+  Alternative: paste the <script>…</script> from this file directly over
+  the existing Organization script in sections/header.liquid, and skip
+  the new snippet. The snippet + render method is easier to update later.
+
+  After saving, check the homepage, a product page, and /pages/contact:
+  each should have one Organization/LocalBusiness block (canonical URL
+  https://scrubo.ca, not the current page URL), and only the homepage
+  should still have the WebSite search schema. Product and FAQ JSON-LD
+  should be unchanged.
+{% endcomment %}
+{%- liquid
+  if settings.logo != blank
+    assign org_logo = settings.logo | image_url: width: 500 | prepend: 'https:'
+  else
+    assign org_logo = 'https://scrubo.ca/cdn/shop/files/scrubo-logo--blue.svg?v=1734546057&width=500'
+  endif
+  assign org_url = 'https://scrubo.ca'
+  assign org_id = org_url | append: '#organization'
+  assign org_description = 'Scrubo is a Canadian commercial floor-cleaning brand of Voltbike Electric Inc., based in Port Coquitlam, British Columbia. Scrubo designs and partially assembles floor scrubbers and sweepers, and sells them direct to customers across Canada and the United States. Each machine is tested at the Port Coquitlam facility before delivery.'
+-%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization", "LocalBusiness"],
+  "@id": {{ org_id | json }},
+  "name": "Scrubo",
+  "legalName": "Voltbike Electric Inc.",
+  "alternateName": "Voltbike Electric Inc. (dba Scrubo)",
+  "description": {{ org_description | json }},
+  "url": {{ org_url | json }},
+  "logo": {{ org_logo | json }},
+  "image": {{ org_logo | json }},
+  "telephone": "+1-866-700-2023",
+  "email": "sales@scrubo.ca",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1125 - 1579 Kingsway Ave",
+    "addressLocality": "Port Coquitlam",
+    "addressRegion": "BC",
+    "postalCode": "V3C 0H1",
+    "addressCountry": "CA"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "telephone": "+1-866-700-2023",
+    "email": "sales@scrubo.ca",
+    "areaServed": ["CA", "US"],
+    "availableLanguage": "English"
+  },
+  "areaServed": [
+    { "@type": "Country", "name": "Canada" },
+    { "@type": "Country", "name": "United States" }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/people/Scrubo/61566871164548/",
+    "https://www.youtube.com/@Scrubo-America",
+    "https://x.com/ScruboCanada"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "17:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "10:00",
+      "closes": "15:00"
+    }
+  ]
+}
+</script>
