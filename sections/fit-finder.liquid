@@ -1,0 +1,539 @@
+{% comment %} Scrubo fit finder. Assign the page template page.fit-finder to the Find Your Fit page. {% endcomment %}
+<div class="ff" id="fit-finder">
+    <p class="ff-kicker">Fit finder</p>
+    <h1>Find the right machine</h1>
+    <p class="ff-lead">A few short questions. One machine that fits the floor. Then add it to your cart, check out, finance it with Shop Pay or Affirm, or request a business lease.</p>
+    <div id="ff-stage"></div>
+    <noscript><p>This quiz needs JavaScript. Call <a href="tel:+18667002023">1-866-700-2023</a> or email <a href="mailto:sales@scrubo.ca">sales@scrubo.ca</a>.</p></noscript>
+  </div>
+  <style>
+    .ff {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 36px 20px 72px;
+      color: #121212;
+      font-family: inherit;
+    }
+    .ff * { box-sizing: border-box; }
+    .ff-kicker {
+      margin: 0 0 8px;
+      color: #334fb4;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .ff h1 {
+      margin: 0 0 10px;
+      font-size: clamp(32px, 4vw, 44px);
+      line-height: 1.1;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+    .ff-lead { margin: 0 0 22px; max-width: 68ch; color: #3a3a3a; font-size: 17px; }
+    .ff-card {
+      background: #fff;
+      border: 1px solid #e4e4e4;
+      border-radius: 8px;
+      padding: 22px;
+    }
+    .ff-progress { height: 4px; background: #ececec; border-radius: 99px; overflow: hidden; margin-bottom: 16px; }
+    .ff-progress span { display: block; height: 100%; background: #334fb4; }
+    .ff-step { margin: 0 0 6px; color: #5c5c5c; font-size: 13px; font-weight: 600; }
+    .ff h2 { margin: 0 0 16px; font-size: 26px; line-height: 1.2; font-weight: 600; }
+    .ff-choices { display: grid; gap: 10px; }
+    .ff-choice, .ff-btn, .ff-btn-secondary, .ff-textbtn {
+      font: inherit;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .ff-choice {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: #fff;
+      color: #121212;
+      border: 1px solid #d5d5d5;
+      border-radius: 8px;
+      padding: 16px 18px;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+    .ff-choice:hover, .ff-choice:focus-visible { border-color: #334fb4; background: #f5f7fc; outline: none; }
+    .ff-back {
+      margin-top: 14px;
+      background: none;
+      border: 0;
+      padding: 0;
+      color: #334fb4;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .ff-result { display: grid; grid-template-columns: 280px 1fr; gap: 28px; align-items: start; }
+    .ff-photo {
+      background: #f6f6f6;
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 1;
+    }
+    .ff-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .ff-eyebrow { margin: 0 0 4px; color: #334fb4; font-size: 13px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+    .ff-name { margin: 0 0 8px; font-size: 32px; line-height: 1.1; }
+    .ff-price { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin: 0 0 8px; }
+    .ff-price strong { font-size: 28px; font-weight: 700; }
+    .ff-price s { color: #6b6b6b; font-size: 18px; }
+    .ff-badge {
+      border: 1px solid #121212;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .ff-why { margin: 0 0 14px; font-size: 17px; }
+    .ff-said { margin: 0 0 14px; color: #5c5c5c; font-size: 14px; }
+    .ff-specs { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 0 0 18px; padding: 0; }
+    .ff-specs div { background: #f6f6f6; border-radius: 8px; padding: 10px 12px; }
+    .ff-specs dt { margin: 0; color: #5c5c5c; font-size: 12px; }
+    .ff-specs dd { margin: 2px 0 0; font-weight: 600; }
+    .ff-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 8px; }
+    .ff-btn, .ff-btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: 600;
+      border: 1px solid #334fb4;
+    }
+    .ff-btn { background: #334fb4; color: #fff; }
+    .ff-btn:hover { background: #2a4299; }
+    .ff-btn[disabled] { opacity: 0.7; cursor: default; }
+    .ff-btn-secondary { background: #fff; color: #121212; border-color: #121212; }
+    .ff-btn-secondary:hover { background: #f6f6f6; }
+    .ff-buy { border-top: 1px solid #e4e4e4; margin-top: 8px; padding-top: 16px; }
+    .ff-buy h3 { margin: 16px 0 6px; font-size: 16px; }
+    .ff-buy h3:first-child { margin-top: 0; }
+    .ff-note { margin: 0 0 10px; color: #3a3a3a; font-size: 14px; }
+    .ff-note a, .ff-fine a, .ff-said a { color: #334fb4; }
+    .ff-added { margin: 10px 0 0; font-weight: 600; }
+    .ff-alts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 18px; }
+    .ff-alt {
+      display: grid;
+      grid-template-columns: 84px 1fr;
+      gap: 12px;
+      border: 1px solid #e4e4e4;
+      border-radius: 8px;
+      padding: 12px;
+      background: #fff;
+    }
+    .ff-alt img { width: 84px; height: 84px; object-fit: cover; border-radius: 6px; background: #f6f6f6; }
+    .ff-alt p { margin: 0 0 4px; color: #5c5c5c; font-size: 13px; }
+    .ff-alt strong { display: block; margin-bottom: 6px; }
+    .ff-textbtn { background: none; border: 0; padding: 0; color: #334fb4; font-weight: 600; }
+    .ff-fine { margin: 16px 0 0; color: #5c5c5c; font-size: 13px; }
+    .ff-call h2 { margin-bottom: 8px; }
+    @media (max-width: 740px) {
+      .ff-result, .ff-alts, .ff-specs { grid-template-columns: 1fr; }
+      .ff-card { padding: 16px; }
+      .ff-actions .ff-btn, .ff-actions .ff-btn-secondary { width: 100%; }
+    }
+  </style>
+  <script>
+    (function () {
+      var root = document.getElementById("fit-finder");
+      if (!root || root.getAttribute("data-ready") === "1") return;
+      root.setAttribute("data-ready", "1");
+      var stage = document.getElementById("ff-stage");
+      var FINANCE_MIN = 1000;
+      var LEASE_MIN = 750;
+      var LEASE_RATE = 0.032926;
+
+      var MACHINES = {
+        flex: m("Flex", "scrubo-flex", 47476970946882, 1599, 1999, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Scrubo_Flex_-_Angle_1_-_square_ar.jpg?v=1725473155", [["Cleaning path", "16 in"], ["Run time", "1–2 hours"], ["Tanks", "3.2 L / 6.5 L"], ["Weight", "42 lb"]]),
+        flexplus: m("Flex Plus", "flex-plus", 55941833621826, 1699, 1899, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/FlexPlus-1_4e8d3eb3-9336-4f46-89b2-80a6cb2b658e.jpg?v=1787088296", [["Cleaning path", "17 in"], ["Run time", "1–2 hours"], ["Tanks", "4.7 L / 9 L"], ["Weight", "42 lb"]]),
+        p14plus: m("Pristine 14 Plus", "pristine-14-plus", 52279225352514, 1649, 1799, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Pristine_14_-_6.jpg?v=1773443217", [["Cleaning path", "14 in"], ["Run time", "3–4 hours"], ["Tanks", "30 L / 39 L"], ["Weight", "190 lb"]]),
+        p16: m("Pristine 16", "scrubo-pristine-16", 47476967309634, 1699, 1999, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Scrubo_Pristine_16_-_Angle_1.jpg?v=1719016213", [["Cleaning path", "16 in"], ["Run time", "3–4 hours"], ["Tanks", "30 L / 39 L"], ["Weight", "190 lb"]]),
+        p18: m("Pristine 18", "scrubo-pristine-18", 47479112532290, 2199, 2599, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Prisine18--Angle-5.jpg?v=1736991160", [["Cleaning path", "18 in"], ["Run time", "3–4 hours"], ["Tanks", "40 L / 45 L"], ["Weight", "260 lb"]]),
+        p20: m("Pristine 20", "scrubo-pristine-20", 47476978286914, 2649, 2999, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Pristine_20_-_1_-_2.jpg?v=1725140882", [["Cleaning path", "20 in"], ["Run time", "4.5 hours"], ["Tanks", "50 L / 56 L"], ["Weight", "496 lb"]]),
+        p20pro: m("Pristine 20 Pro", "scrubo-pristine-20-pro-with-traction-drive", 47903954370882, 3149, 3499, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Pristine20Pro-1-v2.jpg?v=1725061559", [["Cleaning path", "20 in, self-propelled"], ["Run time", "4.5 hours"], ["Tanks", "50 L / 56 L"], ["Weight", "496 lb"]]),
+        p26pro: m("Pristine 26 Pro", "pristine-26-pro", 50563285483842, 4199, 4799, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Pristine26-5.jpg?v=1747437949", [["Cleaning path", "26 in, self-propelled"], ["Run time", "Up to 5 hours"], ["Tanks", "50 L / 56 L"], ["Weight", "496 lb"]]),
+        cleanrider: m("CleanRider 26", "scrubo-cleanrider-26", 50007863656770, 5199, 5999, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/CleanRider26_Left.jpg?v=1736887639", [["Cleaning path", "26 in ride-on"], ["Run time", "4–5 hours"], ["Tanks", "103 L / 113 L"], ["Weight", "640 lb"]]),
+        standon: m("Stand-On 28", "scrubo-stand-on-28", 50067412484418, 8499, 9299, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Stand-On-28--Angle-6.jpg?v=1737409657", [["Cleaning path", "28 in stand-on"], ["Turning radius", "48 in"], ["Tanks", "80 L / 85 L"], ["Weight", "740 lb"]]),
+        sweep: m("Sweep", "scrubo-sweep", 47906123284802, 329, 399, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Sweep--Angle-2.jpg?v=1736989202", [["Cleaning path", "40 in"], ["Type", "Manual sweeper"], ["Debris", "55 L"], ["Weight", "44 lb"]]),
+        polaris: m("Polaris", "polaris", 51789052281154, 1799, 2499, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Polaris-1.jpg?v=1771041072", [["Cleaning path", "42 in"], ["Run time", "3–4 hours"], ["Debris", "35 L"], ["Weight", "194 lb"]]),
+        vortex: m("Vortex 17 Pro", "vortex-17-pro", 51949074448706, 929, 1099, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Vortex17Pro-1.jpg?v=1770755024", [["Pad", "17 in"], ["Solution", "12 L"], ["Extra pressure", "30 kg weight"], ["Weight", "152 lb"]]),
+        cyclone: m("Cyclone 17", "cyclone-17", 51932629369154, 949, 1099, "https://cdn.shopify.com/s/files/1/0850/3125/6386/files/Cyclone17-1.jpg?v=1770755748", [["Pad", "17 in"], ["Type", "Corded buffer"], ["Cord", "12 metres"], ["Use", "Burnish, polish, wax"]])
+      };
+
+      function m(name, handle, variant, price, compare, image, specs) {
+        return { name: name, handle: handle, variant: variant, price: price, compare: compare, available: true, image: image, specs: specs };
+      }
+
+      var state = { screen: "job", history: [], answers: {} };
+
+      var SCREENS = {
+        job: {
+          step: "Question 1",
+          title: "What do you need the machine to do?",
+          choices: [
+            ["scrub", "Scrub and dry a hard floor"],
+            ["sweep", "Pick up dry dirt, dust, or debris"],
+            ["polish", "Polish, strip, or wax a floor"],
+            ["unsure", "I'm not sure yet"]
+          ]
+        },
+        size: {
+          step: "Question 2 of 4",
+          title: "About how much floor is in one cleaning?",
+          choices: [
+            ["small", "A small shop, café, clinic, or a few rooms"],
+            ["medium", "A store, gym, school section, or showroom"],
+            ["large", "A large open floor, like a supermarket or warehouse aisle"],
+            ["huge", "A full shift on a big floor, where walking all day is the hard part"]
+          ]
+        },
+        space: {
+          step: "Question 3 of 4",
+          title: "How tight is the space?",
+          choices: [
+            ["tight", "Tight. It has to fit in a van, under fixtures, or down a narrow aisle"],
+            ["normal", "Normal commercial aisles"],
+            ["open", "Wide open runs"]
+          ]
+        },
+        operator: {
+          step: "Question 4 of 4",
+          title: "Who is operating it?",
+          choices: [
+            ["push", "We're fine walking behind a lighter machine"],
+            ["nopush", "We don't want to push a heavy machine the whole shift"],
+            ["fatigue", "Long shifts. Fatigue matters more than the price"]
+          ]
+        },
+        sweep: {
+          step: "Question 2 of 2",
+          title: "How often does this debris show up?",
+          choices: [
+            ["occasional", "Now and then. I want it light and simple"],
+            ["daily", "Most days, in a warehouse, shop, or plant"]
+          ]
+        },
+        polish: {
+          step: "Question 2 of 2",
+          title: "What kind of finish work is it?",
+          choices: [
+            ["wax", "Burnish, polish, or wax, and a cord is fine"],
+            ["strip", "Strip or scrub-polish. I want water and extra pressure"]
+          ]
+        },
+        unsure: {
+          step: "Question 2",
+          title: "What's the main thing on the floor?",
+          choices: [
+            ["scrub", "A dirty film that needs water and a squeegee"],
+            ["sweep", "Dry mess: dust, sand, packaging, glass, or leaves"],
+            ["polish", "A dull finish I want shiny"],
+            ["call", "I'm still not sure. I'll talk to a person"]
+          ]
+        }
+      };
+
+      function onSite() {
+        return /(^|\.)scrubo\.ca$/i.test(location.hostname);
+      }
+      function shop(path) {
+        return (onSite() ? "" : "https://scrubo.ca") + path;
+      }
+      function money(n) {
+        return "$" + Number(n).toLocaleString("en-CA");
+      }
+      function leaseMonthly(price) {
+        return (Math.round(price * LEASE_RATE * 100) / 100).toLocaleString("en-CA", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      }
+      function esc(s) {
+        return String(s).replace(/[&<>"']/g, function (c) {
+          return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+        });
+      }
+      function nextAfter(key, value) {
+        if (key === "job") {
+          if (value === "scrub") return "size";
+          if (value === "sweep") return "sweep";
+          if (value === "polish") return "polish";
+          return "unsure";
+        }
+        if (key === "size") return "space";
+        if (key === "space") return "operator";
+        if (key === "unsure") {
+          if (value === "call") return "result";
+          if (value === "scrub") return "size";
+          if (value === "sweep") return "sweep";
+          return "polish";
+        }
+        return "result";
+      }
+      function said(a) {
+        var bits = [];
+        if (a.job === "sweep" || a.unsure === "sweep") bits.push("dry debris");
+        else if (a.job === "polish" || a.unsure === "polish") bits.push("finish work");
+        else if (a.job === "scrub" || a.unsure === "scrub") bits.push("scrub and dry");
+        if (a.sweep === "occasional") bits.push("occasional mess");
+        if (a.sweep === "daily") bits.push("most days");
+        if (a.polish === "wax") bits.push("burnish or wax");
+        if (a.polish === "strip") bits.push("strip with water");
+        if (a.size === "small") bits.push("a small floor");
+        if (a.size === "medium") bits.push("a medium floor");
+        if (a.size === "large") bits.push("a large floor");
+        if (a.size === "huge") bits.push("a full shift");
+        if (a.space === "tight") bits.push("tight space");
+        if (a.space === "normal") bits.push("normal aisles");
+        if (a.space === "open") bits.push("wide open runs");
+        if (a.operator === "push") bits.push("fine to walk behind it");
+        if (a.operator === "nopush") bits.push("don't want to push a heavy machine");
+        if (a.operator === "fatigue") bits.push("fatigue matters");
+        return bits.join(" · ");
+      }
+      function recommend(a) {
+        if (a.unsure === "call") return { call: true };
+        var job = a.job === "unsure" ? a.unsure : a.job;
+        if (job === "sweep") {
+          if (a.sweep === "daily") {
+            return { best: "polaris", alts: [{ id: "sweep", label: "If the mess is light and occasional" }], why: "You need to pick up dry debris on a regular warehouse, shop, or plant floor. The Polaris is the battery sweeper for that work: a wide path, side brushes, and a front mister to keep the dust down." };
+          }
+          return { best: "sweep", alts: [{ id: "polaris", label: "If this becomes an everyday job" }], why: "You need light debris pickup, not a wet scrub. The Sweep is a manual walk-behind with a 40-inch path. It is light, it has no battery to charge, and it is the right tool when the mess is occasional." };
+        }
+        if (job === "polish") {
+          if (a.polish === "strip") {
+            return { best: "vortex", alts: [{ id: "cyclone", label: "If you mainly want to burnish or wax" }], why: "You want to strip or scrub-polish, with water and extra pressure. The Vortex 17 Pro has a 17-inch pad, a solution tank, and a removable weight for heavier contact." };
+          }
+          return { best: "cyclone", alts: [{ id: "vortex", label: "If you also need to strip, with water and weight" }], why: "You want to burnish, polish, or wax, and a cord is fine. The Cyclone 17 is a corded 17-inch buffer with a 12-metre cord, built for that finish work." };
+        }
+        var tight = a.space === "tight";
+        var open = a.space === "open";
+        var fatigue = a.operator === "fatigue";
+        var noPush = a.operator === "nopush" || fatigue;
+        if (a.size === "huge") {
+          if (tight) return { best: "p20pro", alts: [{ id: "p18", label: "If the aisles are tighter than they sound" }, { id: "cleanrider", label: "If the open floor is really the whole shift" }], why: "This is a long cleaning, but the space is tight for a ride-on. The Pristine 20 Pro scrubs a 20-inch path and drives itself, so nobody is pushing about 500 pounds. If the building is mostly wide open, look at the CleanRider instead." };
+          if (fatigue || (noPush && open)) return { best: "cleanrider", alts: [{ id: "standon", label: "If you want a wider path and a stand-on" }, { id: "p26pro", label: "If you would rather walk behind" }], why: "A full shift on a big floor is a ride-on job. The CleanRider 26 covers about 40,000 square feet a charge, with large tanks, so the operator is not walking it all night." };
+          if (noPush) return { best: "p26pro", alts: [{ id: "cleanrider", label: "If the shift is long enough to ride" }, { id: "p20pro", label: "If 26 inches is wider than the aisles" }], why: "You have a large floor and you do not want to push a heavy machine. The Pristine 26 Pro is self-propelled, with a 26-inch path and about 30,000 square feet of coverage." };
+          return { best: "p26pro", alts: [{ id: "p20pro", label: "If you want the same idea in a 20-inch path" }, { id: "cleanrider", label: "If walking the shift is the real problem" }], why: "A big floor with room to walk calls for the widest self-propelled scrubber. The Pristine 26 Pro uses two brushes for a 26-inch path and runs up to about 5 hours." };
+        }
+        if (a.size === "large") {
+          if (tight) return { best: "p18", alts: [{ id: "p16", label: "If it also has to slip under fixtures" }, { id: "p20pro", label: "For the wide parts of the same building" }], why: "The floor is large, but the routes are tight. The Pristine 18 is the biggest walk-behind that still behaves in normal-to-narrow commercial space. Use a 20 Pro only where the aisles open up." };
+          if (fatigue) return { best: "cleanrider", alts: [{ id: "p26pro", label: "If a ride-on will not fit the building" }, { id: "standon", label: "If you want to stand and turn tighter" }], why: "On a large floor, fatigue matters more than saving the step up to a rider. The CleanRider 26 takes the walking out of the shift." };
+          if (noPush) return { best: "p20pro", alts: [{ id: "p26pro", label: "If the floor is bigger than a single aisle" }, { id: "p20", label: "Same scrubber, if pushing is acceptable" }], why: "A large open floor and a heavy machine do not go together unless the machine drives itself. The Pristine 20 Pro has the same 20-inch scrub as the Pristine 20, plus traction drive." };
+          return { best: "p20", alts: [{ id: "p20pro", label: "If pushing about 500 pounds gets old" }, { id: "p26pro", label: "If you want more path on the same shift" }], why: "A supermarket, warehouse aisle, school, or gym of this size is what the Pristine 20 is built for: a 20-inch path, large tanks, and about 23,000 square feet a charge. It is a heavy machine to push." };
+        }
+        if (a.size === "medium") {
+          if (tight) return { best: "p16", alts: [{ id: "p14plus", label: "If the aisles are tighter than a 16-inch machine" }, { id: "flexplus", label: "If it also has to be light enough to lift" }], why: "A store, gym, or school section with tight routes fits the Pristine 16. It has a 16-inch path, 3–4 hours of run time, and enough tank that you are not refilling every room." };
+          if (noPush && open) return { best: "p20pro", alts: [{ id: "p18", label: "If 20 inches feels like too much machine" }, { id: "p20", label: "Same scrubber, if pushing is acceptable" }], why: "The floor is open enough for a 20-inch machine, and you do not want to push it. The Pristine 20 Pro drives itself and still fits a medium commercial floor." };
+          if (open) return { best: "p20", alts: [{ id: "p18", label: "If you want it easier to turn" }, { id: "p20pro", label: "If you want the same scrubber to drive itself" }], why: "An open medium floor can use the extra path. The Pristine 20 covers about 23,000 square feet a charge. If turning it feels like too much, the Pristine 18 is the easier step down." };
+          return { best: "p18", alts: [{ id: "p16", label: "If the space is smaller than it first sounded" }, { id: "p20", label: "If the floor is more open than a typical aisle" }], why: "A store, showroom, gym, or school section with normal aisles is a Pristine 18 job: an 18-inch path, 40 L of solution, and 3–4 hours of run time." };
+        }
+        if (tight) return { best: "flex", alts: [{ id: "flexplus", label: "Same machine, with bigger tanks" }, { id: "p14plus", label: "If you want more water and a longer run" }], why: "A small floor that has to fit in a van, under fixtures, or down a narrow aisle is a Flex. It weighs 42 pounds, folds, and scrubs a 16-inch path. The tanks are small, so a longer job may want the Flex Plus or the Pristine 14 Plus." };
+        if (noPush) return { best: "flexplus", alts: [{ id: "flex", label: "If you want the smaller tanks" }, { id: "p16", label: "If you can live with a heavier machine" }], why: "On a small floor, the way to avoid pushing a heavy scrubber is to stay with the upright machines. The Flex Plus is still about 42 pounds, with larger tanks than the Flex." };
+        return { best: "p16", alts: [{ id: "p14plus", label: "If the rooms are smaller than a full shop" }, { id: "p18", label: "If the shop is busier than it looks" }], why: "A small shop, café, clinic, or a few rooms with normal access fits the Pristine 16. You get 3–4 hours of run time and real tanks, without stepping up to a 260-pound machine." };
+      }
+      function progressWidth() {
+        var map = { job: 25, size: 50, space: 75, operator: 100, sweep: 100, polish: 100, unsure: 60 };
+        return map[state.screen] || 25;
+      }
+      function leaseMailto(machine) {
+        var monthly = leaseMonthly(machine.price);
+        var body = [
+          "Hi Scrubo,",
+          "",
+          "I'd like a lease quote for 1 x " + machine.name + " (" + money(machine.price) + " CAD).",
+          "The fit finder estimated " + monthly + " per month + tax for 36 months, before shipping.",
+          "",
+          "Registered business name:",
+          "Contact name:",
+          "Phone:",
+          "Email:",
+          "",
+          "Please include shipping in the quote."
+        ].join("\n");
+        return "mailto:sales@scrubo.ca?subject=" + encodeURIComponent("Lease quote request — " + machine.name) + "&body=" + encodeURIComponent(body);
+      }
+      function priceHtml(machine) {
+        var sale = machine.compare && machine.compare > machine.price;
+        return '<p class="ff-price"><strong>' + money(machine.price) + '</strong>' +
+          (sale ? '<s>' + money(machine.compare) + '</s><span class="ff-badge">Sale</span>' : '') +
+          '<span>CAD</span></p>';
+      }
+      function specsHtml(machine) {
+        return '<dl class="ff-specs">' + machine.specs.map(function (pair) {
+          return '<div><dt>' + esc(pair[0]) + '</dt><dd>' + esc(pair[1]) + '</dd></div>';
+        }).join("") + '</dl>';
+      }
+      function buyHtml(machine) {
+        var product = shop("/products/" + machine.handle);
+        var checkout = shop("/cart/add?id=" + machine.variant + "&quantity=1&return_to=/checkout");
+        var html = '<div class="ff-buy"><h3>Buy it</h3>';
+        if (!machine.available) {
+          html += '<p class="ff-note">This one is sold out right now. Call <a href="tel:+18667002023">1-866-700-2023</a> and we\'ll tell you when it\'s back, or pick another machine below.</p>';
+        } else {
+          html += '<div class="ff-actions">' +
+            '<button class="ff-btn" type="button" data-act="add" data-variant="' + machine.variant + '">Add to cart</button>' +
+            '<a class="ff-btn-secondary" href="' + checkout + '">Check out</a>' +
+            '</div>' +
+            '<p class="ff-added" id="ff-added" hidden>Added. <a href="' + shop("/cart") + '">View cart</a> or <a href="' + shop("/checkout") + '">check out</a>.</p>';
+        }
+        html += '<p class="ff-note"><a href="' + product + '">View the ' + esc(machine.name) + ' product page</a></p>';
+        if (machine.price >= FINANCE_MIN && machine.available) {
+          html += '<h3>Pay over time</h3>' +
+            '<p class="ff-note">Shop Pay and Affirm show up as payment options at checkout on orders of $1,000 or more. Rates are 0–31.99% APR where available, based on creditworthiness, and subject to an eligibility check and provincial limits.</p>' +
+            '<div class="ff-actions"><a class="ff-btn" href="' + checkout + '">Check out with financing</a></div>';
+        } else if (machine.price < FINANCE_MIN) {
+          html += '<h3>Pay over time</h3><p class="ff-note">Shop Pay and Affirm financing starts at $1,000, so this machine is a regular checkout' + (machine.price >= LEASE_MIN ? ' or a lease' : '') + '.</p>';
+        }
+        if (machine.price >= LEASE_MIN) {
+          html += '<h3>Lease it</h3>' +
+            '<p class="ff-note">About <strong>$' + leaseMonthly(machine.price) + '/month + tax</strong> for 36 months, on approved credit. No down payment. Own it for $10 + tax at the end. One-time $115 setup fee. Shipping is extra ($80 per machine) and can go on the same lease. This is a grenke application, not a card payment. Canadian businesses only, unless a US business leases through a Canadian entity.</p>' +
+            '<div class="ff-actions">' +
+            '<a class="ff-btn" href="' + leaseMailto(machine) + '">Email a lease quote</a>' +
+            '<a class="ff-btn-secondary" href="' + shop("/pages/leasing") + '">Leasing details</a>' +
+            '</div>';
+        } else {
+          html += '<h3>Lease it</h3><p class="ff-note">Business leasing starts at $750, so the ' + esc(machine.name) + ' is a straight purchase.</p>';
+        }
+        html += '<p class="ff-note">Want a person to confirm the match? Call <a href="tel:+18667002023">1-866-700-2023</a> or email <a href="mailto:sales@scrubo.ca">sales@scrubo.ca</a>.</p>';
+        html += '</div>';
+        return html;
+      }
+      function renderQuestion() {
+        var screen = SCREENS[state.screen];
+        var key = state.screen === "job" ? "job" : state.screen;
+        var html = '<div class="ff-card"><div class="ff-progress"><span style="width:' + progressWidth() + '%"></span></div>';
+        html += '<p class="ff-step">' + esc(screen.step) + '</p><h2>' + esc(screen.title) + '</h2><div class="ff-choices">';
+        screen.choices.forEach(function (choice) {
+          html += '<button class="ff-choice" type="button" data-act="answer" data-key="' + key + '" data-value="' + choice[0] + '">' + esc(choice[1]) + '</button>';
+        });
+        html += '</div>';
+        if (state.history.length) html += '<button class="ff-back" type="button" data-act="back">Back</button>';
+        html += '</div>';
+        stage.innerHTML = html;
+      }
+      function renderResult() {
+        var rec = recommend(state.answers);
+        if (rec.call) {
+          stage.innerHTML = '<div class="ff-card ff-call"><h2>Let\'s match it together</h2><p class="ff-why">No single machine is a fair guess from here. Tell us the floor, the mess, and how long the shift is.</p><div class="ff-actions"><a class="ff-btn" href="tel:+18667002023">Call 1-866-700-2023</a><a class="ff-btn-secondary" href="mailto:sales@scrubo.ca?subject=' + encodeURIComponent("Help me choose a machine") + '">Email sales@scrubo.ca</a></div><button class="ff-back" type="button" data-act="restart">Start over</button></div>';
+          return;
+        }
+        var machine = MACHINES[rec.best];
+        var html = '<div class="ff-card"><div class="ff-result"><div class="ff-photo"><img src="' + machine.image + '" alt="' + esc(machine.name) + '"></div><div>';
+        html += '<p class="ff-eyebrow">Best fit</p><h2 class="ff-name">' + esc(machine.name) + '</h2>';
+        html += priceHtml(machine);
+        html += '<p class="ff-why">' + esc(rec.why) + '</p>';
+        html += '<p class="ff-said">You said: ' + esc(said(state.answers)) + '</p>';
+        html += specsHtml(machine);
+        html += buyHtml(machine);
+        html += '</div></div>';
+        if (rec.alts && rec.alts.length) {
+          html += '<div class="ff-alts">';
+          rec.alts.forEach(function (alt) {
+            var other = MACHINES[alt.id];
+            html += '<article class="ff-alt"><img src="' + other.image + '" alt=""><div><p>' + esc(alt.label) + '</p><strong>' + esc(other.name) + ' · ' + money(other.price) + '</strong>';
+            if (other.available) html += '<button class="ff-textbtn" type="button" data-act="add" data-variant="' + other.variant + '">Add to cart</button>';
+            html += ' · <a href="' + shop("/products/" + other.handle) + '">View</a></div></article>';
+          });
+          html += '</div>';
+        }
+        html += '<div class="ff-fine">Prices are current scrubo.ca sale prices in CAD, before tax, as of November 13, 2026. Shipping is $80 per machine in Canada. Pickup in Port Coquitlam is free. The lease figure uses the 36-month rate on the leasing page (price × 3.2926%) and does not include tax or shipping. <button class="ff-textbtn" type="button" data-act="restart">Start over</button></div>';
+        html += '</div>';
+        stage.innerHTML = html;
+      }
+      function render() {
+        if (state.screen === "result") renderResult();
+        else renderQuestion();
+        var card = stage.querySelector(".ff-card");
+        if (card && state.history.length) card.scrollIntoView({ block: "nearest" });
+      }
+      async function addToCart(button) {
+        var id = Number(button.getAttribute("data-variant"));
+        if (!onSite()) {
+          location.href = "https://scrubo.ca/cart/add?id=" + id + "&quantity=1";
+          return;
+        }
+        button.disabled = true;
+        var original = button.textContent;
+        button.textContent = "Adding…";
+        try {
+          var res = await fetch("/cart/add.js", {
+            method: "POST",
+            headers: { "Content-Type": "application/json", "Accept": "application/json" },
+            body: JSON.stringify({ items: [{ id: id, quantity: 1 }] })
+          });
+          if (!res.ok) throw new Error("cart");
+          button.textContent = "Added";
+          var note = document.getElementById("ff-added");
+          if (note) note.hidden = false;
+          try {
+            var cart = await (await fetch("/cart.js")).json();
+            var bubble = document.querySelector(".cart-count-bubble span");
+            if (bubble && cart && cart.item_count != null) bubble.textContent = String(cart.item_count);
+          } catch (ignore) {}
+        } catch (err) {
+          button.disabled = false;
+          button.textContent = original;
+          location.href = "/cart/add?id=" + id + "&quantity=1";
+        }
+      }
+      root.addEventListener("click", function (event) {
+        var button = event.target.closest("[data-act]");
+        if (!button || !root.contains(button)) return;
+        var act = button.getAttribute("data-act");
+        if (act === "back") {
+          state.screen = state.history.pop();
+          render();
+          return;
+        }
+        if (act === "restart") {
+          state.screen = "job";
+          state.history = [];
+          state.answers = {};
+          render();
+          return;
+        }
+        if (act === "add") {
+          event.preventDefault();
+          addToCart(button);
+          return;
+        }
+        if (act === "answer") {
+          var key = button.getAttribute("data-key");
+          var value = button.getAttribute("data-value");
+          if (key === "job") {
+            state.answers = { job: value };
+          } else if (key === "unsure") {
+            state.answers.unsure = value;
+            if (value !== "call") state.answers.job = "unsure";
+          } else {
+            state.answers[key] = value;
+          }
+          state.history.push(state.screen);
+          state.screen = nextAfter(key, value);
+          render();
+        }
+      });
+      render();
+    })();
+  </script>
+{% schema %}
+{
+  "name": "Fit finder",
+  "tag": "section",
+  "class": "scrubo-fit-finder",
+  "settings": [],
+  "presets": [
+    { "name": "Fit finder" }
+  ],
+  "enabled_on": {
+    "templates": ["page"]
+  }
+}
+{% endschema %}
