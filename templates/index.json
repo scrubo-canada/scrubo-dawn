@@ -47,11 +47,30 @@
             "color_scheme": "scheme-24462ae4-2793-4052-aa14-9596f3e47813",
             "text_alignment_mobile": "center"
           }
+        },
+        "slide_C3YwAX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/scrubo-hero-single-pristine20pro-gemini.jpg",
+            "heading": "&nbsp;Scrubo Pristine 20 Pro",
+            "heading_size": "h1",
+            "subheading": "Discover the Scrubo Pristine 20 Pro, your ultimate companion for floor care tasks. This powered self-propelled walk-behind floor scrubber and dryer features a traction drive, ensuring effortless handling and maneuverability. &nbsp;",
+            "button_label": "Learn More",
+            "link": "shopify://products/scrubo-pristine-20-pro-with-traction-drive",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-24462ae4-2793-4052-aa14-9596f3e47813",
+            "text_alignment_mobile": "center"
+          }
         }
       },
       "block_order": [
         "slide_caxCMt",
-        "slide_zNLmgK"
+        "slide_zNLmgK",
+        "slide_C3YwAX"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
