@@ -322,6 +322,7 @@
       "blocks": {
         "column_RgBhaG": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/brush_8f375459-3d94-412e-8ebc-7a46e851d2c3.jpg",
             "title": "Brush",
