@@ -320,6 +320,16 @@
     "multicolumn_7WAc4q": {
       "type": "multicolumn",
       "blocks": {
+        "column_RgBhaG": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/brush_8f375459-3d94-412e-8ebc-7a46e851d2c3.jpg",
+            "title": "Brush",
+            "text": "<p><br/>16\" Nylon brush for hard/uneven floors and medium–heavy stain removal.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_E78MWt": {
           "type": "column",
           "settings": {
@@ -332,6 +342,7 @@
         }
       },
       "block_order": [
+        "column_RgBhaG",
         "column_E78MWt"
       ],
       "custom_css": [
