@@ -320,16 +320,6 @@
     "multicolumn_7WAc4q": {
       "type": "multicolumn",
       "blocks": {
-        "column_nkh9Qf": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/brush.jpg",
-            "title": "Brush",
-            "text": "<p>Two 16\" Nylon brushes for hard/uneven floors.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_E78MWt": {
           "type": "column",
           "settings": {
@@ -342,7 +332,6 @@
         }
       },
       "block_order": [
-        "column_nkh9Qf",
         "column_E78MWt"
       ],
       "custom_css": [
