@@ -49,6 +49,15 @@
     background: #e8e8e8;
   }
 
+  .ai-image-grid-{{ ai_gen_id }}__image:hover {
+  transform: scale(1.05);
+}
+
+  .ai-image-grid-{{ ai_gen_id }}__image {
+    object-fit: cover;
+    transition: transform 0.2s ease-in-out;
+  }
+
   .ai-image-grid-{{ ai_gen_id }}__placeholder svg {
     width: 100%;
     height: 100%;
