@@ -9,7 +9,7 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/scrubo-logo--blue.svg",
+    "logo": "shopify://shop_images/scrubo_logo.png",
     "logo_width": 150,
     "type_header_font": "source_sans_pro_n4",
     "heading_scale": 100,
@@ -241,7 +241,7 @@
         "settings": {
           "background": "rgba(0,0,0,0)",
           "background_gradient": "",
-          "text": "#FFFFFF",
+          "text": "#ffffff",
           "button": "#334fb4",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
