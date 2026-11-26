@@ -12,6 +12,24 @@
     "slideshow_4eCbT3": {
       "type": "slideshow",
       "blocks": {
+        "slide_z7UEiB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/scrubo-hero-sale20-lineup-flex-p18-p20pro-p26pro.jpg",
+            "heading": "&nbsp;Scrubo's Black Friday Sale",
+            "heading_size": "h1",
+            "subheading": "Save up to 20% off our most popular Floor Scrubbers. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; No coupon code required. Shipping only $80!",
+            "button_label": "Learn More",
+            "link": "shopify://pages/find-your-fit",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-24462ae4-2793-4052-aa14-9596f3e47813",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_caxCMt": {
           "type": "slide",
           "settings": {
@@ -65,31 +83,13 @@
             "color_scheme": "scheme-24462ae4-2793-4052-aa14-9596f3e47813",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_z7UEiB": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/scrubo-hero-sale20-lineup-flex-p18-p20pro-p26pro.jpg",
-            "heading": "&nbsp;Scrubo's Black Friday Sale",
-            "heading_size": "h1",
-            "subheading": "Save up to 20% off our most popular Floor Scrubbers. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; No coupon code required. Shipping only $80!",
-            "button_label": "Learn More",
-            "link": "shopify://pages/find-your-fit",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": true,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-24462ae4-2793-4052-aa14-9596f3e47813",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
+        "slide_z7UEiB",
         "slide_caxCMt",
         "slide_zNLmgK",
-        "slide_C3YwAX",
-        "slide_z7UEiB"
+        "slide_C3YwAX"
       ],
       "name": "t:sections.slideshow.presets.name",
       "settings": {
