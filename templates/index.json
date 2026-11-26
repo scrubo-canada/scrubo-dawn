@@ -16,8 +16,8 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/scrubo-hero-sale20-lineup-flex-p18-p20pro-p26pro.jpg",
-            "heading": "&nbsp;Scrubo's Black Friday Sale",
-            "heading_size": "h1",
+            "heading": "Black Friday Sale",
+            "heading_size": "hxl",
             "subheading": "Save up to 20% off our most popular Floor Scrubbers. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; No coupon code required. Shipping only $80!",
             "button_label": "Learn More",
             "link": "shopify://pages/find-your-fit",
